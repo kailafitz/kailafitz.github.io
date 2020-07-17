@@ -4,7 +4,7 @@
 }
 
 .home {
-    background-color: #7e979e;
+    background-color: #63abbd;
     font-family: 'Raleway', sans-serif;
     color: white;
     width: 100%;
@@ -240,6 +240,7 @@ header {
     width: 100%;
     display: inline-block;
     text-align: center;
+    color: #0B5D68;
 }
 
 .card-header img {
@@ -260,6 +261,7 @@ header {
 .bio {
     margin: 20px;
     text-align: center;
+    color: #0B5D68;
 }
 
 .membership-label {
@@ -280,7 +282,7 @@ header {
 }
 
 .membership-info button {
-    padding: 5px 5px;
+    padding: 7px;
     margin: 0px 10px;
     background-color: ghostwhite;
     color: #30bf4f;

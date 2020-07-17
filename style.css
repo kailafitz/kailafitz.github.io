@@ -94,3 +94,8 @@ header {
     background-color: #96bcc7;
     border-color: white;
 }
+
+.kf-btn :hover {
+    background-color: #ffffff;
+    color: #96bcc7;
+}
