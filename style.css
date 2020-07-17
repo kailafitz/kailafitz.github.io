@@ -75,3 +75,22 @@ header {
     position: relative;
     display: inline-block;
 } /* stay active while menu drops down? */
+
+/* ------------------------------------- */
+
+.web-card {
+    margin: 0px 90px;
+    font-family: 'Crimson Text', serif;
+}
+
+#hamsa-img {
+    width: 100px;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.kf-btn {
+    background-color: #96bcc7;
+    border-color: white;
+}
