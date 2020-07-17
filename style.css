@@ -5,13 +5,13 @@
 
 header {
     width: 100%;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Crimson Text', serif;
 }
 
 #profile-card {
-    font-family: 'Varela Round', sans-serif;
-    background-color: beige;
-    width: 15%;
+    font-family: 'Crimson Text', serif;
+    background-color: #8CCBD4;
+    width: 12%;
     height: 100%;
     margin: 40px;
     padding: 50px;
@@ -28,6 +28,50 @@ header {
     box-shadow: 0px 0px 9px 0px #000000;
 }
 
-#profile-card p {
+#profile-card h4 {
     text-align: justify;
 }
+
+/*-----------------------------*/
+
+
+header {
+    background-color: #ffffff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Crimson Text', serif;
+    color: black;
+}
+.navbar ul.nav-menu {
+    width: 100%;
+    font-family: 'Crimson Text', serif;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+.menu-item {
+    padding: 0px 30px;
+}
+
+#co-name {
+    padding-right: 20px;
+}
+
+.text {
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-item a.text:hover {
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+} /* stay active while menu drops down? */
