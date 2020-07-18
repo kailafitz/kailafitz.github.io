@@ -10,14 +10,14 @@ header {
 
 #profile-card {
     font-family: 'Crimson Text', serif;
-    background-color: #8CCBD4;
+    background-color: #f8f8f8;
     width: 12%;
     height: 100%;
-    margin: 40px;
+    margin: 40px auto;
     padding: 50px;
     text-align: center;
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px 0px grey;
+    /* border-radius: 30px; */
+    box-shadow: 0px 0px 10px 0px rgba(244, 220, 255, 0.692);
 }
 
 #profile-card img {
@@ -44,12 +44,12 @@ header {
     color: black;
 }
 .navbar ul.nav-menu {
-    width: 100%;
     font-family: 'Crimson Text', serif;
     list-style-type: none;
     display: flex;
     align-items: center;
-    padding: 40px;
+    margin: 40px 0px;
+    padding-left: 20px;
 }
 
 .menu-item {
@@ -69,6 +69,7 @@ header {
 
 .menu-item a.text:hover {
     color: white;
+    text-shadow: 1px 1px rgba(209, 162, 231, 0.699);
 }
 
 .dropdown {
