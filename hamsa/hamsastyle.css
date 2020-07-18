@@ -380,6 +380,17 @@ footer {
     padding: 10px;
 }
 
+.kf-return{
+    position: fixed;
+    bottom:20px;
+    left:20px;
+}
+
+.kf-return a{
+    font-size: 2em;
+    color:white;
+}
+
 /* ------------------------------------ HOME -------------------------------- */
 
 .home-body {
@@ -394,21 +405,20 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0px 350px;
+    justify-content: center;
 }
 
 .bracket img {
     height: 400px;
 }
 
-/* #br1 {
-    margin-left: 100px;
-} */
+#br1 {
+    margin-right: 30px;
+}
 
-/* #br2 img {
-    margin-left: -100px;
-} */
+#br2 {
+    margin-left: 30px;
+}
 
 #motto {
     display: block;
@@ -425,7 +435,7 @@ footer {
 .text-tran {
     transition: font-size 0.8s ease;
     cursor: default;
-    padding: 30px 0px;
+    padding: 30px 70px;
 }
 
 #mot1:hover {

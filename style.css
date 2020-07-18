@@ -17,7 +17,7 @@ header {
     padding: 50px;
     text-align: center;
     /* border-radius: 30px; */
-    box-shadow: 0px 0px 10px 0px rgba(244, 220, 255, 0.692);
+    box-shadow: 0px 0px 10px 0px #d1a2e7;
 }
 
 #profile-card img {
@@ -69,7 +69,8 @@ header {
 
 .menu-item a.text:hover {
     color: white;
-    text-shadow: 1px 1px rgba(209, 162, 231, 0.699);
+    text-shadow: 1px 1px #d1a2e7;
+    text-decoration: none;
 }
 
 .dropdown {
@@ -82,6 +83,8 @@ header {
 .web-card {
     margin: 0px 90px;
     font-family: 'Crimson Text', serif;
+    border-color: none;
+    box-shadow: 0px 0px 10px 0px #d1a2e7;
 }
 
 #hamsa-img {
@@ -92,11 +95,22 @@ header {
 }
 
 .kf-btn {
-    background-color: #96bcc7;
+    background-color: #d1a2e7;
     border-color: white;
 }
 
-.kf-btn :hover {
+.kf-btn:hover {
     background-color: #ffffff;
-    color: #96bcc7;
+    color: #d1a2e7;
+    border-color: #d1a2e7;
+}
+
+/* ----------------- */
+
+#portfolio-info {
+    font-family: 'Crimson Text', serif;
+    width: 80%;
+    text-align: justify;
+    margin: 30px auto;
+    margin-bottom: 70px;
 }
