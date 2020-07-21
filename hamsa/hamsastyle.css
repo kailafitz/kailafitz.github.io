@@ -470,3 +470,15 @@ footer {
     height: 100px;
     width: 60px;
 }
+
+/* ------------------------- ABOUT ------------------------------------*/
+
+.about-body {
+    width: 62%;
+}
+
+.about-body h4 {
+    width: 40%;
+    margin: 146px auto;
+    text-align: justify;
+}
