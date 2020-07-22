@@ -104,7 +104,7 @@ header {
     border-color: #d1a2e7;
 }
 
-/* ----------------- */
+/* ----------------- PORTFOLIO ------------------------------ */
 
 #portfolio-info {
     font-family: 'Crimson Text', serif;
@@ -112,4 +112,12 @@ header {
     text-align: justify;
     margin: 30px auto;
     margin-bottom: 70px;
+}
+
+/* ------------------------- ABOUT ----------------------- */
+
+#intro h3 {
+    font-family: 'Crimson Text', serif;
+    padding: 0 50px;
+    text-align: justify;
 }
