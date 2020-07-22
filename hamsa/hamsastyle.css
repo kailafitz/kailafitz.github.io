@@ -22,26 +22,6 @@
     box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-/* .bg-img {
-    background-image: url(man-carrying-woman-with-hot-air-balloons-background-3889705.jpg);
-    height: 100%;
-    opacity: .8;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-/* .bg-img {
-    width: 1000px;
-    height: 1200px;
-    background-image: url(man-carrying-woman-with-hot-air-balloons-background-3889705.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: right;
-    position: relative;
-} */
-
 body .moon {
     background-image: url(full-moon-in-blue-sky-4321944.jpg);
     background-position: center;
@@ -58,19 +38,6 @@ header {
     font-family: 'Raleway', sans-serif;
     color: #6cabbd;
 }
-
-/* .bg-colour {
-    background-color: white;
-    opacity: .7;
-} */
-
-/* nav {
-    width:100%;
-    background-color: #ffffff;
-    opacity: .7;
-    margin: 0;
-    padding: 0;
-} */
 
 .navbar ul.nav-menu {
     width: 100%;
@@ -317,7 +284,6 @@ header {
 footer {
     width: 100%;
     background-color: #ccdee4e8;
-    /*opacity: .7;*/
     font-family: 'Raleway', sans-serif;
     color: #6cabbd;
 }
@@ -380,20 +346,21 @@ footer {
     padding: 10px;
 }
 
-.kf-return{
+.kf-return {
     position: fixed;
-    bottom:20px;
-    left:20px;
+    bottom: 20px;
+    left: 20px;
 }
 
-.kf-return a{
+.kf-return a {
     font-size: 2em;
-    color:white;
+    color: white;
 }
 
 /* ------------------------------------ HOME -------------------------------- */
 
-.home-body {
+/* draft code for draft versions of page */
+/*.home-body {
     padding: 200px 0px;
     width: 62%;
     display: flex;
@@ -424,13 +391,18 @@ footer {
     display: block;
     text-align: center;
     padding: 80px 0px;
+} */
+
+.home-body {
+    width: 62%;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
-/* .text-tran:hover {
-    transition-timing-function: ease-in-out;
-    transform: scale(1.2);
-    transition-duration: 1s;
-} */
+#motto {
+    margin: 12em auto;
+}
 
 .text-tran {
     transition: font-size 0.8s ease;
@@ -449,20 +421,6 @@ footer {
 #mot3:hover {
     font-size: 37px;
 }
-
-/* .img-cont {
-    width: 30%;
-    padding: 30px;
-    text-align: center;
-} */
-
-/* .img-cont img {
-    width: 400px;
-    height: 600px;
-    border-radius: 200px;
-    padding: 0px 40px;
-    box-shadow: 15px 2px 10px white;
-} */
 
 /* -------------------------- TEMPLATE PROFILE ---------------------- */ 
 

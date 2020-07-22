@@ -93,6 +93,13 @@ header {
     text-align: center;
 }
 
+#cb-img {
+    width: 150px;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+}
+
 .kf-btn {
     background-color: #d1a2e7;
     border-color: white;
@@ -112,6 +119,10 @@ header {
     text-align: justify;
     margin: 30px auto;
     margin-bottom: 70px;
+}
+
+#portfolio-cards {
+    display: flex;
 }
 
 /* ------------------------- ABOUT ----------------------- */

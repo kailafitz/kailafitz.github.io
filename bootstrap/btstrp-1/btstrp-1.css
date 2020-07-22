@@ -1,0 +1,160 @@
+.project1nav {
+    background-color: darksalmon;
+}
+
+.project1nav a {
+    color: dimgrey;
+}
+
+.p1navbar-logo {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+}
+
+.p1nav-item {
+    margin: 0px 20px;
+}
+
+.project1nav .dropdown-toggle::after {
+    border-right: 0; 
+    border-left: 0;
+}
+
+.p1searchbtn {
+    color: dimgray;
+    background-color: darksalmon;
+    border-color: dimgray;
+    border-width: medium;
+}
+
+.p1searchbtn:hover {
+    color: antiquewhite;
+    background-color: darksalmon;
+    border-color: antiquewhite;
+}
+
+.p1collapse-nav {
+    background-color: dimgray;
+}
+
+.p1drop-item:hover {
+    background-color: darksalmon;
+}
+
+.p1carousel {
+    width: 90%;
+    height: 400px;
+    margin: 40px auto;
+}
+
+.p1carousel-img {
+    height: 400px;
+}
+
+.p1carousel-img img {
+    margin-top: -30em;
+    opacity: .8;
+}
+
+.carousel-caption h5 {
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+}
+
+footer {
+    background-color: darksalmon;
+    margin-bottom: 0px;
+}
+
+footer p, footer a {
+    color: dimgray;
+}
+
+.p1footer-heading {
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+    color: dimgray;
+}
+
+#footer-description {
+    text-align: justify;
+}
+
+.p1jumb {
+    background-color: darksalmon;
+}
+
+.p1jumb h1 {
+    font-family: 'Lobster', cursive;
+    color: dimgray;
+    text-align: center;
+}
+
+.p1jumb p {
+    color: dimgray;
+    text-align: center;
+}
+
+.p1jumb a {
+    background-color: dimgray;
+    color: darksalmon;
+    border-color: dimgray;
+}
+
+.p1jumb a:hover {
+    color: antiquewhite;
+    background-color: darksalmon;
+    border-color: antiquewhite;
+}
+
+.kf-return {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.kf-return a {
+    font-size: 2em;
+    color: white;
+}
+
+.kf-return a:hover {
+    color: dimgrey;
+}
+
+/* ------------------- ABOUT -------------------- */
+
+#coll-body {
+    margin: 6.8em 15em 10em 15em;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+#desc p {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    margin: 60px 20px 0px 20px;
+    text-align: center;
+    color: dimgray;
+    font-weight: 600;
+}
+
+.coll-butt {
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    color: dimgray;
+}
+
+.coll-butt:hover {
+    text-decoration: none;
+    color: darksalmon;
+}
+
+/******* getting rid of the blue outline of the button *********/
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.card-body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
