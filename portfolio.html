@@ -1,55 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head lang="en">
-        <link rel="shortcut icon" type="image/x-icon" href="images/KF.ico"/>
+        <link rel="shortcut icon" href="/images/Portfolio Logos.ico" type="image/x-icon"/>
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <title>Kailafitz</title>
     </head>
 
     <body>
-        <header class="header">
-            <div class="big-headfoot-div">
-                <nav class="navbar">
-                    <ul class="nav-menu">
-                        <li class="menu-item"><h1>KF</h1></li>                      
-                        <li class="menu-item"><a href="index.html" class="text">Home</a></li>
-                        <li class="menu-item dropdown"><a href="about.html" class="text">About</a></li>
-                        <li class="menu-item dropdown"><a href="" class="text">Portfolio</a></li>
-                        <li class="menu-item"><a href="contact.html" class="text">Contact</a></li>
-                    </ul>
-                 </nav>
+        <header>
+            <a href="index.html" id="kf-logo">KF</a>
+            <div id="menu-bars">
+                <i class="fas fa-bars"></i>
             </div>
+            <nav class="navbar">
+                <ul class="nav-menu">                   
+                    <li class="menu-item"><a href="index.html" class="text">Home</a></li>
+                    <li class="menu-item dropdown"><a href="about.html" class="text">About</a></li>
+                    <li class="menu-item dropdown"><a href="portfolio.html" class="text">Portfolio</a></li>
+                    <li class="menu-item"><a href="contact.html" class="text">Contact</a></li>
+                </ul>
+             </nav>     
         </header>
 
         <div id="portfolio-info">
-            <h6>On this page, I plan to showcase my skills and design ideas through various projects. As I continue to develop my skills, I hope to be able to display a range of abilities in different languages, putting my knowledge to the test.</h6>
+            <p>As I learn new skills, I hope to showcase my ideas and projects.</p>
         </div>
 
         <div id="portfolio-cards">
-            <div class="card web-card" style="width: 18rem;">
+            <div class="card web-card">
                 <img src="images/hamsa-solid.png" class="card-img-top" id="hamsa-img" alt="...">
                 <div class="card-body">
-                <h5 class="card-title">Hamsa</h5>
-                <p class="card-text">This is my first attempt at designing different layouts and components using fundamental HTML & CSS.</p>
-                <a href="hamsa/hamsaindex.html" class="btn btn-primary kf-btn">Check it out!</a>
+                    <h5 class="card-title">Hamsa</h5>
+                    <p class="card-text">This is my first attempt at designing different layouts and components using fundamental HTML & CSS.</p>
+                    <a href="hamsa/hamsaindex.html" class="kf-btn">Check it out!</a>
                 </div>
             </div>
 
-            <div class="card web-card" style="width: 18rem;">
+            <div class="card web-card">
                 <img src="bootstrap/btstrp-1/images/CB Logo.png" class="card-img-top" id="cb-img" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">Cece's Boys</h5>
                 <p class="card-text">This is my first attempt at designing different layouts and components using fundamental HTML & CSS with Bootstrap.</p>
-                <a href="bootstrap/btstrp-1/btstrp1index.html" class="btn btn-primary kf-btn">Check it out!</a>
+                <a href="bootstrap/btstrp-1/btstrp1index.html" class="kf-btn">Check it out!</a>
                 </div>
             </div>
         </div>
 
-
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </body>
 </html>
