@@ -160,8 +160,7 @@ header * {
 
 /* ------------------- MOBILE PHONE ------------------------- */
   
-@media screen and (max-width: 828px) {
-
+@media screen and (max-width: 1000px) {
 
     .navbar {
         width: 100%;
@@ -181,7 +180,6 @@ header * {
         margin: 7px 0;
         text-align: center;
     }
-
 
     #menu-bars {
         display: block;
