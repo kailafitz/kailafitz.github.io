@@ -160,23 +160,23 @@ header * {
 
 /* ------------------- MOBILE PHONE ------------------------- */
   
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1500px) {
 
 
-    .navbar{
-        width:100%;
+    .navbar {
+        width: 100%;
         display: none;
     }
     
     .nav-menu {
         display: block;
-        width:100%;
-    }
-
-    .nav-menu ul{
         width: 100%;
     }
-    .nav-menu li{
+
+    .nav-menu ul {
+        width: 100%;
+    }
+    .nav-menu li {
         width: 100%;
         margin: 7px 0;
         text-align: center;
