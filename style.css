@@ -421,6 +421,7 @@ header * {
     /* -------------- NAVBAR ------------- */
 
     #kf-logo {
+        font-size: 3em;
         left: 10px;
     }
 
@@ -437,18 +438,23 @@ header * {
     .nav-menu ul {
         width: 100%;
     }
+
     .nav-menu li {
-        width: 100%;
+        width: 90%;
         margin: 7px 0;
         text-align: center;
+    }
+
+    .nav-menu a {
+        font-size: 30px;
     }
 
     #menu-bars {
         display: block;
         color: black;
         float: right;
-        margin-right: 50px;
-        font-size: 25px;
+        margin-right: 90px;
+        font-size: 3em;
     }
 
 
@@ -461,15 +467,16 @@ header * {
 
     #profile-pic {
         width: 80%;
-        margin: 40px auto;
+        margin: 30px auto;
     }
 
     #intro {
         text-align: center;
         width: 80%;
-        margin: 20px auto;
+        margin: 1px auto;
+        font-size: 2em;
+        padding-top: 15px;
     }
-
 
     /* ------------------ About ---------*/
 
@@ -478,11 +485,11 @@ header * {
     }
 
     #ab-img {
-        margin: 30px auto;
+        margin: 35px auto;
     }
 
     #ab-img img {
-        width: 200px;
+        width: 350px;
     }
 
     .ab-info {
@@ -497,8 +504,21 @@ header * {
 
     /* ------------- Contact -------------- */
 
+    #contact-bod {
+        margin: 30em auto;
+    }
+
     #cont-info {
         width: 80%;
-        margin: 10px auto;
+        font-size: 30px;
     }
+
+    #conts {
+        padding: 35px auto;
+    }
+
+    .icon {
+        margin-right: 30px;
+    }
+
 }
