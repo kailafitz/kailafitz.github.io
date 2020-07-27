@@ -144,19 +144,20 @@ header * {
 .sect {
     width: 100%;
     display: flex;
-    margin: 7em;
+    justify-content: center;
+    margin: 7em 0;
 }
 
-#ab-img1 {
+#ab-img {
     width: 30%;
     text-align: center;
 }
 
-#ab-img1 img {
+#ab-img img {
     width: 400px;
 }
 
-.ab-info1 {
+.ab-info {
     width: 40%;
     font-family: 'Raleway', sans-serif;
 }
@@ -166,6 +167,7 @@ header * {
     text-align: left;
     font-size: 25px;
     letter-spacing: 4px;
+    margin-bottom: 20px;
 }
 
 .ab-info1 p {
@@ -417,6 +419,11 @@ header * {
 @media screen and (max-width: 1000px) {
 
     /* -------------- NAVBAR ------------- */
+
+    #kf-logo {
+        left: 10px;
+    }
+
     .navbar {
         width: 100%;
         display: none;
@@ -464,11 +471,34 @@ header * {
     }
 
 
+    /* ------------------ About ---------*/
+
+    .sect {
+        display: block;
+    }
+
+    #ab-img {
+        margin: 30px auto;
+    }
+
+    #ab-img img {
+        width: 200px;
+    }
+
+    .ab-info {
+        text-align: justify;
+        margin: 20px auto;
+        width: 70%;
+    }
+
+
     /* ------------- Portfolio ----------------- */
 
 
-    .web-card {
+    /* ------------- Contact -------------- */
+
+    #cont-info {
+        width: 80%;
         margin: 10px auto;
-        width: 70%;
     }
 }
