@@ -5,8 +5,12 @@
     padding: 0px;
 }
 
+.body {
+    background-color: #e8505b;
+}
+
 a {
-    font-family: 'Crimson Text', serif;
+    font-family: 'Raleway', sans-serif;
     color: black;
     text-decoration: none;
 }
@@ -14,36 +18,85 @@ a {
 #profile-intro {
     display: flex;
     justify-items: center;
-    width: 50%;
-    margin: 7em auto;
-    padding: 100px 0;
+    margin: 5em 4em 2em 3em;
 }
 
-#intro h1 {
-    font-family: 'Crimson Text', serif;
-    padding: 0 30px;
+#profile-pic {
+    width: 45%;
+    text-align: center;
+    margin-left: 7em;
 }
 
 #profile-pic img {
+    width: 700px;
+}
+
+/* #profile-pic img {
     width: 300px;
     text-align: center;
     box-shadow: 0px 0px 9px 0px #000000;
+} */
+
+.element {
+    animation: pulse 5s infinite;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes pulse {
+    0% {
+      color: #e8505b;
+      ;
+    }
+    100% {
+      color: #000000;
+    }
+  }
+
+#intro {
+    width: 20%;
+    padding-top: 6em;
+    margin-left: 4em;
+    text-align: justify;
 }
 
-#profile-card h4 {
+#intro h1 {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 4px;
+}
+
+#intro h4 {
+    padding-top: 4em;
+}
+
+#intro h3 {
+    padding-top: 1em;
+}
+
+#intro p {
+    font-family: 'Raleway', sans-serif;
+    padding: 2em 0 0 0;
     text-align: justify;
+    word-spacing: 2px;
+}
+
+.highlight {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    color: #f9d56e;
+    text-transform: uppercase;
+}
+
+.smiley {
+    color: #f9d56e;
 }
 
 /*------------ NAV BAR -----------------*/
 
-
 header {
-    background-color: #ffffff;
-    width: 97%;
     margin: 20px auto;
     padding: 0;
-    font-family: 'Crimson Text', serif;
-    color: black;
+    font-family: 'Raleway', sans-serif;
+    margin: 50px 0px 0px 100px;
 }
 
 header * {
@@ -52,11 +105,12 @@ header * {
 }
 
 #kf-logo {
-    font-size: 1.4em;
-    margin-right: 20px;
+    font-size: 1.7em;
+    margin-right: 70px;
 }
 
 #menu-bars {
+    color: #ffffff;
     display: none;
 }
 
@@ -69,46 +123,221 @@ header * {
 }
 
 .menu-item a {
+    color: #ffffff;
+    letter-spacing: 3px;
     margin: 0 10px;
     font-size: 1.1em;
     margin: 0 30px;
 }
 
-.text:hover {
-    text-shadow: 0px 0px 10px 0px #d1a2e7;
+.menu-item a:hover {
+    color: black;
 }
 
-.nav-menu li a:hover {
-    text-shadow: cyan;
+/* ---------------- ABOUT ------------------- */
+
+#about-cont {
+    width: 100%;
+    display: block;
+}
+
+.sect {
+    width: 100%;
+    display: flex;
+    margin: 7em;
+}
+
+#ab-img1 {
+    width: 30%;
+    text-align: center;
+}
+
+#ab-img1 img {
+    width: 400px;
+}
+
+.ab-info1 {
+    width: 40%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.sect h3 {
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 4px;
+}
+
+.ab-info1 p {
+    margin-top: 30px;
+    text-align: justify;
+    word-spacing: 2px;
 }
 
 
 /* ------------ PORTFOLIO --------------- */
-#portfolio-info {
-    font-family: 'Crimson Text', serif;
-    width: 80%;
-    text-align: center;
-    margin: 40px auto;
-    margin-bottom: 60px;
+
+#port-body {
+    background-color: #f9d56e;
 }
 
-#portfolio-info p {
-    font-size: 1.2em;
+#portfolio-info {
+    font-family: 'Raleway', sans-serif;
+    width: 80%;
+    text-align: center;
+    margin: 30px auto;
+    /* margin-bottom: 30px; */
+}
+
+#portfolio-info h5 {
+    font-family: 'Raleway', sans-serif;
+    color: #e8505b;
+    margin-top: 5em;
 }
 
 #portfolio-cards {
-    width:100%;
+    
+}
+
+.card {
+    background-color: #e8505b;
+    width: 70%;
+    height: 80%;
+    border-radius: 30px;
+    border: 1px transparent;
+    margin: 5em auto;
+}
+
+.img-cont {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    /* background-image: url('/hamsa/images/man-carrying-woman-with-hot-air-balloons-background-3889705.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.img-cont img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    transform: translate(0, -68%);
+}
+
+.all {
+    padding: 10px;
+}
+
+.card-info {
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.card-info h2 {
+    font-family: 'Anton', sans-serif;
+    color: black;
+    letter-spacing: 3px;
+}
+
+.card-info p {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 5px;
+}
+
+.all {
+    display: block;
+}
+
+.inf {
+    width: 80%;
+}
+
+.tags {
+    width: 100%;
+    display: flex;
+}
+
+.tags p:nth-child(1) {
+    margin-left: 30px;
+}
+
+.tags p {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 20px;
+    background-color: #f9d56e;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.prog-div {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.prog-bg {
+    background-color: #f3ecc2;
+    width: 100%;
+    border-radius: 40px;
+}
+
+.prog1 {
+    width: 20%;
+    background-color: #14b1ab;
+    border-radius: 40px;
+}
+
+.prog2 {
+    width: 5%;
+    background-color: #14b1ab;
+    border-radius: 40px;
+}
+
+.prog-div p {
+    text-align: center;
+}
+
+.but-div {
+    width: 20%;
+}
+
+.arrow {
+    color: white;
+    font-size: 30px;
+    float: right;
+}
+
+.arrow:hover {
+    cursor: pointer;
+    color: #14b1ab;
+}
+
+/* .but {
+    padding: 15px;
+    border-radius: 20px;
+    border: 3px #14b1ab solid;   
+    font-family: 'Raleway', sans-serif;
+    float: right;
+} */
+
+/* 
+#portfolio-cards {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-flow: wrap;
-
 }
 
 .web-card {
     margin: 0px 90px;
     padding: 20px;
     width: 15%;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Raleway', sans-serif;
     border-color: none;
     box-shadow: 0px 0px 10px 0px #e6e6e6;
     text-align: center;
@@ -137,31 +366,57 @@ header * {
 }
 
 .kf-btn {
-    background-color: #C6C6C6;
+    background-color: #ffffff;
     padding: 6px 8px;
     border-radius: 3px;
-    color: white;
+    color: black;
 }
 
 .kf-btn:hover {
-    background-color: #ffffff;
-    color: #C6C6C6;
-    border-color: #C6C6C6;
+    background-color: black;
+    color: white;
+    border-color: white;
+} */
+
+/* ----------- CONTACT ------------- */
+
+#contact-bod {
+    width: 100%;
+    margin-top: 12em;
 }
 
-
-/* ---------------- ABOUT ------------------- */
-
-#intro h3 {
-    font-family: 'Crimson Text', serif;
-    padding: 0 50px;
-    text-align: justify;
+#cont-info {
+    width: 30%;
+    background-color: #14b1ab;
+    margin: 5em auto;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 28px 28px 15px -21px #000000;
 }
+
+#conts-div {
+    margin: 0 auto;
+    width: 90%;
+}
+
+#conts {
+    background-color: #f3ecc2;
+    border-radius: 30px;
+    text-align: left;
+    margin-top: 20px;
+    padding: 30px 0px 30px 30px;
+}
+
+.icon {
+    margin: 10px;
+}
+
 
 /* ------------------- MOBILE PHONE ------------------------- */
   
 @media screen and (max-width: 1000px) {
 
+    /* -------------- NAVBAR ------------- */
     .navbar {
         width: 100%;
         display: none;
@@ -185,8 +440,32 @@ header * {
         display: block;
         color: black;
         float: right;
-        margin-right: 10px;
+        margin-right: 50px;
+        font-size: 25px;
     }
+
+
+    /* -------------- HOME --------------- */
+
+    #profile-intro {
+        display: block;
+        margin: 0px;
+    }
+
+    #profile-pic {
+        width: 80%;
+        margin: 40px auto;
+    }
+
+    #intro {
+        text-align: center;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+
+    /* ------------- Portfolio ----------------- */
+
 
     .web-card {
         margin: 10px auto;
