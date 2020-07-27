@@ -244,7 +244,7 @@ header * {
 .card-info h2 {
     font-family: 'Anton', sans-serif;
     color: black;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 }
 
 .card-info p {
@@ -270,7 +270,7 @@ header * {
 }
 
 .tags p {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Quantico', sans-serif;
     margin: 0px 20px;
     background-color: #f9d56e;
     padding: 10px;
@@ -288,13 +288,13 @@ header * {
     border-radius: 40px;
 }
 
-.prog1 {
+#prog1 {
     width: 20%;
     background-color: #14b1ab;
     border-radius: 40px;
 }
 
-.prog2 {
+#prog2 {
     width: 5%;
     background-color: #14b1ab;
     border-radius: 40px;
@@ -501,6 +501,27 @@ header * {
 
     /* ------------- Portfolio ----------------- */
 
+    .card {
+        width: 80%;
+    }
+
+    .flex {
+        font-size: 30px;
+    }
+
+    .tags p {
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    #prog1 {
+        font-size: 30px;
+    }
+
+    #prog2 {
+        font-size: 30px;
+    }
 
     /* ------------- Contact -------------- */
 
