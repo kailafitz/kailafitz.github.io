@@ -14,7 +14,7 @@
 
 
         <link rel="shortcut icon" type="image/x-icon" href="images/hamsa-solid.ico"/>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
@@ -23,8 +23,8 @@
     </head>
 
 
-    <body>
-        <img id="bg-img" src="images/man-carrying-woman-with-hot-air-balloons-background-3889705.jpg">
+    <body class="bg-img">
+        <!-- <img id="bg-img" src="images/man-carrying-woman-with-hot-air-balloons-background-3889705.jpg"> -->
         <header>
             <div class="big-headfoot-div">
                 <nav class="navbar">
@@ -32,17 +32,17 @@
                         <li><a href="" class="logo"><i class="fas fa-hamsa"></i></a></li>
                         <li id="co-name">HAMSA</li>
                         <li class="menu-item"><a href="hamsaindex.html" class="text">Home</a></li>
-                        <li class="menu-item dropdown"><a href="" class="text">About</a>
-                            <ul class="drop-menu">
+                        <li class="menu-item dropdown"><a href="hamsaabout.html" class="text">About</a>
+                            <!-- <ul class="drop-menu">
                                 <li class="drop-content"><a href="hamsaabout.html">Our Story</a></li>
                                 <li class="drop-content"><a href="">Initiatives</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
-                        <li class="menu-item dropdown"><a href="" class="text">Profiles</a>
-                            <ul class="drop-menu">
+                        <li class="menu-item dropdown"><a href="hamsaprofiles.html" class="text">Profiles</a>
+                            <!-- <ul class="drop-menu">
                                 <li class="drop-content"><a href="hamsamyacc.html">My Account</a></li>
                                 <li class="drop-content"><a href="hamsaprofiles.html">My Profiles</a></li>
-                            </ul>  
+                            </ul>   -->
                         </li>
                         <li class="menu-item"><a href="hamsacontact.html" class="text">Contact Us</a></li>
                         <div>
@@ -56,20 +56,32 @@
                                 <button class="login" id="mdl-btn">Login</button>
                         </div>
                         <div class="sign-up">
-                                <h5>Don't have an account?<a href=""> Sign up!</a></h5>
+                                <h5>Don't have an account?<a href="">Sign up!</a></h5>
                         </div>
                     </div>
             </div>
         </header>
-        
-        <div class="home-body">
+
+        <div id="bod-div">
+            <div id="desk">
+                <img src="images/girl at desk.png">
+            </div>
+
+            <div id="desk-txt">
+                <h2>Join our Community today.</h2>
+                <h5>Empowering women to find their true matches.</h5>
+                <h6>At Hamsa, we want to offer women a distinguished choice of men who are fit for what <b class="bold">women</b> want in their busy lives.
+                    Find someone who gets you; find your <b class="bold">Hamsa</b>.</h6>
+            </div>
+        </div>
 
                 <div id="in-modal" class="modal">
                     <div class="modal-cont">
+
                         <div class="clsbtn">&times;</div>
 
                         <div id="mod-head">
-                            <i class="fas fa-hamsa"></i>
+                            <!-- <i class="fas fa-hamsa"></i> -->
                             <h2>Login</h2>
                         </div>
 
@@ -82,7 +94,7 @@
 
                             <h5>Password</h5>
                             <div class="userinfo">
-                                <i class="fas fa-lock"></i>
+                                <i class="fas fa-user"></i>
                                 <input id="login-pw" class="log-input" placeholder="password..." name="log-pw" type="password"/>
                             </div>
 
@@ -90,32 +102,17 @@
 
                         </div>
 
-                        <div>
+                        <div id="but-div">
                             <button type="button" id="login-btn">Login</button>
-                        </div> 
-
+                        </div>
                     </div>
                 </div>
-
-                
-                <div id="motto">
-                    <div>
-                        <h3 class="text-tran" id="mot1" >Discover your match . . .</h3>
-                    </div>
-                    <div>
-                        <h2 class="text-tran" id="mot2">Find your power . . .</h2>
-                    </div>
-                    <div>
-                        <h1 class="text-tran" id="mot3">Show your Hamsa.</h1>
-                    </div>
-                </div>
-        </div>
         
         <footer>
             <div class="big-headfoot-div">
                 <div class="info-cont">
-                    <div>
-                        <a href="" class="footer-logo"><i class="fas fa-hamsa"></i></a>
+                    <div class="footer-logo">
+                        <i class="fas fa-hamsa"></i>
                     </div>
                     <div class="foot-info">
                         <h3>Community</h3>
@@ -163,6 +160,6 @@
         </footer>
 
 
-        <script src="/hamsa/hamsascript.js"></script>
+        <script src="hamsascript.js"></script>
     </body>
 </html>
