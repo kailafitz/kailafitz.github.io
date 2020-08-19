@@ -1,160 +1,348 @@
-.project1nav {
-    background-color: darksalmon;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.project1nav a {
-    color: dimgrey;
+body {
+  width: 100%;
 }
 
-.p1navbar-logo {
-    font-family: 'Lobster', cursive;
-    font-size: 40px;
+.bootnav {
+  width: 100%;
+}
+.bootnav a {
+  color: #696969;
+}
+.bootnav .dropdown-toggle::after {
+  border-right: 0;
+  border-left: 0;
 }
 
-.p1nav-item {
-    margin: 0px 20px;
+.navbar-logo {
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+  cursor: default;
 }
 
-.project1nav .dropdown-toggle::after {
-    border-right: 0; 
-    border-left: 0;
+.navbar-nav {
+  width: 100%;
 }
 
-.p1searchbtn {
-    color: dimgray;
-    background-color: darksalmon;
-    border-color: dimgray;
-    border-width: medium;
+.nav-item {
+  margin: 0px 20px;
+  font-family: "Spartan", sans-serif;
+}
+.nav-item a:hover {
+  color: #ffeadb;
 }
 
-.p1searchbtn:hover {
-    color: antiquewhite;
-    background-color: darksalmon;
-    border-color: antiquewhite;
+.nav-icons {
+  display: flex;
+  padding: 0 50x;
 }
 
-.p1collapse-nav {
-    background-color: dimgray;
+#page-title {
+  text-align: center;
+  font-family: "Spartan", sans-serif;
+  letter-spacing: 0.4em;
+  margin-top: 3em;
 }
 
-.p1drop-item:hover {
-    background-color: darksalmon;
+form {
+  width: 70%;
+  margin: 50px auto;
+}
+form div {
+  margin: 4em auto;
+  width: 80%;
+  text-align: center;
+}
+form #search {
+  width: 80%;
+  padding: 0 3em;
 }
 
-.p1carousel {
-    width: 90%;
-    height: 400px;
-    margin: 40px auto;
+.searchbtn {
+  font-family: "Spartan", sans-serif;
+  color: #ffeadb;
+  padding: 1em 2em;
+  background-color: #e9967a;
+  border: none;
+  border-radius: 0px;
+  box-shadow: -2px 2px 12px -2px #9e9e9e;
 }
 
-.p1carousel-img {
-    height: 400px;
+.searchbtn:hover {
+  color: #e9967a;
+  background-color: #ffeadb;
+  border-color: #e9967a;
 }
 
-.p1carousel-img img {
-    margin-top: -30em;
-    opacity: .8;
+#lists {
+  display: flex;
+  justify-content: center;
+  background-color: #f7c5a8;
+  color: #696969;
+  font-size: 12px;
+  padding: 20px;
+  margin-bottom: 10em;
+}
+#lists div {
+  width: 10%;
+  margin: 0 45px;
+}
+#lists h6 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+#lists p {
+  text-align: left;
+  margin-bottom: 5px;
+}
+#lists p:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
+.carousel {
+  width: 90%;
+  margin: 40px auto;
+}
+
+.carousel-img img {
+  margin-top: -30em;
+  opacity: 0.8;
+}
+
+.hei {
+  height: 70%;
+}
+
+.carousel-caption {
+  font-family: "Spartan", sans-serif;
+}
 .carousel-caption h5 {
-    font-family: 'Lobster', cursive;
-    font-size: 35px;
+  font-family: "Spartan", sans-serif;
+  font-size: 35px;
+  letter-spacing: 1em;
+}
+
+#shop-now {
+  width: 100%;
+  border-bottom: 1px solid #ffeadb;
+  text-align: center;
+  padding-bottom: 3em;
+}
+#shop-now h4 {
+  margin-top: 4em;
+  font-family: "Spartan", sans-serif;
+  letter-spacing: 0.3em;
+}
+#shop-now button {
+  color: #ffeadb;
+  padding: 1em 2em;
+  margin: 1em;
+  background-color: #e9967a;
+  border: none;
+  outline: none;
+  box-shadow: -2px 2px 12px -2px #9e9e9e;
+}
+#shop-now button:hover {
+  color: #e9967a;
+  background-color: #ffeadb;
+  border-color: #e9967a;
+}
+
+#trends {
+  text-align: center;
+  margin: 7em auto;
+  width: 100%;
+  color: #696969;
+}
+#trends h2 {
+  font-family: "Spartan", sans-serif;
+  margin-bottom: 1.5em;
+  font-size: 35px;
+  letter-spacing: 1em;
+}
+#trends #all-cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#trends .card {
+  width: 60%;
+  margin: 0 2em;
+  border: none;
+  text-align: center;
+}
+#trends .card .card-img {
+  width: 500px;
+  margin: 0 auto;
+}
+#trends .card img {
+  object-fit: cover;
+}
+#trends .card a {
+  font-family: "Spartan", sans-serif;
+  background-color: #e9967a;
+  border: none;
+  color: #ffeadb;
+  padding: 10px 40px;
+  border-radius: 0;
+  outline: none;
+  box-shadow: -2px 2px 12px -2px #9e9e9e;
+}
+#trends .card a:hover {
+  background-color: #ffeadb;
+  border: none;
+  color: #e9967a;
+}
+#trends .card .card-body {
+  margin: 0 auto;
+  font-family: "Spartan", sans-serif;
+}
+#trends .card .card-body h5 {
+  margin-top: 2em;
+  letter-spacing: 0.4em;
+}
+
+#big-img {
+  width: 100%;
+  margin: 5em 0;
+  height: 36em;
+  overflow: hidden;
+}
+#big-img img {
+  object-fit: contain;
+  margin-top: -70%;
+  margin-left: -30%;
+}
+
+#news {
+  background-color: #c4c4c4;
+  color: white;
+  padding: 5em;
+  margin-top: 7em;
+  width: 100%;
+  font-family: "Spartan", sans-serif;
+}
+#news #news-flex {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+#news #news-flex #signup-info {
+  display: block;
+  width: 50%;
+}
+#news .input-group {
+  margin-left: 4em;
+  width: 30%;
+}
+#news #email-input {
+  border: none;
+  outline: none;
+  background-color: #c4c4c4;
+  border-bottom: 1px solid black;
 }
 
 footer {
-    background-color: darksalmon;
-    margin-bottom: 0px;
+  background-color: #e9967a;
+  margin-bottom: 0px;
+  margin-top: 6em;
 }
-
 footer p, footer a {
-    color: dimgray;
+  color: #696969;
 }
 
-.p1footer-heading {
-    font-family: 'Lobster', cursive;
-    letter-spacing: 2px;
-    color: dimgray;
+.footer-heading {
+  font-family: "Spartan", sans-serif;
+  letter-spacing: 2px;
+  color: #696969;
 }
 
 #footer-description {
-    text-align: justify;
+  text-align: justify;
 }
 
-.p1jumb {
-    background-color: darksalmon;
+.jumb {
+  background-color: #f7c5a8;
+  margin: 2em 0;
 }
-
-.p1jumb h1 {
-    font-family: 'Lobster', cursive;
-    color: dimgray;
-    text-align: center;
+.jumb h1 {
+  font-family: "Spartan", sans-serif;
+  color: #696969;
+  text-align: center;
 }
-
-.p1jumb p {
-    color: dimgray;
-    text-align: center;
+.jumb p {
+  color: #696969;
+  text-align: center;
 }
-
-.p1jumb a {
-    background-color: dimgray;
-    color: darksalmon;
-    border-color: dimgray;
+.jumb a {
+  background-color: #696969;
+  color: #f7c5a8;
+  border-color: #696969;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  box-shadow: -2px 2px 12px -2px #9e9e9e;
 }
-
-.p1jumb a:hover {
-    color: antiquewhite;
-    background-color: darksalmon;
-    border-color: antiquewhite;
+.jumb a:hover {
+  background-color: #ffeadb;
+  color: #696969;
 }
 
 .kf-return {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
 }
 
 .kf-return a {
-    font-size: 2em;
-    color: white;
+  font-size: 2em;
+  color: white;
 }
 
 .kf-return a:hover {
-    color: dimgrey;
+  color: #696969;
 }
 
 /* ------------------- ABOUT -------------------- */
-
 #coll-body {
-    margin: 6.8em 15em 10em 15em;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  margin: 6.8em 15em 10em 15em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 #desc p {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    margin: 60px 20px 0px 20px;
-    text-align: center;
-    color: dimgray;
-    font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin: 60px 20px 0px 20px;
+  text-align: center;
+  color: #696969;
+  font-weight: 600;
 }
 
 .coll-butt {
-    text-decoration: none;
-    font-family: 'Lobster', cursive;
-    color: dimgray;
+  text-decoration: none;
+  font-family: "Lobster", cursive;
+  color: #696969;
 }
 
 .coll-butt:hover {
-    text-decoration: none;
-    color: darksalmon;
+  text-decoration: none;
+  color: #e9967a;
 }
 
 /******* getting rid of the blue outline of the button *********/
 .btn.focus, .btn:focus {
-    outline: 0;
-    box-shadow: none;
-    text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+  text-decoration: none;
 }
 
 .card-body {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+/*# sourceMappingURL=btstrp-1.css.map */

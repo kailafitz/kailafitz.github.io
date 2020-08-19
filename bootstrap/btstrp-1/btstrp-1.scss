@@ -1,0 +1,404 @@
+$dark-salmon: #e9967a;
+$cream: #ffeadb;
+$light-grey: #c4c4c4;
+$light-orange: #f7c5a8;
+$dim-grey: #696969;
+$logo-font: 'Lobster', cursive;
+$para-font: 'Spartan', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+.bootnav {
+    width: 100%;
+
+    a {
+        color: $dim-grey;
+    }
+
+    .dropdown-toggle::after {
+        border-right: 0; 
+        border-left: 0;
+    }
+}
+
+.navbar-logo {
+    font-family: $logo-font;
+    font-size: 40px;
+    cursor: default;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.nav-item {
+    margin: 0px 20px;
+    font-family: $para-font;
+
+    a:hover {
+        color: $cream;
+    }
+}
+
+.nav-icons {
+    display: flex;
+    padding: 0 50x;
+}
+
+#page-title {
+    text-align: center;
+    font-family: $para-font;
+    letter-spacing: .4em;
+    margin-top: 3em;
+}
+
+form {
+    width: 70%;
+    margin: 50px auto;
+
+    div {
+        margin: 4em auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    #search {
+        width: 80%;
+        padding: 0 3em;
+    }
+}
+
+.searchbtn {
+    font-family: $para-font;
+    color: $cream;
+    padding: 1em 2em;
+    background-color: $dark-salmon;
+    border: none;
+    border-radius: 0px;
+    box-shadow: -2px 2px 12px -2px rgba(158,158,158,1);
+}
+
+.searchbtn:hover {
+    color: $dark-salmon;
+    background-color: $cream;
+    border-color: $dark-salmon;
+}
+
+// .collapse-nav {
+//     background-color: $dim-grey;
+// }
+
+// .drop-item:hover {
+//     background-color: $dark-salmon;
+// }
+
+
+#lists {
+    display: flex;
+    justify-content: center;
+    // grid: auto-flow / 1fr 1fr 1fr;
+    background-color: $light-orange;
+    color: $dim-grey;
+    font-size: 12px;
+    padding: 20px;
+    margin-bottom: 10em;
+
+    div {
+        width: 10%;
+        margin: 0 45px;
+    }
+
+    h6 {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    p {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    p:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.carousel {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.carousel-img img {
+    margin-top: -30em;
+    opacity: .8;
+}
+
+.hei {
+    height: 70%;
+}
+
+.carousel-caption {
+    font-family: $para-font;
+
+    h5 {
+        font-family: $para-font;
+        font-size: 35px;
+        letter-spacing: 1em;
+    }
+}
+
+#shop-now {
+    width: 100%;
+    border-bottom: 1px solid $cream;
+    text-align: center;
+    padding-bottom: 3em;
+
+    h4 {
+        margin-top: 4em;
+        font-family: $para-font;
+        letter-spacing: .3em;
+    }
+
+    button {
+        color: $cream;
+        padding: 1em 2em;
+        margin: 1em;
+        background-color: $dark-salmon;
+        border: none;
+        outline: none;
+        box-shadow: -2px 2px 12px -2px rgba(158,158,158,1);
+    }
+
+    button:hover {
+        color: $dark-salmon;
+        background-color: $cream;
+        border-color: $dark-salmon;
+    }
+}
+
+#trends {
+    text-align: center;
+    margin: 7em auto;
+    width: 100%;
+    color: $dim-grey;
+    
+    h2 {
+        font-family: $para-font;
+        margin-bottom: 1.5em;
+        font-size: 35px;
+        letter-spacing: 1em;
+    }
+
+    #all-cards {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .card {
+        width: 60%;
+        margin: 0 2em;
+        border: none;
+        text-align: center;
+
+        .card-img {
+            width: 500px;
+            margin: 0 auto;
+        }
+    
+        img {
+            object-fit: cover;
+        }
+
+        a {
+            font-family: $para-font;
+            background-color: $dark-salmon;
+            border: none;
+            color: $cream;
+            padding: 10px 40px;
+            border-radius: 0;
+            outline: none;
+            box-shadow: -2px 2px 12px -2px rgba(158,158,158,1);
+        }
+
+        a:hover {
+            background-color: $cream;
+            border: none;
+            color: $dark-salmon;
+        }
+
+        .card-body {
+            margin: 0 auto;
+            font-family: $para-font;
+
+            h5 {
+                margin-top: 2em;
+                letter-spacing: .4em;
+            }
+        }    
+    }
+    // display: inline-grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    // grid-gap: 30px;
+}
+
+#big-img {
+    width: 100%;
+    margin: 5em 0;
+    height: 36em;
+    overflow: hidden;
+
+    img {
+        object-fit: contain;
+        margin-top: -70%;
+        margin-left: -30%;
+    }
+}
+
+#news {
+    background-color: $light-grey;
+    color: white;
+    padding: 5em;
+    margin-top: 7em;
+    width: 100%;
+    font-family: $para-font;
+
+    #news-flex {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+
+        #signup-info {
+            display: block;
+            width: 50%;
+        }
+    }
+
+    .input-group {
+        margin-left: 4em;
+        width: 30%;
+    }
+
+    #email-input {
+        border: none;
+        outline: none;
+        background-color: $light-grey;
+        border-bottom: 1px solid black;
+    }
+}
+
+footer {
+    background-color: $dark-salmon;
+    margin-bottom: 0px;
+    margin-top: 6em;
+
+    p, a {
+        color: $dim-grey;
+    }
+}
+
+// footer p, footer a {
+//     color: $dim-grey;
+// }
+
+.footer-heading {
+    font-family: $para-font;
+    letter-spacing: 2px;
+    color: $dim-grey;
+}
+
+#footer-description {
+    text-align: justify;
+}
+
+.jumb {
+    background-color: $light-orange;
+    margin: 2em 0;
+
+    h1 {
+        font-family: $para-font;
+        color: $dim-grey;
+        text-align: center;
+    }
+
+    p {
+        color: $dim-grey;
+        text-align: center;
+    }
+
+    a {
+        background-color: $dim-grey;
+        color: $light-orange;
+        border-color: $dim-grey;
+        border: none;
+        border-radius: 0;
+        outline: none;
+        box-shadow: -2px 2px 12px -2px rgba(158,158,158,1);
+    }
+
+    a:hover {
+        background-color: $cream;
+        color: $dim-grey;
+    }
+}
+
+.kf-return {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.kf-return a {
+    font-size: 2em;
+    color: white;
+}
+
+.kf-return a:hover {
+    color: $dim-grey;
+}
+
+/* ------------------- ABOUT -------------------- */
+
+#coll-body {
+    margin: 6.8em 15em 10em 15em;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+#desc p {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    margin: 60px 20px 0px 20px;
+    text-align: center;
+    color: $dim-grey;
+    font-weight: 600;
+}
+
+.coll-butt {
+    text-decoration: none;
+    font-family: $logo-font;
+    color: $dim-grey;
+}
+
+.coll-butt:hover {
+    text-decoration: none;
+    color: $dark-salmon;
+}
+
+/******* getting rid of the blue outline of the button *********/
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.card-body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
