@@ -34,6 +34,17 @@ body {
     cursor: default;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#menu-bars {
+    font-size: 30px;
+}
+
 .navbar-nav {
     width: 100%;
 }
@@ -72,6 +83,7 @@ form {
     #search {
         width: 80%;
         padding: 0 3em;
+        box-shadow: none;
     }
 }
 
@@ -137,12 +149,8 @@ form {
 }
 
 .carousel-img img {
-    margin-top: -30em;
-    opacity: .8;
-}
-
-.hei {
-    height: 70%;
+    // margin-top: -30em;
+    opacity: .7;
 }
 
 .carousel-caption {
@@ -187,7 +195,7 @@ form {
 #trends {
     text-align: center;
     margin: 7em auto;
-    width: 100%;
+    width: 95%;
     color: $dim-grey;
     
     h2 {
@@ -201,6 +209,7 @@ form {
         display: flex;
         justify-content: center;
         width: 100%;
+        margin: 0 auto;
     }
 
     .card {
@@ -209,12 +218,12 @@ form {
         text-align: center;
 
         .card-img {
-            width: 500px;
-            margin: 0 auto;
+            padding: 5px;
         }
     
         img {
             object-fit: cover;
+            text-align: center;
         }
 
         a {
@@ -235,7 +244,6 @@ form {
         }
 
         .card-body {
-            margin: 0 auto;
             font-family: $para-font;
 
             h5 {
@@ -251,7 +259,8 @@ form {
 
 #big-img {
     width: 100%;
-    margin: 5em 0;
+    margin: 7em 0;
+    margin-top: 10em;
     height: 36em;
     overflow: hidden;
 
@@ -273,23 +282,24 @@ form {
     #news-flex {
         display: flex;
         align-items: center;
-        width: 80%;
+        width: 60%;
         margin: 0 auto;
 
         #signup-info {
             display: block;
-            width: 50%;
+            width: 70%;
         }
     }
 
     .input-group {
         margin-left: 4em;
-        width: 30%;
+        width: 35%;
     }
 
     #email-input {
         border: none;
         outline: none;
+        box-shadow: none; //removes outline
         background-color: $light-grey;
         border-bottom: 1px solid black;
     }
