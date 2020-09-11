@@ -1,0 +1,857 @@
+$prmy: #056676;
+$scdry: #2B4162;
+$third: #e76e1c;
+$fourth: #e5e5e5;
+
+$nameFont: 'Anaktoria Regular';
+$pFont: 'Cardo';
+
+@font-face {
+    font-family: 'Anaktoria Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Anaktoria Regular'), url('Anaktoria.woff') format('woff');
+}    
+    
+@font-face {
+    font-family: 'Anaktoria Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Anaktoria Regular'), url('Anaktoria_hint.woff') format('woff');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*------------ NAV BAR -----------------*/
+
+header * {
+    display: inline-block;
+}
+
+header {
+    font-family: $pFont;
+    padding: 50px 0px 3em 100px;
+    
+    a {
+        text-decoration: none;
+    }
+
+    #kf-logo {
+        color: black;
+        font-size: 2em;
+        margin-right: 70px;
+        animation: logo 1s ease;
+        font-family: $nameFont;
+    }
+
+    #menu-bars {
+        color: #ffffff;
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+
+        li {
+            list-style-type: none;
+        }
+    }
+
+    .menu-item a {
+        color: rgb(41, 41, 41);
+        letter-spacing: 3px;
+        margin: 0 10px;
+        font-size: 1.1em;
+        margin: 0 30px;   
+    }
+
+    .menu-item a:hover {
+        color: $third;
+    }
+}
+
+/* ------------ INDEX ---------------- */
+
+.body {
+    background-color: $fourth;
+    transition: background 1s ease;
+}
+
+#index {
+    background-image: url("images/Kaila\ Fitz.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#profile-intro {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    margin-left: 15em;
+
+    #profile-pic {
+        width: 45%;
+        text-align: center;
+        margin-left: 7em;
+
+        img {
+            width: 700px;
+        }
+    }
+
+    #intro {
+        width: 100%;
+        text-align: center;
+    
+        #element {
+            font-size: 10em;
+            font-family: 'Anaktoria Regular';
+            animation: nameColor 6s ease;
+            animation-iteration-count: 1;
+        }
+
+        #title {
+            letter-spacing: .5em;
+            font-family: $pFont;
+            font-weight: 200;
+            text-transform: uppercase;            
+            width: 60%;
+            font-size: 1.5em;
+            margin: auto auto;
+            animation: title 4s ease;
+            animation-iteration-count: 1;
+        }
+    
+        h1 {
+            letter-spacing: 4px;
+            font-weight: 200;
+            margin-bottom: .5em;
+        }
+    
+        h4 {
+           padding: 1em 0;
+        }
+    
+        h3 {
+            padding-top: 1em;
+        }
+    
+        p {
+            font-family: $pFont;
+            padding: 2em 0 0 0;
+            text-align: justify;
+            word-spacing: 2px;
+        }
+    }
+    
+}
+  
+@keyframes nameColor {
+    0% {
+        transform: translate(-240px);
+        color: $fourth;
+    }
+    100% {
+        transform: translate(0);
+        color: #000000;
+    }
+}
+
+@keyframes title {
+    0% {
+        transform: translate(-100px);
+        color: $fourth;
+    }
+    100% {
+        transform: translate(0);
+        color: #000000;
+    }
+}
+
+@keyframes logo {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ---------------- ABOUT ------------------- */
+
+@keyframes ab-img {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(50px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.0);
+        transition: ease 1s transform;
+    }
+
+    100% {
+        transform: scale(1.1);
+        transition: ease 1s transform
+    }
+}
+
+#about-cont {
+    width: 100%;
+    height: 100%;
+    // display: block;
+
+    // display: grid;
+    // align-items: center;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 1fr 1fr;
+}
+
+#ab-intro {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    margin: 10em auto;
+    padding-bottom: 3em;
+    position: relative;
+
+    img {
+        width: 8%;
+        position: absolute;
+    }
+
+    #q1 {
+        top: 0;
+        left: 4em;
+    }
+
+    #q2 {
+        bottom: 0;
+        right: 6em;
+    }
+
+    h1 {
+        width: 70%;
+        font-size: 2em;
+        font-family: $nameFont;
+        margin: 0 auto;
+    }
+}
+
+.sect {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // display: grid;
+    // place-items: center;
+    // grid-template-columns: 1fr 1fr;
+
+    .ab-img {
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        background-color: $scdry;
+        display: flex;
+    
+        img {
+            width: 350px;
+            margin: auto;
+            animation: ab-img 1.7s ease;
+            animation-fill-mode: forwards;
+
+            // &:hover {
+            //     animation: pulse 1s ease;
+            // }
+        }
+    }
+
+    .ab-info {
+        width: 50%;
+        font-family: $pFont;
+        height: 100%;
+        display: flex;
+        background-color: $prmy;
+        color: #ffffff;
+    
+        .ab-box {
+            width: 90%;
+            margin: auto;
+            animation: ab-img 1.7s ease;
+            animation-fill-mode: forwards;
+
+            h3 {
+                font-family: $nameFont;
+                text-align: left;
+                font-size: 40px;
+                letter-spacing: 12px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+/* ----------- PORTFOLIO --------------- */
+
+#port {
+    background: $fourth;
+}
+
+#port-cont {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    // display: flex;
+    // align-content: center;
+    // height: 90%;
+    // display: inline-grid;
+    // grid-template-columns: 1fr 1fr;
+
+    #dp-title {
+        background-color: #ffffff;
+        padding: 4em;
+        font-family: $nameFont;
+        color: $scdry;
+
+        h2 {
+            width: 100%;
+            font-size: 3em;
+            letter-spacing: .7em;
+            text-align: center;
+        }
+
+        h6 {
+            padding-top: 2em;
+            width: 60%;
+            font-size: 2em;
+            font-family: $nameFont;
+            text-align: center;
+            margin: 0 auto;           
+            font-weight: 400;
+        }
+    }
+
+    #principals {
+        display: flex;
+        align-items: center;
+        // height: 100%;
+        height: 35em;
+        padding: 4em 0;
+
+        #titles {
+            display: block;
+            width: 80%;
+            // height: 100%;
+            padding: 4em 3em;
+
+            #prince1 {
+                background-image: url("./images/prince-bgimg1.png");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            #prince2 {
+                background-image: url("./images/prince-bgimg2.png");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            #prince3 {
+                background-image: url("./images/prince-bgimg3.png");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            #prince4 {
+                background-image: url("./images/prince-bgimg4.png");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            .prince {
+                height: auto;
+                width: 100%;
+                margin: auto;
+
+                h1 {
+                    width: 90%;
+                    height: 60%;
+                    font-family: $nameFont;
+                    text-align: center;
+                    font-size: 4em;
+                    color: #ffffff;
+                    margin: auto;
+                    letter-spacing: .6em;
+                }
+
+                h6 {
+                    padding-top: 2em;
+                    font-family: $pFont;
+                    font-weight: 200;
+                    text-align: center;
+                    font-size: 1.5em;
+                    color: $fourth;
+                    margin: auto;
+                    text-transform: uppercase;
+                    letter-spacing: .2em;
+                }
+            }
+        }
+
+        #toggle {
+            display: block;
+            width: 20%;
+        }
+
+        button {
+            outline: none;
+            margin: 12px 0;
+            border: none;
+            display: block;
+            border-radius: 50%;
+            box-shadow: -7px 7px 13px -6px rgba(0,0,0,0.75);
+            padding: 9px;
+            background-color: $third;
+            transition: ease .3s transform;
+            cursor: pointer;
+
+            i {
+                color: $scdry;
+                font-size: 1.5em;
+            }
+
+            &:hover {
+                background-color: $fourth;
+                transform: scale(1.1);
+            }
+        }     
+    }
+
+    #tiles {
+        width: 100%;
+        margin: 0 auto;
+        // display: flex;
+        // align-content: center;
+        height: 90%;
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+
+        div {
+            width: 100%;
+            background-color: $third;
+            display: flex;
+            padding: 16em 0;
+        }
+        
+        a {
+            color: black;
+            margin: auto;
+            font-size: 4em;
+            font-family: $nameFont;
+            text-decoration: none;
+        }
+
+        .port-sect:hover a {
+            color: white;
+            transition: .2s ease-in-out;
+        }
+
+        #wd:hover {
+            background-color: $prmy;
+            transition: .6s ease-in-out;
+        }
+
+        #gd:hover {
+            background-color: $prmy;
+            transition: .6s ease-in-out;
+        }
+    }
+
+}
+
+/* ------------ WEBSITES --------------- */
+
+#webport-body {
+    background: $prmy;
+    transition: background 1s ease;
+}
+
+#webportfolio-info {
+    width: 80%;
+    text-align: center;
+    margin: 30px auto;
+    /* margin-bottom: 30px; */
+
+    h5 {
+        font-family: $pFont;
+        text-transform: uppercase;
+        font-weight: 200;
+        color: #ffffff;
+        font-size: 1.5em;
+    }
+}
+
+.card {
+    background-color: $fourth;
+    width: 30%;
+    height: 80%;
+    border-radius: 30px;
+    border: 1px transparent;
+    margin: 5em auto;
+    box-shadow: -7px 7px 13px -6px rgba(0,0,0,0.75);
+
+    .img-cont {
+        position: relative;
+        overflow: hidden;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        /* background-image: url('/hamsa/images/man-carrying-woman-with-hot-air-balloons-background-3889705.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; */
+    
+        img {
+            width: 100%;
+            // position: absolute;
+            // bottom: 0;
+            // top: 50%;
+            // transform: translate(0, -68%);
+        }
+    }
+}
+
+.all {
+    padding: 1.5em .5em;
+    display: block;
+}
+
+.card-info {
+    color: black;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+
+    h2 {
+        font-size: 3em;
+        font-family: $nameFont;
+        color: black;
+        letter-spacing: 4px;
+    }
+
+    p {
+        font-family: $pFont;
+        margin-top: 5px;
+    }
+}
+
+#flex {
+    width: 100%;
+
+    .inf {
+        width: 80%;
+    }
+
+    .but-div {
+        width: 20%;
+    }
+}
+
+.arrow {
+    color: $scdry;
+    font-size: 30px;
+    float: right;
+
+    &:hover {
+        cursor: pointer;
+        color: $third;
+    }
+}
+
+.tags {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+        font-family: 'Quantico', sans-serif;
+        margin: 0px 20px;
+        background-color: $scdry;
+        padding: 10px;
+        border-radius: 10px;
+        color: $fourth;
+    }
+
+    p:nth-child(1) {
+        margin-left: 30px;
+    }
+}
+
+.prog-div {
+    width: 90%;
+    margin: 30px auto;
+
+    p {
+        text-align: center;
+        font-family: $pFont;
+        font-size: 10px;
+        padding: 5px;
+        color: #ffffff;
+    }
+
+    .prog-bg {
+        background-color: $third;
+        width: 100%;
+        border-radius: 40px;
+    }
+
+    #prog1 {
+        width: 20%;
+        background-color: $prmy;
+        border-radius: 40px;
+    }
+
+    #prog2 {
+        width: 5%;
+        background-color: $prmy;
+        border-radius: 40px;
+    }
+}
+
+/* ----------- CONTACT ------------- */
+
+#cont-bod {
+    height: 100%;
+    background: $prmy;
+}
+
+#bg-contact {
+    // background-attachment: fixed;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    height: 100vh;
+    width: 50vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    z-index: -1;
+}
+
+#contact-bod {
+    width: 100%;
+
+    #cont-info {
+        // width: 30%;
+        // background-color: $fourth;
+        // margin: 5em auto;
+        // padding: 30px;
+        // border-radius: 30px;
+        // box-shadow: 10px -4px 17px -9px rgba(0,0,0,0.75);
+        width: 50vw;
+        float: right;
+    
+        h2 {
+            font-family: $nameFont;
+            margin-bottom: 3em;
+            font-size: 3em;
+            text-align: center;
+            letter-spacing: .4em;
+        }
+
+        #conts-div {
+            margin: 0 auto;
+            width: 90%;
+    
+            #conts {
+                // background-color: $fourth;
+                // border-radius: 30px;
+                // text-align: left;
+                // margin-top: 20px;
+                // padding: 30px 0px 30px 30px;
+                
+                // a {
+                //     display: block;
+                // }
+
+                .test {
+                    display: block;
+                    font-size: 2em;
+                    margin: 1em;
+                }
+
+                .icon {
+                    margin: 1em 2em;
+                    color: $third;
+                    background-color: none;
+                    // box-shadow: -7px 7px 13px -6px rgba(0,0,0,0.75);
+                }
+            }
+        }
+    }
+}
+
+/* ------------------- MOBILE PHONE ------------------------- */
+  
+@media screen and (max-width: 1000px) {
+
+    /* -------------- NAVBAR ------------- */
+
+    header {
+        width: 100%;
+
+        #kf-logo {
+            font-size: 3em;
+            left: 10px;
+        }
+
+        #menu-bars {
+            display: block;
+            color: $third;
+            float: right;
+            margin-right: 90px;
+            font-size: 3em;
+        }
+    
+        .navbar {
+            width: 100%;
+            display: none;
+
+            .nav-menu {
+                display: block;
+                width: 100%;
+
+                ul {
+                    width: 100%;
+                }
+
+                li {
+                    width: 90%;
+                    margin: 7px 0;
+                    text-align: center;
+                }
+
+                a {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    /* -------------- HOME --------------- */
+
+    #profile-intro {
+        display: block;
+        margin: 0px;
+    }
+
+    #profile-pic {
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    #intro {
+        text-align: center;
+        width: 80%;
+        margin: 1px auto;
+        font-size: 2em;
+        padding-top: 15px;
+    }
+
+    /* ------------------ About ---------*/
+
+    .sect {
+        display: block;
+    }
+
+    #ab-img {
+        margin: 35px auto;
+    }
+
+    #ab-img img {
+        width: 350px;
+    }
+
+    .ab-info {
+        text-align: justify;
+        margin: 20px auto;
+        width: 70%;
+    }
+
+    /* ------------- Portfolio ----------------- */
+
+    .card {
+        width: 80%;
+    }
+
+    #flex {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .tags p {
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    #prog1 {
+        font-size: 30px;
+    }
+
+    #prog2 {
+        font-size: 30px;
+    }
+
+    /* ------------- Contact -------------- */
+
+    #contact-bod {
+        margin: 30em auto;
+    }
+
+    #cont-info {
+        width: 80%;
+        font-size: 30px;
+    }
+
+    #conts {
+        padding: 35px auto;
+    }
+
+    .icon {
+        margin-right: 30px;
+    }
+
+}

@@ -1,545 +1,705 @@
-/* ------------ INDEX ---------------- */
-
+@font-face {
+  font-family: "Anaktoria Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Anaktoria Regular"), url("Anaktoria.woff") format("woff");
+}
+@font-face {
+  font-family: "Anaktoria Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Anaktoria Regular"), url("Anaktoria_hint.woff") format("woff");
+}
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.body {
-    background-color: #e8505b;
+body {
+  width: 100%;
 }
 
 a {
-    font-family: 'Raleway', sans-serif;
-    color: black;
-    text-decoration: none;
-}
-
-#profile-intro {
-    display: flex;
-    justify-items: center;
-    margin: 5em 4em 2em 3em;
-}
-
-#profile-pic {
-    width: 45%;
-    text-align: center;
-    margin-left: 7em;
-}
-
-#profile-pic img {
-    width: 700px;
-}
-
-/* #profile-pic img {
-    width: 300px;
-    text-align: center;
-    box-shadow: 0px 0px 9px 0px #000000;
-} */
-
-.element {
-    animation: pulse 5s infinite;
-    animation-iteration-count: 1;
-  }
-  
-  @keyframes pulse {
-    0% {
-      color: #e8505b;
-      ;
-    }
-    100% {
-      color: #000000;
-    }
-  }
-
-#intro {
-    width: 20%;
-    padding-top: 6em;
-    margin-left: 4em;
-    text-align: justify;
-}
-
-#intro h1 {
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 4px;
-}
-
-#intro h4 {
-    padding-top: 4em;
-}
-
-#intro h3 {
-    padding-top: 1em;
-}
-
-#intro p {
-    font-family: 'Raleway', sans-serif;
-    padding: 2em 0 0 0;
-    text-align: justify;
-    word-spacing: 2px;
-}
-
-.highlight {
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 1px;
-    color: #f9d56e;
-    text-transform: uppercase;
-}
-
-.smiley {
-    color: #f9d56e;
+  text-decoration: none;
+  color: black;
 }
 
 /*------------ NAV BAR -----------------*/
+header * {
+  display: inline-block;
+}
 
 header {
-    margin: 20px auto;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
-    margin: 50px 0px 0px 100px;
+  font-family: "Cardo";
+  padding: 50px 0px 3em 100px;
+}
+header a {
+  text-decoration: none;
+}
+header #kf-logo {
+  color: black;
+  font-size: 2em;
+  margin-right: 70px;
+  animation: logo 1s ease;
+  font-family: "Anaktoria Regular";
+}
+header #menu-bars {
+  color: #ffffff;
+  display: none;
+}
+header .nav-menu {
+  display: flex;
+}
+header .nav-menu li {
+  list-style-type: none;
+}
+header .menu-item a {
+  color: #292929;
+  letter-spacing: 3px;
+  margin: 0 10px;
+  font-size: 1.1em;
+  margin: 0 30px;
+}
+header .menu-item a:hover {
+  color: #e76e1c;
 }
 
-header * {
-    display: inline-block;
-    font-weight: 700;
+/* ------------ INDEX ---------------- */
+.body {
+  background-color: #e5e5e5;
+  transition: background 1s ease;
 }
 
-#kf-logo {
-    font-size: 1.7em;
-    margin-right: 70px;
+#index {
+  background-image: url("images/Kaila Fitz.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
-#menu-bars {
-    color: #ffffff;
-    display: none;
+#profile-intro {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  margin-left: 15em;
+}
+#profile-intro #profile-pic {
+  width: 45%;
+  text-align: center;
+  margin-left: 7em;
+}
+#profile-intro #profile-pic img {
+  width: 700px;
+}
+#profile-intro #intro {
+  width: 100%;
+  text-align: center;
+}
+#profile-intro #intro #element {
+  font-size: 10em;
+  font-family: "Anaktoria Regular";
+  animation: nameColor 6s ease;
+  animation-iteration-count: 1;
+}
+#profile-intro #intro #title {
+  letter-spacing: 0.5em;
+  font-family: "Cardo";
+  font-weight: 200;
+  text-transform: uppercase;
+  width: 60%;
+  font-size: 1.5em;
+  margin: auto auto;
+  animation: title 4s ease;
+  animation-iteration-count: 1;
+}
+#profile-intro #intro h1 {
+  letter-spacing: 4px;
+  font-weight: 200;
+  margin-bottom: 0.5em;
+}
+#profile-intro #intro h4 {
+  padding: 1em 0;
+}
+#profile-intro #intro h3 {
+  padding-top: 1em;
+}
+#profile-intro #intro p {
+  font-family: "Cardo";
+  padding: 2em 0 0 0;
+  text-align: justify;
+  word-spacing: 2px;
 }
 
-.nav-menu {
-    display: flex;
+@keyframes nameColor {
+  0% {
+    transform: translate(-240px);
+    color: #e5e5e5;
+  }
+  100% {
+    transform: translate(0);
+    color: #000000;
+  }
 }
-
-.nav-menu li {
-    list-style-type: none;
+@keyframes title {
+  0% {
+    transform: translate(-100px);
+    color: #e5e5e5;
+  }
+  100% {
+    transform: translate(0);
+    color: #000000;
+  }
 }
-
-.menu-item a {
-    color: #ffffff;
-    letter-spacing: 3px;
-    margin: 0 10px;
-    font-size: 1.1em;
-    margin: 0 30px;
+@keyframes logo {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-
-.menu-item a:hover {
-    color: black;
-}
-
 /* ---------------- ABOUT ------------------- */
-
+@keyframes ab-img {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(50px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    transition: ease 1s transform;
+  }
+  100% {
+    transform: scale(1.1);
+    transition: ease 1s transform;
+  }
+}
 #about-cont {
-    width: 100%;
-    display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#ab-intro {
+  width: 70%;
+  text-align: center;
+  display: flex;
+  margin: 10em auto;
+  padding-bottom: 3em;
+  position: relative;
+}
+#ab-intro img {
+  width: 8%;
+  position: absolute;
+}
+#ab-intro #q1 {
+  top: 0;
+  left: 4em;
+}
+#ab-intro #q2 {
+  bottom: 0;
+  right: 6em;
+}
+#ab-intro h1 {
+  width: 70%;
+  font-size: 2em;
+  font-family: "Anaktoria Regular";
+  margin: 0 auto;
 }
 
 .sect {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 7em 0;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.sect .ab-img {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  background-color: #2B4162;
+  display: flex;
+}
+.sect .ab-img img {
+  width: 350px;
+  margin: auto;
+  animation: ab-img 1.7s ease;
+  animation-fill-mode: forwards;
+}
+.sect .ab-info {
+  width: 50%;
+  font-family: "Cardo";
+  height: 100%;
+  display: flex;
+  background-color: #056676;
+  color: #ffffff;
+}
+.sect .ab-info .ab-box {
+  width: 90%;
+  margin: auto;
+  animation: ab-img 1.7s ease;
+  animation-fill-mode: forwards;
+}
+.sect .ab-info .ab-box h3 {
+  font-family: "Anaktoria Regular";
+  text-align: left;
+  font-size: 40px;
+  letter-spacing: 12px;
+  margin-bottom: 20px;
 }
 
-#ab-img {
-    width: 30%;
-    text-align: center;
+/* ----------- PORTFOLIO --------------- */
+#port {
+  background: #e5e5e5;
 }
 
-#ab-img img {
-    width: 400px;
+#port-cont {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+#port-cont #dp-title {
+  background-color: #ffffff;
+  padding: 4em;
+  font-family: "Anaktoria Regular";
+  color: #2B4162;
+}
+#port-cont #dp-title h2 {
+  width: 100%;
+  font-size: 3em;
+  letter-spacing: 0.7em;
+  text-align: center;
+}
+#port-cont #dp-title h6 {
+  padding-top: 2em;
+  width: 60%;
+  font-size: 2em;
+  font-family: "Anaktoria Regular";
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 400;
+}
+#port-cont #principals {
+  display: flex;
+  align-items: center;
+  height: 35em;
+  padding: 4em 0;
+}
+#port-cont #principals #titles {
+  display: block;
+  width: 80%;
+  padding: 4em 3em;
+}
+#port-cont #principals #titles #prince1 {
+  background-image: url("./images/prince-bgimg1.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#port-cont #principals #titles #prince2 {
+  background-image: url("./images/prince-bgimg2.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#port-cont #principals #titles #prince3 {
+  background-image: url("./images/prince-bgimg3.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#port-cont #principals #titles #prince4 {
+  background-image: url("./images/prince-bgimg4.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#port-cont #principals #titles .prince {
+  height: auto;
+  width: 100%;
+  margin: auto;
+}
+#port-cont #principals #titles .prince h1 {
+  width: 90%;
+  height: 60%;
+  font-family: "Anaktoria Regular";
+  text-align: center;
+  font-size: 4em;
+  color: #ffffff;
+  margin: auto;
+  letter-spacing: 0.6em;
+}
+#port-cont #principals #titles .prince h6 {
+  padding-top: 2em;
+  font-family: "Cardo";
+  font-weight: 200;
+  text-align: center;
+  font-size: 1.5em;
+  color: #e5e5e5;
+  margin: auto;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+#port-cont #principals #toggle {
+  display: block;
+  width: 20%;
+}
+#port-cont #principals button {
+  outline: none;
+  margin: 12px 0;
+  border: none;
+  display: block;
+  border-radius: 50%;
+  box-shadow: -7px 7px 13px -6px rgba(0, 0, 0, 0.75);
+  padding: 9px;
+  background-color: #e76e1c;
+  transition: ease 0.3s transform;
+  cursor: pointer;
+}
+#port-cont #principals button i {
+  color: #2B4162;
+  font-size: 1.5em;
+}
+#port-cont #principals button:hover {
+  background-color: #e5e5e5;
+  transform: scale(1.1);
+}
+#port-cont #tiles {
+  width: 100%;
+  margin: 0 auto;
+  height: 90%;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+}
+#port-cont #tiles div {
+  width: 100%;
+  background-color: #e76e1c;
+  display: flex;
+  padding: 16em 0;
+}
+#port-cont #tiles a {
+  color: black;
+  margin: auto;
+  font-size: 4em;
+  font-family: "Anaktoria Regular";
+  text-decoration: none;
+}
+#port-cont #tiles .port-sect:hover a {
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+#port-cont #tiles #wd:hover {
+  background-color: #056676;
+  transition: 0.6s ease-in-out;
+}
+#port-cont #tiles #gd:hover {
+  background-color: #056676;
+  transition: 0.6s ease-in-out;
 }
 
-.ab-info {
-    width: 40%;
-    font-family: 'Raleway', sans-serif;
+/* ------------ WEBSITES --------------- */
+#webport-body {
+  background: #056676;
+  transition: background 1s ease;
 }
 
-.sect h3 {
-    font-family: 'Raleway', sans-serif;
-    text-align: left;
-    font-size: 25px;
-    letter-spacing: 4px;
-    margin-bottom: 20px;
+#webportfolio-info {
+  width: 80%;
+  text-align: center;
+  margin: 30px auto;
+  /* margin-bottom: 30px; */
 }
-
-.ab-info1 p {
-    margin-top: 30px;
-    text-align: justify;
-    word-spacing: 2px;
-}
-
-
-/* ------------ PORTFOLIO --------------- */
-
-#port-body {
-    background-color: #f9d56e;
-}
-
-#portfolio-info {
-    font-family: 'Raleway', sans-serif;
-    width: 80%;
-    text-align: center;
-    margin: 30px auto;
-    /* margin-bottom: 30px; */
-}
-
-#portfolio-info h5 {
-    font-family: 'Raleway', sans-serif;
-    color: #e8505b;
-    margin-top: 5em;
+#webportfolio-info h5 {
+  font-family: "Cardo";
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #ffffff;
+  font-size: 1.5em;
 }
 
 .card {
-    background-color: #e8505b;
-    width: 70%;
-    height: 80%;
-    border-radius: 30px;
-    border: 1px transparent;
-    margin: 5em auto;
+  background-color: #e5e5e5;
+  width: 30%;
+  height: 80%;
+  border-radius: 30px;
+  border: 1px transparent;
+  margin: 5em auto;
+  box-shadow: -7px 7px 13px -6px rgba(0, 0, 0, 0.75);
 }
-
-.img-cont {
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
-    /* background-image: url('/hamsa/images/man-carrying-woman-with-hot-air-balloons-background-3889705.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
+.card .img-cont {
+  position: relative;
+  overflow: hidden;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  /* background-image: url('/hamsa/images/man-carrying-woman-with-hot-air-balloons-background-3889705.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
-
-.img-cont img {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    top: 50%;
-    transform: translate(0, -68%);
+.card .img-cont img {
+  width: 100%;
 }
 
 .all {
-    padding: 10px;
-    display: block;
+  padding: 1.5em 0.5em;
+  display: block;
 }
 
 .card-info {
-    color: white;
-    padding: 20px 30px;
-    display: flex;
-    align-items: center;
+  color: black;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
 }
-
 .card-info h2 {
-    font-family: 'Anton', sans-serif;
-    color: black;
-    letter-spacing: 4px;
+  font-size: 3em;
+  font-family: "Anaktoria Regular";
+  color: black;
+  letter-spacing: 4px;
 }
-
 .card-info p {
-    font-family: 'Raleway', sans-serif;
-    margin-top: 5px;
+  font-family: "Cardo";
+  margin-top: 5px;
 }
 
 #flex {
-    width: 100%;
+  width: 100%;
 }
-
-.inf {
-    width: 80%;
+#flex .inf {
+  width: 80%;
 }
-
-.tags {
-    width: 100%;
-    display: flex;
-}
-
-.tags p:nth-child(1) {
-    margin-left: 30px;
-}
-
-.tags p {
-    font-family: 'Quantico', sans-serif;
-    margin: 0px 20px;
-    background-color: #f9d56e;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.prog-div {
-    width: 90%;
-    margin: 30px auto;
-}
-
-.prog-bg {
-    background-color: #f3ecc2;
-    width: 100%;
-    border-radius: 40px;
-}
-
-#prog1 {
-    width: 20%;
-    background-color: #14b1ab;
-    border-radius: 40px;
-}
-
-#prog2 {
-    width: 5%;
-    background-color: #14b1ab;
-    border-radius: 40px;
-}
-
-.prog-div p {
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;
-}
-
-.but-div {
-    width: 20%;
+#flex .but-div {
+  width: 20%;
 }
 
 .arrow {
-    color: white;
-    font-size: 30px;
-    float: right;
+  color: #2B4162;
+  font-size: 30px;
+  float: right;
 }
-
 .arrow:hover {
-    cursor: pointer;
-    color: #14b1ab;
+  cursor: pointer;
+  color: #e76e1c;
 }
 
-/* .but {
-    padding: 15px;
-    border-radius: 20px;
-    border: 3px #14b1ab solid;   
-    font-family: 'Raleway', sans-serif;
-    float: right;
-} */
-
-/* 
-#portfolio-cards {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: wrap;
+.tags {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tags p {
+  font-family: "Quantico", sans-serif;
+  margin: 0px 20px;
+  background-color: #2B4162;
+  padding: 10px;
+  border-radius: 10px;
+  color: #e5e5e5;
+}
+.tags p:nth-child(1) {
+  margin-left: 30px;
 }
 
-.web-card {
-    margin: 0px 90px;
-    padding: 20px;
-    width: 15%;
-    font-family: 'Raleway', sans-serif;
-    border-color: none;
-    box-shadow: 0px 0px 10px 0px #e6e6e6;
-    text-align: center;
+.prog-div {
+  width: 90%;
+  margin: 30px auto;
 }
-
-.card-body{
-    text-align: left;
+.prog-div p {
+  text-align: center;
+  font-family: "Cardo";
+  font-size: 10px;
+  padding: 5px;
+  color: #ffffff;
 }
-
-.card-title{
-    font-size: 1.3em;
+.prog-div .prog-bg {
+  background-color: #e76e1c;
+  width: 100%;
+  border-radius: 40px;
 }
-#hamsa-img {
-    width: 100px;
-    margin: 50px auto;
-    text-align: center;
+.prog-div #prog1 {
+  width: 20%;
+  background-color: #056676;
+  border-radius: 40px;
 }
-
-#cb-img {
-    width: 190px;
-    margin: 60px auto;
+.prog-div #prog2 {
+  width: 5%;
+  background-color: #056676;
+  border-radius: 40px;
 }
-
-.card-text{
-    margin:10px 0;
-}
-
-.kf-btn {
-    background-color: #ffffff;
-    padding: 6px 8px;
-    border-radius: 3px;
-    color: black;
-}
-
-.kf-btn:hover {
-    background-color: black;
-    color: white;
-    border-color: white;
-} */
 
 /* ----------- CONTACT ------------- */
+#cont-bod {
+  height: 100%;
+  background: #056676;
+}
+
+#bg-contact {
+  height: 100vh;
+  width: 50vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: -1;
+}
 
 #contact-bod {
-    width: 100%;
-    margin-top: 12em;
+  width: 100%;
 }
-
-#cont-info {
-    width: 30%;
-    background-color: #14b1ab;
-    margin: 5em auto;
-    padding: 30px;
-    border-radius: 30px;
-    box-shadow: 28px 28px 15px -21px #000000;
+#contact-bod #cont-info {
+  width: 50vw;
+  float: right;
 }
-
-#conts-div {
-    margin: 0 auto;
-    width: 90%;
+#contact-bod #cont-info h2 {
+  font-family: "Anaktoria Regular";
+  margin-bottom: 3em;
+  font-size: 3em;
+  text-align: center;
+  letter-spacing: 0.4em;
 }
-
-#conts {
-    background-color: #f3ecc2;
-    border-radius: 30px;
-    text-align: left;
-    margin-top: 20px;
-    padding: 30px 0px 30px 30px;
+#contact-bod #cont-info #conts-div {
+  margin: 0 auto;
+  width: 90%;
 }
-
-.icon {
-    margin: 10px;
+#contact-bod #cont-info #conts-div #conts .test {
+  display: block;
+  font-size: 2em;
+  margin: 1em;
 }
-
+#contact-bod #cont-info #conts-div #conts .icon {
+  margin: 1em 2em;
+  color: #e76e1c;
+  background-color: none;
+}
 
 /* ------------------- MOBILE PHONE ------------------------- */
-  
 @media screen and (max-width: 1000px) {
+  /* -------------- NAVBAR ------------- */
+  header {
+    width: 100%;
+  }
+  header #kf-logo {
+    font-size: 3em;
+    left: 10px;
+  }
+  header #menu-bars {
+    display: block;
+    color: #e76e1c;
+    float: right;
+    margin-right: 90px;
+    font-size: 3em;
+  }
+  header .navbar {
+    width: 100%;
+    display: none;
+  }
+  header .navbar .nav-menu {
+    display: block;
+    width: 100%;
+  }
+  header .navbar .nav-menu ul {
+    width: 100%;
+  }
+  header .navbar .nav-menu li {
+    width: 90%;
+    margin: 7px 0;
+    text-align: center;
+  }
+  header .navbar .nav-menu a {
+    font-size: 30px;
+  }
 
-    /* -------------- NAVBAR ------------- */
+  /* -------------- HOME --------------- */
+  #profile-intro {
+    display: block;
+    margin: 0px;
+  }
 
-    #kf-logo {
-        font-size: 3em;
-        left: 10px;
-    }
+  #profile-pic {
+    width: 80%;
+    margin: 30px auto;
+  }
 
-    .navbar {
-        width: 100%;
-        display: none;
-    }
-    
-    .nav-menu {
-        display: block;
-        width: 100%;
-    }
+  #intro {
+    text-align: center;
+    width: 80%;
+    margin: 1px auto;
+    font-size: 2em;
+    padding-top: 15px;
+  }
 
-    .nav-menu ul {
-        width: 100%;
-    }
+  /* ------------------ About ---------*/
+  .sect {
+    display: block;
+  }
 
-    .nav-menu li {
-        width: 90%;
-        margin: 7px 0;
-        text-align: center;
-    }
+  #ab-img {
+    margin: 35px auto;
+  }
 
-    .nav-menu a {
-        font-size: 30px;
-    }
+  #ab-img img {
+    width: 350px;
+  }
 
-    #menu-bars {
-        display: block;
-        color: black;
-        float: right;
-        margin-right: 90px;
-        font-size: 3em;
-    }
+  .ab-info {
+    text-align: justify;
+    margin: 20px auto;
+    width: 70%;
+  }
 
+  /* ------------- Portfolio ----------------- */
+  .card {
+    width: 80%;
+  }
 
-    /* -------------- HOME --------------- */
+  #flex {
+    font-size: 30px;
+    width: 100%;
+  }
 
-    #profile-intro {
-        display: block;
-        margin: 0px;
-    }
+  .tags p {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+  }
 
-    #profile-pic {
-        width: 80%;
-        margin: 30px auto;
-    }
+  #prog1 {
+    font-size: 30px;
+  }
 
-    #intro {
-        text-align: center;
-        width: 80%;
-        margin: 1px auto;
-        font-size: 2em;
-        padding-top: 15px;
-    }
+  #prog2 {
+    font-size: 30px;
+  }
 
-    /* ------------------ About ---------*/
+  /* ------------- Contact -------------- */
+  #contact-bod {
+    margin: 30em auto;
+  }
 
-    .sect {
-        display: block;
-    }
+  #cont-info {
+    width: 80%;
+    font-size: 30px;
+  }
 
-    #ab-img {
-        margin: 35px auto;
-    }
+  #conts {
+    padding: 35px auto;
+  }
 
-    #ab-img img {
-        width: 350px;
-    }
-
-    .ab-info {
-        text-align: justify;
-        margin: 20px auto;
-        width: 70%;
-    }
-
-
-    /* ------------- Portfolio ----------------- */
-
-    .card {
-        width: 80%;
-    }
-
-    #flex {
-        font-size: 30px;
-        width: 100%;
-    }
-
-    .tags p {
-        text-align: center;
-        padding: 10px;
-        font-size: 20px;
-    }
-
-    #prog1 {
-        font-size: 30px;
-    }
-
-    #prog2 {
-        font-size: 30px;
-    }
-
-    /* ------------- Contact -------------- */
-
-    #contact-bod {
-        margin: 30em auto;
-    }
-
-    #cont-info {
-        width: 80%;
-        font-size: 30px;
-    }
-
-    #conts {
-        padding: 35px auto;
-    }
-
-    .icon {
-        margin-right: 30px;
-    }
-
+  .icon {
+    margin-right: 30px;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
