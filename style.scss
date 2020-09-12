@@ -2,6 +2,7 @@ $prmy: #056676;
 $scdry: #2B4162;
 $third: #e76e1c;
 $fourth: #e5e5e5;
+$blck: #010f12;
 
 $nameFont: 'Anaktoria Regular';
 $pFont: 'Cardo';
@@ -32,7 +33,7 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: $blck;
 }
 
 /*------------ NAV BAR -----------------*/
@@ -50,7 +51,7 @@ header {
     }
 
     #kf-logo {
-        color: black;
+        color: $scdry;
         font-size: 2em;
         margin-right: 70px;
         animation: logo 1s ease;
@@ -477,7 +478,7 @@ header {
         }
         
         a {
-            color: black;
+            color: $blck;
             margin: auto;
             font-size: 4em;
             font-family: $nameFont;
@@ -559,7 +560,7 @@ header {
 }
 
 .card-info {
-    color: black;
+    color: $blck;
     padding: 20px 30px;
     display: flex;
     align-items: center;
@@ -567,7 +568,7 @@ header {
     h2 {
         font-size: 3em;
         font-family: $nameFont;
-        color: black;
+        color: $blck;
         letter-spacing: 4px;
     }
 

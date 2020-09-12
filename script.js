@@ -9,6 +9,7 @@ $(document).ready(function () {
     $('body').fadeIn(1000);
     test1();
     test2();
+    navColor();
 
     function test1() {
 
@@ -81,6 +82,20 @@ $(document).ready(function () {
     //     });
 
     //   });
+
+    function navColor() {
+        
+        let bgCol = $("body").css("background-color");
+
+        if (bgCol == "rgb(5, 102, 118)") {
+            $(".text").css("color", "#e5e5e5");
+            $("#kf-logo").css("color", "#e5e5e5");
+        }
+        else if (bgCol == "rgb(229, 229, 229)") {
+            
+            $(".text").css("color", "#2B4162");
+        }
+    }
 
 
     // ----------------- DESIGN PRINCIPALS

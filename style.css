@@ -22,7 +22,7 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #010f12;
 }
 
 /*------------ NAV BAR -----------------*/
@@ -38,7 +38,7 @@ header a {
   text-decoration: none;
 }
 header #kf-logo {
-  color: black;
+  color: #2B4162;
   font-size: 2em;
   margin-right: 70px;
   animation: logo 1s ease;
@@ -391,7 +391,7 @@ header .menu-item a:hover {
   padding: 16em 0;
 }
 #port-cont #tiles a {
-  color: black;
+  color: #010f12;
   margin: auto;
   font-size: 4em;
   font-family: "Anaktoria Regular";
@@ -459,7 +459,7 @@ header .menu-item a:hover {
 }
 
 .card-info {
-  color: black;
+  color: #010f12;
   padding: 20px 30px;
   display: flex;
   align-items: center;
@@ -467,7 +467,7 @@ header .menu-item a:hover {
 .card-info h2 {
   font-size: 3em;
   font-family: "Anaktoria Regular";
-  color: black;
+  color: #010f12;
   letter-spacing: 4px;
 }
 .card-info p {
