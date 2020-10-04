@@ -4,22 +4,22 @@ $third: #e76e1c;
 $fourth: #e5e5e5;
 $blck: #010f12;
 
-$nameFont: 'Anaktoria Regular';
-$pFont: 'Cardo';
+$nameFont: 'Catamaran', sans-serif;
+$pFont: 'Work Sans', sans-serif;;
 
-@font-face {
-    font-family: 'Anaktoria Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Anaktoria Regular'), url('Anaktoria.woff') format('woff');
-}    
+// @font-face {
+//     font-family: 'Anaktoria Regular';
+//     font-style: normal;
+//     font-weight: normal;
+//     src: local('Anaktoria Regular'), url('Anaktoria.woff') format('woff');
+// }    
     
-@font-face {
-    font-family: 'Anaktoria Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Anaktoria Regular'), url('Anaktoria_hint.woff') format('woff');
-}
+// @font-face {
+//     font-family: 'Anaktoria Regular';
+//     font-style: normal;
+//     font-weight: normal;
+//     src: local('Anaktoria Regular'), url('Anaktoria_hint.woff') format('woff');
+// }
 
 * {
     margin: 0px;
@@ -29,11 +29,13 @@ $pFont: 'Cardo';
 
 body {
     width: 100%;
+    transition: ease 1s background;
 }
 
-a {
-    text-decoration: none;
-    color: $blck;
+.content {
+    display: table;
+    height: 100%;
+    width: 100%;
 }
 
 /*------------ NAV BAR -----------------*/
@@ -86,83 +88,13 @@ header {
 
 /* ------------ INDEX ---------------- */
 
-.body {
-    background-color: $fourth;
-    transition: background 1s ease;
-}
-
 #index {
-    background-image: url("images/Kaila\ Fitz.png");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-}
+    background-color: $third;
 
-#profile-intro {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 65%;
-    margin-left: 15em;
-
-    #profile-pic {
-        width: 45%;
+    #fizzy-title {
         text-align: center;
-        margin-left: 7em;
-
-        img {
-            width: 700px;
-        }
+        width: 50.5%;
     }
-
-    #intro {
-        width: 100%;
-        text-align: center;
-    
-        #element {
-            font-size: 10em;
-            font-family: 'Anaktoria Regular';
-            animation: nameColor 6s ease;
-            animation-iteration-count: 1;
-        }
-
-        #title {
-            letter-spacing: .5em;
-            font-family: $pFont;
-            font-weight: 200;
-            text-transform: uppercase;            
-            width: 60%;
-            font-size: 1.5em;
-            margin: auto auto;
-            animation: title 4s ease;
-            animation-iteration-count: 1;
-        }
-    
-        h1 {
-            letter-spacing: 4px;
-            font-weight: 200;
-            margin-bottom: .5em;
-        }
-    
-        h4 {
-           padding: 1em 0;
-        }
-    
-        h3 {
-            padding-top: 1em;
-        }
-    
-        p {
-            font-family: $pFont;
-            padding: 2em 0 0 0;
-            text-align: justify;
-            word-spacing: 2px;
-        }
-    }
-    
 }
   
 @keyframes nameColor {
@@ -173,27 +105,6 @@ header {
     100% {
         transform: translate(0);
         color: #000000;
-    }
-}
-
-@keyframes title {
-    0% {
-        transform: translate(-100px);
-        color: $fourth;
-    }
-    100% {
-        transform: translate(0);
-        color: #000000;
-    }
-}
-
-@keyframes logo {
-    0% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
     }
 }
 
@@ -505,149 +416,80 @@ header {
 
 /* ------------ WEBSITES --------------- */
 
-#webport-body {
-    background: $prmy;
-    transition: background 1s ease;
-}
-
-#webportfolio-info {
-    width: 80%;
-    text-align: center;
-    margin: 30px auto;
-    /* margin-bottom: 30px; */
-
-    h5 {
-        font-family: $pFont;
-        text-transform: uppercase;
-        font-weight: 200;
-        color: #ffffff;
-        font-size: 1.5em;
-    }
-}
-
-.card {
-    background-color: $fourth;
-    width: 30%;
-    height: 80%;
-    border-radius: 30px;
-    border: 1px transparent;
-    margin: 5em auto;
-    box-shadow: -7px 7px 13px -6px rgba(0,0,0,0.75);
-
-    .img-cont {
-        position: relative;
-        overflow: hidden;
-        border-top-right-radius: 30px;
-        border-top-left-radius: 30px;
-        /* background-image: url('/hamsa/images/man-carrying-woman-with-hot-air-balloons-background-3889705.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; */
-    
-        img {
-            width: 100%;
-            // position: absolute;
-            // bottom: 0;
-            // top: 50%;
-            // transform: translate(0, -68%);
-        }
-    }
-}
-
-.all {
-    padding: 1.5em .5em;
+#webportfolio-cards {
+    width: 98%;
+    margin: 5rem auto;
     display: block;
-}
 
-.card-info {
-    color: $blck;
-    padding: 20px 30px;
-    display: flex;
-    align-items: center;
-
-    h2 {
+    h1 {
         font-size: 3em;
-        font-family: $nameFont;
-        color: $blck;
-        letter-spacing: 4px;
-    }
-
-    p {
-        font-family: $pFont;
-        margin-top: 5px;
-    }
-}
-
-#flex {
-    width: 100%;
-
-    .inf {
-        width: 80%;
-    }
-
-    .but-div {
-        width: 20%;
-    }
-}
-
-.arrow {
-    color: $scdry;
-    font-size: 30px;
-    float: right;
-
-    &:hover {
-        cursor: pointer;
-        color: $third;
-    }
-}
-
-.tags {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-
-    p {
-        font-family: 'Quantico', sans-serif;
-        margin: 0px 20px;
-        background-color: $scdry;
-        padding: 10px;
-        border-radius: 10px;
-        color: $fourth;
-    }
-
-    p:nth-child(1) {
-        margin-left: 30px;
-    }
-}
-
-.prog-div {
-    width: 90%;
-    margin: 30px auto;
-
-    p {
         text-align: center;
-        font-family: $pFont;
-        font-size: 10px;
-        padding: 5px;
-        color: #ffffff;
+        font-family: $nameFont;
+        color: $scdry;
+        margin: 2em 0;
     }
+}
 
-    .prog-bg {
-        background-color: $third;
-        width: 100%;
-        border-radius: 40px;
-    }
+.proj-container {
+    width: 100%;
+    margin: 4em 0;
+    display: flex;    
+    align-items: center;
+    justify-content: space-evenly;
 
-    #prog1 {
-        width: 20%;
-        background-color: $prmy;
-        border-radius: 40px;
-    }
+    .card {
+        background-color: $scdry;
+        padding: 1em;
+        width: 30%;
+        border-radius: 30px;
+        border: 1px transparent;
+        box-shadow: -7px 7px 13px -6px rgba(0,0,0,0.75);
 
-    #prog2 {
-        width: 5%;
-        background-color: $prmy;
-        border-radius: 40px;
+        .img-cont {
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-top-right-radius: 30px;
+            border-top-left-radius: 30px;
+        
+            img {
+                width: 50%;
+                margin: 3rem auto;
+            }
+        }
+
+        .card-info {
+            color: $fourth;
+            display: block;
+
+            a {
+                font-family: $nameFont;
+                color: $fourth;
+                font-size: 1.5em;
+            }
+            
+            p {
+                font-family: $pFont;
+                margin: 1em 0;
+                font-size: 1.3em;
+            }     
+        }
+
+        .tags {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        
+            p {
+                font-size: .8em;
+                font-family: 'Quantico', sans-serif;
+                margin: 1em 1.5em 1em 0;
+                background-color: $prmy;
+                padding: 1em;
+                border-radius: 10px;
+                color: $fourth;
+            }
+        }
     }
 }
 
@@ -659,9 +501,6 @@ header {
 }
 
 #bg-contact {
-    // background-attachment: fixed;
-    // background-repeat: no-repeat;
-    // background-size: cover;
     height: 100vh;
     width: 50vw;
     position: fixed;
@@ -671,54 +510,36 @@ header {
     z-index: -1;
 }
 
-#contact-bod {
-    width: 100%;
+#cont-info {
+    width: 50vw;
+    float: right;
 
-    #cont-info {
-        // width: 30%;
-        // background-color: $fourth;
-        // margin: 5em auto;
-        // padding: 30px;
-        // border-radius: 30px;
-        // box-shadow: 10px -4px 17px -9px rgba(0,0,0,0.75);
-        width: 50vw;
-        float: right;
-    
-        h2 {
-            font-family: $nameFont;
-            margin-bottom: 3em;
-            font-size: 3em;
-            text-align: center;
-            letter-spacing: .4em;
-        }
+    h2 {
+        font-family: $nameFont;
+        margin-bottom: 3em;
+        font-size: 3em;
+        text-align: center;
+        letter-spacing: .4em;
+    }
 
-        #conts-div {
-            margin: 0 auto;
-            width: 90%;
-    
-            #conts {
-                // background-color: $fourth;
-                // border-radius: 30px;
-                // text-align: left;
-                // margin-top: 20px;
-                // padding: 30px 0px 30px 30px;
-                
-                // a {
-                //     display: block;
-                // }
+    #conts-div {
+        margin: 0 auto;
+        width: 90%;
 
-                .test {
-                    display: block;
-                    font-size: 2em;
-                    margin: 1em;
-                }
+        #conts {
 
-                .icon {
-                    margin: 1em 2em;
-                    color: $third;
-                    background-color: none;
-                    // box-shadow: -7px 7px 13px -6px rgba(0,0,0,0.75);
-                }
+            .deet {
+                display: block;
+                font-size: 2em;
+                margin: 1em;
+                color: $blck;
+                text-decoration: none;
+            }
+
+            .icon {
+                margin: 1em 2em;
+                color: $third;
+                background-color: none;
             }
         }
     }
@@ -726,7 +547,7 @@ header {
 
 /* ------------------- MOBILE PHONE ------------------------- */
   
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1500px) {
 
     /* -------------- NAVBAR ------------- */
 
@@ -773,22 +594,8 @@ header {
 
     /* -------------- HOME --------------- */
 
-    #profile-intro {
-        display: block;
-        margin: 0px;
-    }
-
-    #profile-pic {
-        width: 80%;
-        margin: 30px auto;
-    }
-
-    #intro {
-        text-align: center;
-        width: 80%;
-        margin: 1px auto;
-        font-size: 2em;
-        padding-top: 15px;
+    #index #fizzy-title {
+        width: 50.8%;
     }
 
     /* ------------------ About ---------*/
@@ -813,46 +620,66 @@ header {
 
     /* ------------- Portfolio ----------------- */
 
-    .card {
-        width: 80%;
-    }
-
-    #flex {
-        font-size: 30px;
-        width: 100%;
-    }
-
     .tags p {
         text-align: center;
         padding: 10px;
         font-size: 20px;
     }
 
-    #prog1 {
-        font-size: 30px;
-    }
+    /* ------------- Website ------------ */
 
-    #prog2 {
-        font-size: 30px;
+    #webportfolio-cards {
+        width: 100%;
+        display: block;
+
+        .proj-container {
+            width: 100%;
+            margin: 2em auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+            .card {
+                width: 40%;
+                margin: 4em auto;
+
+                .img-cont img {
+                    width: 40%;
+                }
+            }
+
+            #onecard {
+                width: 60%;
+            }
+        }
     }
 
     /* ------------- Contact -------------- */
 
-    #contact-bod {
-        margin: 30em auto;
+    .bg-contact {
+        width: 50%;
+        height: 100%;
     }
-
+        
     #cont-info {
-        width: 80%;
-        font-size: 30px;
-    }
+        width: 50vw;
 
-    #conts {
-        padding: 35px auto;
-    }
+        h2 {
+            font-size: 1.5em;
+        }
 
-    .icon {
-        margin-right: 30px;
-    }
+        #conts-div #conts {
+            padding: 35em auto;
 
+            .deet {
+                font-size: 1.4em;
+            }
+
+            .icon {
+                margin-right: 1em;
+            }
+        }
+
+    }
 }

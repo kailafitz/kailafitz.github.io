@@ -174,8 +174,8 @@ $(document).ready(function () {
     //         .scrollie({
     //             scrolloffset: -50,
     //             scrollingInView: function (elem) {
-    //                 var bgColor = elem.data('col');
-    //                 $('#port-body').css('background-color', bgColor);
+    //                 var bgColor = elem.data('background');
+    //                 $('body').css('background-color', bgColor);
     //             }
     //         });
     // });

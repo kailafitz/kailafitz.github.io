@@ -1,15 +1,3 @@
-@font-face {
-  font-family: "Anaktoria Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Anaktoria Regular"), url("Anaktoria.woff") format("woff");
-}
-@font-face {
-  font-family: "Anaktoria Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Anaktoria Regular"), url("Anaktoria_hint.woff") format("woff");
-}
 * {
   margin: 0px;
   padding: 0px;
@@ -18,11 +6,13 @@
 
 body {
   width: 100%;
+  transition: ease 1s background;
 }
 
-a {
-  text-decoration: none;
-  color: #010f12;
+.content {
+  display: table;
+  height: 100%;
+  width: 100%;
 }
 
 /*------------ NAV BAR -----------------*/
@@ -31,7 +21,7 @@ header * {
 }
 
 header {
-  font-family: "Cardo";
+  font-family: "Work Sans", sans-serif;
   padding: 50px 0px 3em 100px;
 }
 header a {
@@ -42,7 +32,7 @@ header #kf-logo {
   font-size: 2em;
   margin-right: 70px;
   animation: logo 1s ease;
-  font-family: "Anaktoria Regular";
+  font-family: "Catamaran", sans-serif;
 }
 header #menu-bars {
   color: #ffffff;
@@ -66,73 +56,12 @@ header .menu-item a:hover {
 }
 
 /* ------------ INDEX ---------------- */
-.body {
-  background-color: #e5e5e5;
-  transition: background 1s ease;
-}
-
 #index {
-  background-image: url("images/Kaila Fitz.png");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
+  background-color: #e76e1c;
 }
-
-#profile-intro {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 65%;
-  margin-left: 15em;
-}
-#profile-intro #profile-pic {
-  width: 45%;
+#index #fizzy-title {
   text-align: center;
-  margin-left: 7em;
-}
-#profile-intro #profile-pic img {
-  width: 700px;
-}
-#profile-intro #intro {
-  width: 100%;
-  text-align: center;
-}
-#profile-intro #intro #element {
-  font-size: 10em;
-  font-family: "Anaktoria Regular";
-  animation: nameColor 6s ease;
-  animation-iteration-count: 1;
-}
-#profile-intro #intro #title {
-  letter-spacing: 0.5em;
-  font-family: "Cardo";
-  font-weight: 200;
-  text-transform: uppercase;
-  width: 60%;
-  font-size: 1.5em;
-  margin: auto auto;
-  animation: title 4s ease;
-  animation-iteration-count: 1;
-}
-#profile-intro #intro h1 {
-  letter-spacing: 4px;
-  font-weight: 200;
-  margin-bottom: 0.5em;
-}
-#profile-intro #intro h4 {
-  padding: 1em 0;
-}
-#profile-intro #intro h3 {
-  padding-top: 1em;
-}
-#profile-intro #intro p {
-  font-family: "Cardo";
-  padding: 2em 0 0 0;
-  text-align: justify;
-  word-spacing: 2px;
+  width: 50.5%;
 }
 
 @keyframes nameColor {
@@ -143,24 +72,6 @@ header .menu-item a:hover {
   100% {
     transform: translate(0);
     color: #000000;
-  }
-}
-@keyframes title {
-  0% {
-    transform: translate(-100px);
-    color: #e5e5e5;
-  }
-  100% {
-    transform: translate(0);
-    color: #000000;
-  }
-}
-@keyframes logo {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 /* ---------------- ABOUT ------------------- */
@@ -216,7 +127,7 @@ header .menu-item a:hover {
 #ab-intro h1 {
   width: 70%;
   font-size: 2em;
-  font-family: "Anaktoria Regular";
+  font-family: "Catamaran", sans-serif;
   margin: 0 auto;
 }
 
@@ -241,7 +152,7 @@ header .menu-item a:hover {
 }
 .sect .ab-info {
   width: 50%;
-  font-family: "Cardo";
+  font-family: "Work Sans", sans-serif;
   height: 100%;
   display: flex;
   background-color: #056676;
@@ -254,7 +165,7 @@ header .menu-item a:hover {
   animation-fill-mode: forwards;
 }
 .sect .ab-info .ab-box h3 {
-  font-family: "Anaktoria Regular";
+  font-family: "Catamaran", sans-serif;
   text-align: left;
   font-size: 40px;
   letter-spacing: 12px;
@@ -274,7 +185,7 @@ header .menu-item a:hover {
 #port-cont #dp-title {
   background-color: #ffffff;
   padding: 4em;
-  font-family: "Anaktoria Regular";
+  font-family: "Catamaran", sans-serif;
   color: #2B4162;
 }
 #port-cont #dp-title h2 {
@@ -287,7 +198,7 @@ header .menu-item a:hover {
   padding-top: 2em;
   width: 60%;
   font-size: 2em;
-  font-family: "Anaktoria Regular";
+  font-family: "Catamaran", sans-serif;
   text-align: center;
   margin: 0 auto;
   font-weight: 400;
@@ -335,7 +246,7 @@ header .menu-item a:hover {
 #port-cont #principals #titles .prince h1 {
   width: 90%;
   height: 60%;
-  font-family: "Anaktoria Regular";
+  font-family: "Catamaran", sans-serif;
   text-align: center;
   font-size: 4em;
   color: #ffffff;
@@ -344,7 +255,7 @@ header .menu-item a:hover {
 }
 #port-cont #principals #titles .prince h6 {
   padding-top: 2em;
-  font-family: "Cardo";
+  font-family: "Work Sans", sans-serif;
   font-weight: 200;
   text-align: center;
   font-size: 1.5em;
@@ -394,7 +305,7 @@ header .menu-item a:hover {
   color: #010f12;
   margin: auto;
   font-size: 4em;
-  font-family: "Anaktoria Regular";
+  font-family: "Catamaran", sans-serif;
   text-decoration: none;
 }
 #port-cont #tiles .port-sect:hover a {
@@ -411,132 +322,72 @@ header .menu-item a:hover {
 }
 
 /* ------------ WEBSITES --------------- */
-#webport-body {
-  background: #056676;
-  transition: background 1s ease;
+#webportfolio-cards {
+  width: 98%;
+  margin: 5rem auto;
+  display: block;
 }
-
-#webportfolio-info {
-  width: 80%;
+#webportfolio-cards h1 {
+  font-size: 3em;
   text-align: center;
-  margin: 30px auto;
-  /* margin-bottom: 30px; */
-}
-#webportfolio-info h5 {
-  font-family: "Cardo";
-  text-transform: uppercase;
-  font-weight: 200;
-  color: #ffffff;
-  font-size: 1.5em;
+  font-family: "Catamaran", sans-serif;
+  color: #2B4162;
+  margin: 2em 0;
 }
 
-.card {
-  background-color: #e5e5e5;
+.proj-container {
+  width: 100%;
+  margin: 4em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.proj-container .card {
+  background-color: #2B4162;
+  padding: 1em;
   width: 30%;
-  height: 80%;
   border-radius: 30px;
   border: 1px transparent;
-  margin: 5em auto;
   box-shadow: -7px 7px 13px -6px rgba(0, 0, 0, 0.75);
 }
-.card .img-cont {
+.proj-container .card .img-cont {
+  text-align: center;
   position: relative;
   overflow: hidden;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
-  /* background-image: url('/hamsa/images/man-carrying-woman-with-hot-air-balloons-background-3889705.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
-.card .img-cont img {
-  width: 100%;
+.proj-container .card .img-cont img {
+  width: 50%;
+  margin: 3rem auto;
 }
-
-.all {
-  padding: 1.5em 0.5em;
+.proj-container .card .card-info {
+  color: #e5e5e5;
   display: block;
 }
-
-.card-info {
-  color: #010f12;
-  padding: 20px 30px;
-  display: flex;
-  align-items: center;
+.proj-container .card .card-info a {
+  font-family: "Catamaran", sans-serif;
+  color: #e5e5e5;
+  font-size: 1.5em;
 }
-.card-info h2 {
-  font-size: 3em;
-  font-family: "Anaktoria Regular";
-  color: #010f12;
-  letter-spacing: 4px;
+.proj-container .card .card-info p {
+  font-family: "Work Sans", sans-serif;
+  margin: 1em 0;
+  font-size: 1.3em;
 }
-.card-info p {
-  font-family: "Cardo";
-  margin-top: 5px;
-}
-
-#flex {
-  width: 100%;
-}
-#flex .inf {
-  width: 80%;
-}
-#flex .but-div {
-  width: 20%;
-}
-
-.arrow {
-  color: #2B4162;
-  font-size: 30px;
-  float: right;
-}
-.arrow:hover {
-  cursor: pointer;
-  color: #e76e1c;
-}
-
-.tags {
+.proj-container .card .tags {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.tags p {
+.proj-container .card .tags p {
+  font-size: 0.8em;
   font-family: "Quantico", sans-serif;
-  margin: 0px 20px;
-  background-color: #2B4162;
-  padding: 10px;
+  margin: 1em 1.5em 1em 0;
+  background-color: #056676;
+  padding: 1em;
   border-radius: 10px;
   color: #e5e5e5;
-}
-.tags p:nth-child(1) {
-  margin-left: 30px;
-}
-
-.prog-div {
-  width: 90%;
-  margin: 30px auto;
-}
-.prog-div p {
-  text-align: center;
-  font-family: "Cardo";
-  font-size: 10px;
-  padding: 5px;
-  color: #ffffff;
-}
-.prog-div .prog-bg {
-  background-color: #e76e1c;
-  width: 100%;
-  border-radius: 40px;
-}
-.prog-div #prog1 {
-  width: 20%;
-  background-color: #056676;
-  border-radius: 40px;
-}
-.prog-div #prog2 {
-  width: 5%;
-  background-color: #056676;
-  border-radius: 40px;
 }
 
 /* ----------- CONTACT ------------- */
@@ -555,37 +406,36 @@ header .menu-item a:hover {
   z-index: -1;
 }
 
-#contact-bod {
-  width: 100%;
-}
-#contact-bod #cont-info {
+#cont-info {
   width: 50vw;
   float: right;
 }
-#contact-bod #cont-info h2 {
-  font-family: "Anaktoria Regular";
+#cont-info h2 {
+  font-family: "Catamaran", sans-serif;
   margin-bottom: 3em;
   font-size: 3em;
   text-align: center;
   letter-spacing: 0.4em;
 }
-#contact-bod #cont-info #conts-div {
+#cont-info #conts-div {
   margin: 0 auto;
   width: 90%;
 }
-#contact-bod #cont-info #conts-div #conts .test {
+#cont-info #conts-div #conts .deet {
   display: block;
   font-size: 2em;
   margin: 1em;
+  color: #010f12;
+  text-decoration: none;
 }
-#contact-bod #cont-info #conts-div #conts .icon {
+#cont-info #conts-div #conts .icon {
   margin: 1em 2em;
   color: #e76e1c;
   background-color: none;
 }
 
 /* ------------------- MOBILE PHONE ------------------------- */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1500px) {
   /* -------------- NAVBAR ------------- */
   header {
     width: 100%;
@@ -622,22 +472,8 @@ header .menu-item a:hover {
   }
 
   /* -------------- HOME --------------- */
-  #profile-intro {
-    display: block;
-    margin: 0px;
-  }
-
-  #profile-pic {
-    width: 80%;
-    margin: 30px auto;
-  }
-
-  #intro {
-    text-align: center;
-    width: 80%;
-    margin: 1px auto;
-    font-size: 2em;
-    padding-top: 15px;
+  #index #fizzy-title {
+    width: 50.8%;
   }
 
   /* ------------------ About ---------*/
@@ -660,45 +496,56 @@ header .menu-item a:hover {
   }
 
   /* ------------- Portfolio ----------------- */
-  .card {
-    width: 80%;
-  }
-
-  #flex {
-    font-size: 30px;
-    width: 100%;
-  }
-
   .tags p {
     text-align: center;
     padding: 10px;
     font-size: 20px;
   }
 
-  #prog1 {
-    font-size: 30px;
+  /* ------------- Website ------------ */
+  #webportfolio-cards {
+    width: 100%;
+    display: block;
   }
-
-  #prog2 {
-    font-size: 30px;
+  #webportfolio-cards .proj-container {
+    width: 100%;
+    margin: 2em auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  #webportfolio-cards .proj-container .card {
+    width: 40%;
+    margin: 4em auto;
+  }
+  #webportfolio-cards .proj-container .card .img-cont img {
+    width: 40%;
+  }
+  #webportfolio-cards .proj-container #onecard {
+    width: 60%;
   }
 
   /* ------------- Contact -------------- */
-  #contact-bod {
-    margin: 30em auto;
+  .bg-contact {
+    width: 50%;
+    height: 100%;
   }
 
   #cont-info {
-    width: 80%;
-    font-size: 30px;
+    width: 50vw;
   }
-
-  #conts {
-    padding: 35px auto;
+  #cont-info h2 {
+    font-size: 1.5em;
   }
-
-  .icon {
-    margin-right: 30px;
+  #cont-info #conts-div #conts {
+    padding: 35em auto;
+  }
+  #cont-info #conts-div #conts .deet {
+    font-size: 1.4em;
+  }
+  #cont-info #conts-div #conts .icon {
+    margin-right: 1em;
   }
 }
 

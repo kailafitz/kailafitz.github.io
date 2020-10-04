@@ -14,18 +14,17 @@
     </script>
 
 
+    <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/images/Portfolio Logos.ico" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>kailafitz | portfolio</title>
+    <title>Fizzy | Portfolio</title>
 </head>
 
-<body class="body" id="index">
-    <header>
+<body id="index">
+    <!-- <header>
         <a href="index.html" id="kf-logo">kf</a>
         <div id="menu-bars">
             <i class="fas fa-bars"></i>
@@ -38,22 +37,110 @@
                 <li class="menu-item"><a href="contact.html" class="text">Contact</a></li>
             </ul>
         </nav>
-    </header>
-    <div id="profile-intro">
-        <!-- <div id="profile-pic">
-                <img src="images/profilepic_ps.png">
-            </div> -->
-        <div id="intro">
-            <h1 id="element">kaila fitz</h1>
-            <h4 id="title">
-                <hr>Web & Graphic Designer
-                <hr>
-            </h4>
+    </header> -->
+
+    <img id="fizzy-title" src="images/Fizzy_Text.png">
+
+
+    <div id="webportfolio-cards">
+
+        <h1>Personal Projects</h1>
+
+        <div class="proj-container">
+
+            <div class="card">
+                <div class="img-cont">
+                    <img src="hamsa/images/Logo.png">
+                </div>
+                <div class="card-info">
+                    <a target="_blank" href="hamsa/hamsaindex.html">Hamsa</a>
+                    <p>This is one of my first attempts at creating a website.</p>
+                </div>
+                <div class="tags">
+                    <p> #HTML5 </p>
+                    <p> #SCSS </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-cont">
+                    <img src="./images/C.png">
+                </div>
+                <div class="card-info">
+                    <a target="_blank" href="bootstrap/btstrp-1/btstrp1index.html">Cece's Boys</a>
+                    <p>This project is predominantly based off Bootstrap elements with HTML & CSS. Not filled
+                        out,
+                        very much at the beginning of developing this one.
+                    </p>
+                </div>
+                <div class="tags">
+                    <p> #HTML5 </p>
+                    <p> #SCSS </p>
+                    <p> #Bootstrap4 </p>
+                </div>
+            </div>
+        </div>
+
+        <h1>Commercial Projects</h1>
+
+        <div class="proj-container">
+            <div class="card" id="onecard">
+                <div class="img-cont">
+                    <img src="./images/EFlogoWith_Circle.png">
+                </div>
+                <div class="card-info">
+                    <a target="_blank" href="https://eileenfitzgerald-school.com">The Eileen Fitzgerald School of
+                        Speech
+                        & Drama</a>
+                    <p>My first commercial frontend website.</p>
+                </div>
+                <div class="tags">
+                    <p> #HTML5 </p>
+                    <p> #SCSS </p>
+                    <p> #Bootstrap4 </p>
+                    <p> #JavaScript </p>
+                    <p> #jQuery </p>
+                    <p> #Rellax </p>
+                    <p> #ScrollOut </p>
+                </div>
+            </div>
         </div>
     </div>
+
+    <div id="bg-contact"></div>
+    <div id="cont-info">
+        <h2 id="h2">Let's chat</h2>
+        <div id="conts-div">
+            <div id="conts">
+                <a href="mailto:mikhailafitzpatrick@ayhoo.com" class="deet"><i
+                        class="fas fa-envelope icon"></i>mikhailafitzpatrick@yahoo.com</a>
+                <a href="tel:+353862321667" class="deet"><i class="fas fa-phone-square icon"></i></i>00353 86
+                    232
+                    1667</a>
+                <a href="https://www.linkedin.com/in/mikhaila-fitzpatrick-701848141/" class="deet"><i
+                        class="fab fa-linkedin-in icon"></i>Mikhaila Fitzpatrick</a>
+                <a href="https://www.instagram.com/fizzydesigns" class="deet"><i
+                        class="fab fa-instagram icon"></i>fizzydesigns</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+        integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        var rellax = new Rellax('.rellax');
+
+    </script>
+
+    <script src="jquery.scrollie.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
+
 </body>
 
 </html>
