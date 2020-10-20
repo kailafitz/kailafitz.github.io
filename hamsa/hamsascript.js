@@ -25,13 +25,10 @@
         modal.style.display='none';
     }
 
-
 $(document).ready(function() {
     var bars = $("#menu-bars i");
 
     $(bars).click(function() {
-
-        // $("#mobile-nav").css("display", "block");
         $("#mobile-nav").slideToggle();
     });
 

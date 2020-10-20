@@ -79,12 +79,16 @@ header {
     color: #EF476F;
 }
 
-/* #menu-bars {
-    color: #ffffff;
+#menu-bars {
     display: none;
-    padding-right: 30px;
+    margin-right: 2em;
+    padding: 1em;
+}
+
+#menu-bars i {
+    color: #26547c;
     font-size: 3em;
-} */
+}
 
 .text {
     padding: 0px 30px;
@@ -396,6 +400,7 @@ header {
     right: 0;
     background: #EF476F;
     bottom: 0;
+    z-index: 2;
     display: none;
 }
 
