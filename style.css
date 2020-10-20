@@ -343,7 +343,7 @@ header .menu-item a:hover {
   justify-content: space-evenly;
 }
 .proj-container .card {
-  background-color: #2B4162;
+  background-color: #e5e5e5;
   padding: 1em;
   width: 30%;
   border-radius: 30px;
@@ -367,8 +367,9 @@ header .menu-item a:hover {
 }
 .proj-container .card .card-info a {
   font-family: "Catamaran", sans-serif;
-  color: #e5e5e5;
+  color: #2B4162;
   font-size: 1.5em;
+  text-decoration: none;
 }
 .proj-container .card .card-info p {
   font-family: "Work Sans", sans-serif;
@@ -384,7 +385,7 @@ header .menu-item a:hover {
   font-size: 0.8em;
   font-family: "Quantico", sans-serif;
   margin: 1em 1.5em 1em 0;
-  background-color: #056676;
+  background-color: #2B4162;
   padding: 1em;
   border-radius: 10px;
   color: #e5e5e5;
