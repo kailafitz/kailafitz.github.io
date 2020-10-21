@@ -1018,12 +1018,23 @@ form h3 {
         font-size: 2.5em;
     }
 
-    .team h5 {
+    .team div h5 {
         font-size: 2em;
     }
 
     .team p {
         font-size: 2em;
+    }
+
+    #su-banner {
+        width: 50%;
+        padding: 46px;
+    }
+
+    #su-banner h4 {
+        width: 82%;
+        font-size: 2em;
+        padding: 16px;
     }
 
     /* ------------ Profiles mobile */
