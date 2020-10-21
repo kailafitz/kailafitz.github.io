@@ -978,6 +978,53 @@ form h3 {
         opacity: .2;
     } */
 
+    /* ------------- About mobile */
+
+    .ab-title {
+        padding: 95px;
+        background-size: 40em;
+        width: 50%;
+    }
+
+    .about-body h2 {
+        font-size: 2.5em;
+    }
+
+    .about-body h4 {
+        width: 65%;
+        font-size: 2em;
+    }
+
+    #paras {
+        width: 80%;
+        font-size: 2em;
+    }
+
+    .team {
+        padding: 5em;
+        width: 60%;
+        margin: 4em auto;
+        display: block;
+    }
+
+    .team img {
+        display: block;
+        width: 85%;
+        text-align: center;
+        margin: 3em auto;
+    }
+
+    .team h3 {
+        font-size: 2.5em;
+    }
+
+    .team h5 {
+        font-size: 2em;
+    }
+
+    .team p {
+        font-size: 2em;
+    }
 
     /* ------------ Profiles mobile */
 
