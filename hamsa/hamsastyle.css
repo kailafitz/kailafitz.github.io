@@ -553,7 +553,14 @@ footer {
     justify-content: center;
 }
 
+#desk-div {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
 #desk {
+    display: flex;
     width: 40%;
     /* padding-left: 23em; */
     text-align: center;
@@ -568,9 +575,10 @@ footer {
 }
 
 #desk-txt {
-    padding: 7em 0em;
+    /* padding: 7em 0em; */
     height: 15em;
-    width: 21%;
+    width: 50%;
+    margin: auto 3em;
 }
 
 #desk-txt h2 {
@@ -843,7 +851,6 @@ footer {
     position: absolute;
     top: 15.1em;
     left: 32em;
-    /* margin: 12.5em auto; */
     padding: 70px 15px 70px 40px;
     box-shadow: 0 5px 8px 0px rgba(0,0,0,0.2), 0 7px 20px 0px rgba(0,0,0,0.17);
 }
@@ -939,4 +946,73 @@ form h3 {
         display: none;
     }
 
+    /* ------------ Home mobile */
+
+    #desk-div {
+        position: relative;
+    }
+
+    #desk {
+        opacity: .1;
+        position: static;
+        width: 70%;
+        margin: 0 auto;
+        z-index: 1;
+    }
+
+    #desk img {
+        position: relative;
+    }
+
+    #desk-txt {
+        position: absolute;
+        top: 26%;
+        left: 26%;
+        width: 63%;
+        margin: 0 auto;
+        z-index: 2;
+        padding: 0;
+    }
+
+    /* #desk img {
+        opacity: .2;
+    } */
+
+
+    /* ------------ Profiles mobile */
+
+    .card {
+        display: block;
+        width: 50%;
+        margin: 3em auto;
+    }
+
+    /* ------------ Contact Us mobile */
+
+    #contact-div {
+        position: static;
+        display: block;
+        /* left: 10em; */
+        width: 50%;
+        margin: 0em auto;
+    }
+
+    form {
+        width: 50%;
+        padding: 2em;
+    }
+
+    #form {
+        padding: 0;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .inputs {
+        width: 70%;
+    }
+
+    #submit {
+        width: 30%;
+    }
 }
