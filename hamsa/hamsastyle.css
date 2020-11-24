@@ -673,6 +673,10 @@ form #form #submit:hover {
   #bod-div #desk-div img {
     margin-top: 50%;
   }
+
+  .about-body .ab-title {
+    padding: 68px;
+  }
 }
 /* ------------------------ Mobile Responsive -------------- */
 @media screen and (max-width: 480px) {
