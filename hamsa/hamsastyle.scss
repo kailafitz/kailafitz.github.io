@@ -776,6 +776,10 @@ form {
         }
     }
 
+    .modal .modal-cont {
+        width: 30%;
+    }
+
     #bod-div #desk-div {
         width: 90%;
         margin: 0 auto;
@@ -791,6 +795,15 @@ form {
 
     #all-cards .card {
         width: 30%;
+    }
+
+    #contact-div {
+        width: 23%;
+        left: 6em;
+    }
+
+    form {
+        width: 50%;
     }
 }
 
