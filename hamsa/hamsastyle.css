@@ -665,6 +665,9 @@ form #form #submit:hover {
   header {
     background-color: #EF476F;
   }
+  header .big-head-div #full-nav .navbar ul.nav-menu .text {
+    color: #ffffff;
+  }
 
   #bod-div #desk-div {
     width: 90%;
@@ -676,6 +679,10 @@ form #form #submit:hover {
 
   .about-body .ab-title {
     padding: 68px;
+  }
+
+  #all-cards .card {
+    width: 30%;
   }
 }
 /* ------------------------ Mobile Responsive -------------- */
