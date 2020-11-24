@@ -58,11 +58,11 @@ header {
             width: 90%;
             display: flex;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: space-between;
             margin-right: 20px;
         
             .navbar {
-                width: 100%;
+                width: 70%;
 
                 ul.nav-menu {
                 width: 100%;
@@ -766,6 +766,8 @@ form {
     }
 }
 
+/* ----------------------- Tablet View -------------------------- */
+
 @media screen and (max-width: 1024px) {
 
     header {
@@ -812,15 +814,14 @@ form {
 @media screen and (max-width: 480px) {
 
     header {
-        background-color:  #EF476F;
+
+        .big-head-div #full-nav {
+            display: none;
+        }
     }
 
     #menu-bars {
         display: block;
-    }
-
-    #full-nav {
-        display: none;
     }
 
     footer .big-foot-div .info-cont {
@@ -834,7 +835,7 @@ form {
         }
     }    
 
-    /* ------------ Home mobile */
+    /* ------------ Home mobile ------------------- */
 
     #desk-div {
         position: relative;
@@ -868,8 +869,6 @@ form {
     }
 
     /* ------------- About mobile ------------ */
-
-    
 
     .about-body {
 

@@ -53,11 +53,11 @@ header .big-head-div #full-nav {
   width: 90%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-right: 20px;
 }
 header .big-head-div #full-nav .navbar {
-  width: 100%;
+  width: 70%;
 }
 header .big-head-div #full-nav .navbar ul.nav-menu {
   width: 100%;
@@ -661,6 +661,7 @@ form #form #submit:hover {
   cursor: pointer;
 }
 
+/* ----------------------- Tablet View -------------------------- */
 @media screen and (max-width: 1024px) {
   header {
     background-color: #EF476F;
@@ -700,16 +701,12 @@ form #form #submit:hover {
 }
 /* ------------------------ Mobile Responsive -------------- */
 @media screen and (max-width: 480px) {
-  header {
-    background-color: #EF476F;
+  header .big-head-div #full-nav {
+    display: none;
   }
 
   #menu-bars {
     display: block;
-  }
-
-  #full-nav {
-    display: none;
   }
 
   footer .big-foot-div .info-cont {
@@ -722,7 +719,7 @@ form #form #submit:hover {
     margin: 0 auto;
   }
 
-  /* ------------ Home mobile */
+  /* ------------ Home mobile ------------------- */
   #desk-div {
     position: relative;
     display: flex;
