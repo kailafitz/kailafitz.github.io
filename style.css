@@ -23,6 +23,8 @@ header * {
 header {
   font-family: "Work Sans", sans-serif;
   padding: 50px 0px 3em 100px;
+  width: 100%;
+  height: 6em;
 }
 header a {
   text-decoration: none;
@@ -32,7 +34,7 @@ header #kf-logo {
   font-size: 2em;
   margin-right: 70px;
   animation: logo 1s ease;
-  font-family: "Catamaran", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 header #menu-bars {
   color: #ffffff;
@@ -45,19 +47,25 @@ header .nav-menu li {
   list-style-type: none;
 }
 header .menu-item a {
-  color: #292929;
+  color: #e76e1c;
+  font-weight: 600;
   letter-spacing: 3px;
-  margin: 0 10px;
   font-size: 1.1em;
-  margin: 0 30px;
+  margin: 0 1em;
 }
 header .menu-item a:hover {
-  color: #e76e1c;
+  color: #2B4162;
 }
 
 /* ------------ INDEX ---------------- */
 #index {
   background-color: #e76e1c;
+}
+#index .menu-item a {
+  color: #e5e5e5;
+}
+#index .menu-item a:hover {
+  color: #2B4162;
 }
 #index #fizzy-title {
   text-align: center;
@@ -109,7 +117,6 @@ header .menu-item a:hover {
   text-align: center;
   display: flex;
   margin: 10em auto;
-  padding-bottom: 3em;
   position: relative;
 }
 #ab-intro img {
@@ -118,28 +125,27 @@ header .menu-item a:hover {
 }
 #ab-intro #q1 {
   top: 0;
-  left: 4em;
+  left: 12em;
 }
 #ab-intro #q2 {
   bottom: 0;
-  right: 6em;
+  right: 12em;
 }
 #ab-intro h1 {
   width: 70%;
   font-size: 2em;
-  font-family: "Catamaran", sans-serif;
+  font-family: "Nunito", sans-serif;
   margin: 0 auto;
 }
 
 .sect {
-  height: 50vh;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 .sect .ab-img {
+  padding: 2em 4em;
   width: 50%;
-  height: 100%;
   text-align: center;
   background-color: #2B4162;
   display: flex;
@@ -151,9 +157,9 @@ header .menu-item a:hover {
   animation-fill-mode: forwards;
 }
 .sect .ab-info {
+  padding: 2em 4em;
   width: 50%;
   font-family: "Work Sans", sans-serif;
-  height: 100%;
   display: flex;
   background-color: #056676;
   color: #ffffff;
@@ -165,11 +171,14 @@ header .menu-item a:hover {
   animation-fill-mode: forwards;
 }
 .sect .ab-info .ab-box h3 {
-  font-family: "Catamaran", sans-serif;
+  font-family: "Nunito", sans-serif;
   text-align: left;
   font-size: 40px;
   letter-spacing: 12px;
   margin-bottom: 20px;
+}
+.sect .ab-info .ab-box h4 {
+  margin: 1em 0 0.4em 0;
 }
 
 /* ----------- PORTFOLIO --------------- */
@@ -185,7 +194,7 @@ header .menu-item a:hover {
 #port-cont #dp-title {
   background-color: #ffffff;
   padding: 4em;
-  font-family: "Catamaran", sans-serif;
+  font-family: "Nunito", sans-serif;
   color: #2B4162;
 }
 #port-cont #dp-title h2 {
@@ -198,7 +207,7 @@ header .menu-item a:hover {
   padding-top: 2em;
   width: 60%;
   font-size: 2em;
-  font-family: "Catamaran", sans-serif;
+  font-family: "Nunito", sans-serif;
   text-align: center;
   margin: 0 auto;
   font-weight: 400;
@@ -238,6 +247,12 @@ header .menu-item a:hover {
   background-size: contain;
   background-repeat: no-repeat;
 }
+#port-cont #principals #titles #prince4 #desktop-prince {
+  display: block;
+}
+#port-cont #principals #titles #prince4 #mobile-prince {
+  display: none;
+}
 #port-cont #principals #titles .prince {
   height: auto;
   width: 100%;
@@ -246,7 +261,7 @@ header .menu-item a:hover {
 #port-cont #principals #titles .prince h1 {
   width: 90%;
   height: 60%;
-  font-family: "Catamaran", sans-serif;
+  font-family: "Nunito", sans-serif;
   text-align: center;
   font-size: 4em;
   color: #ffffff;
@@ -305,7 +320,7 @@ header .menu-item a:hover {
   color: #010f12;
   margin: auto;
   font-size: 4em;
-  font-family: "Catamaran", sans-serif;
+  font-family: "Nunito", sans-serif;
   text-decoration: none;
 }
 #port-cont #tiles .port-sect:hover a {
@@ -323,65 +338,55 @@ header .menu-item a:hover {
 
 /* ------------ WEBSITES --------------- */
 #webportfolio-cards {
-  width: 98%;
-  margin: 5rem auto;
-  display: block;
-}
-#webportfolio-cards h1 {
-  font-size: 3em;
-  text-align: center;
-  font-family: "Catamaran", sans-serif;
-  color: #2B4162;
-  margin: 2em 0;
-}
-
-.proj-container {
   width: 100%;
-  margin: 4em 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  margin: 5rem 0;
 }
-.proj-container .card {
+#webportfolio-cards .card {
   background-color: #e5e5e5;
   padding: 1em;
-  width: 30%;
-  border-radius: 30px;
+  width: 25%;
+  margin: 2em auto;
+  border-radius: 7px;
   border: 1px transparent;
   box-shadow: -7px 7px 13px -6px rgba(0, 0, 0, 0.75);
 }
-.proj-container .card .img-cont {
+#webportfolio-cards .card .img-cont {
   text-align: center;
   position: relative;
   overflow: hidden;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
 }
-.proj-container .card .img-cont img {
+#webportfolio-cards .card .img-cont img {
   width: 50%;
   margin: 3rem auto;
 }
-.proj-container .card .card-info {
+#webportfolio-cards .card .card-info {
   color: #e5e5e5;
-  display: block;
+  display: flex;
 }
-.proj-container .card .card-info a {
-  font-family: "Catamaran", sans-serif;
+#webportfolio-cards .card .card-info a {
+  font-family: "Nunito", sans-serif;
   color: #2B4162;
   font-size: 1.5em;
   text-decoration: none;
 }
-.proj-container .card .card-info p {
+#webportfolio-cards .card .card-info h2 {
+  color: #2B4162;
+  font-family: "Nunito", sans-serif;
+}
+#webportfolio-cards .card .card-info p {
   font-family: "Work Sans", sans-serif;
   margin: 1em 0;
   font-size: 1.3em;
+  color: #2B4162;
 }
-.proj-container .card .tags {
+#webportfolio-cards .card .tags {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.proj-container .card .tags p {
+#webportfolio-cards .card .tags p {
   font-size: 0.8em;
   font-family: "Quantico", sans-serif;
   margin: 1em 1.5em 1em 0;
@@ -412,7 +417,7 @@ header .menu-item a:hover {
   float: right;
 }
 #cont-info h2 {
-  font-family: "Catamaran", sans-serif;
+  font-family: "Nunito", sans-serif;
   margin-bottom: 3em;
   font-size: 3em;
   text-align: center;
@@ -425,7 +430,7 @@ header .menu-item a:hover {
 #cont-info #conts-div #conts .deet {
   display: block;
   font-size: 2em;
-  margin: 1em;
+  margin: 1em 0;
   color: #010f12;
   text-decoration: none;
 }
@@ -436,10 +441,11 @@ header .menu-item a:hover {
 }
 
 /* ------------------- MOBILE PHONE ------------------------- */
-@media screen and (max-width: 1500px) {
+@media only screen and (max-width: 480px) {
   /* -------------- NAVBAR ------------- */
   header {
     width: 100%;
+    padding: 0 0;
   }
   header #kf-logo {
     font-size: 3em;
@@ -447,13 +453,16 @@ header .menu-item a:hover {
   }
   header #menu-bars {
     display: block;
-    color: #e76e1c;
-    float: right;
-    margin-right: 90px;
-    font-size: 3em;
+    color: #e5e5e5;
+    font-size: 1.4em;
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
   }
   header .navbar {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3em;
     display: none;
   }
   header .navbar .nav-menu {
@@ -464,12 +473,12 @@ header .menu-item a:hover {
     width: 100%;
   }
   header .navbar .nav-menu li {
-    width: 90%;
-    margin: 7px 0;
+    width: 100%;
+    margin: 7px auto;
     text-align: center;
   }
   header .navbar .nav-menu a {
-    font-size: 30px;
+    font-size: 0.7em;
   }
 
   /* -------------- HOME --------------- */
@@ -478,29 +487,52 @@ header .menu-item a:hover {
   }
 
   /* ------------------ About ---------*/
-  .sect {
+  #about-cont #ab-intro #q1 {
+    left: 0em;
+  }
+  #about-cont #ab-intro h1 {
+    width: 90%;
+    font-size: 1.4em;
+  }
+  #about-cont #ab-intro #q2 {
+    right: 4em;
+  }
+  #about-cont .sect {
     display: block;
   }
-
-  #ab-img {
-    margin: 35px auto;
+  #about-cont .sect .ab-img {
+    width: 100%;
   }
-
-  #ab-img img {
+  #about-cont .sect .ab-img img {
     width: 350px;
   }
-
-  .ab-info {
+  #about-cont .sect .ab-info {
     text-align: justify;
-    margin: 20px auto;
-    width: 70%;
+    width: 100%;
   }
 
   /* ------------- Portfolio ----------------- */
-  .tags p {
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
+  #port-cont #dp-title h2 {
+    font-size: 2em;
+  }
+  #port-cont #dp-title h6 {
+    font-size: 1em;
+  }
+  #port-cont #principals #titles .prince h1 {
+    font-size: 2em;
+    text-align: left;
+  }
+  #port-cont #principals #titles #prince4 #desktop-prince {
+    display: none;
+  }
+  #port-cont #principals #titles #prince4 #mobile-prince {
+    display: block;
+  }
+  #port-cont #tiles {
+    display: block;
+  }
+  #port-cont #tiles .port-sect {
+    padding: 6em 0;
   }
 
   /* ------------- Website ------------ */
@@ -523,30 +555,31 @@ header .menu-item a:hover {
   #webportfolio-cards .proj-container .card .img-cont img {
     width: 40%;
   }
+  #webportfolio-cards .proj-container .card .tags p {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+  }
   #webportfolio-cards .proj-container #onecard {
     width: 60%;
   }
 
   /* ------------- Contact -------------- */
-  .bg-contact {
-    width: 50%;
-    height: 100%;
+  #bg-contact {
+    width: 80%;
   }
 
   #cont-info {
-    width: 50vw;
+    width: 80%;
   }
   #cont-info h2 {
     font-size: 1.5em;
   }
-  #cont-info #conts-div #conts {
-    padding: 35em auto;
-  }
   #cont-info #conts-div #conts .deet {
-    font-size: 1.4em;
+    font-size: 1.1em;
   }
   #cont-info #conts-div #conts .icon {
-    margin-right: 1em;
+    margin: 1em 0.5em;
   }
 }
 

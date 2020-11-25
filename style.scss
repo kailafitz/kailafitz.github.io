@@ -4,8 +4,8 @@ $third: #e76e1c;
 $fourth: #e5e5e5;
 $blck: #010f12;
 
-$nameFont: 'Catamaran', sans-serif;
-$pFont: 'Work Sans', sans-serif;;
+$nameFont: 'Nunito', sans-serif;
+$pFont: 'Work Sans', sans-serif;
 
 // @font-face {
 //     font-family: 'Anaktoria Regular';
@@ -47,6 +47,8 @@ header * {
 header {
     font-family: $pFont;
     padding: 50px 0px 3em 100px;
+    width: 100%;
+    height: 6em;
     
     a {
         text-decoration: none;
@@ -74,15 +76,15 @@ header {
     }
 
     .menu-item a {
-        color: rgb(41, 41, 41);
-        letter-spacing: 3px;
-        margin: 0 10px;
-        font-size: 1.1em;
-        margin: 0 30px;   
-    }
-
-    .menu-item a:hover {
         color: $third;
+        font-weight: 600;
+        letter-spacing: 3px;
+        font-size: 1.1em;
+        margin: 0 1em;
+
+        &:hover {
+            color: $scdry;
+        }
     }
 }
 
@@ -90,6 +92,14 @@ header {
 
 #index {
     background-color: $third;
+
+    .menu-item a {
+        color: $fourth;
+
+        &:hover {
+            color: $scdry;
+        }
+    }
 
     #fizzy-title {
         text-align: center;
@@ -153,7 +163,6 @@ header {
     text-align: center;
     display: flex;
     margin: 10em auto;
-    padding-bottom: 3em;
     position: relative;
 
     img {
@@ -163,12 +172,12 @@ header {
 
     #q1 {
         top: 0;
-        left: 4em;
+        left: 12em;
     }
 
     #q2 {
         bottom: 0;
-        right: 6em;
+        right: 12em;
     }
 
     h1 {
@@ -180,7 +189,7 @@ header {
 }
 
 .sect {
-    height: 50vh;
+    // height: 50vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -189,8 +198,9 @@ header {
     // grid-template-columns: 1fr 1fr;
 
     .ab-img {
+        padding: 2em 4em;
         width: 50%;
-        height: 100%;
+        // height: 100%;
         text-align: center;
         background-color: $scdry;
         display: flex;
@@ -208,9 +218,10 @@ header {
     }
 
     .ab-info {
+        padding: 2em 4em;
         width: 50%;
         font-family: $pFont;
-        height: 100%;
+        // height: 100%;
         display: flex;
         background-color: $prmy;
         color: #ffffff;
@@ -227,6 +238,10 @@ header {
                 font-size: 40px;
                 letter-spacing: 12px;
                 margin-bottom: 20px;
+            }
+
+            h4 {
+                margin: 1em 0 .4em 0;
             }
         }
     }
@@ -311,6 +326,14 @@ header {
                 background-position: center;
                 background-size: contain;
                 background-repeat: no-repeat;
+
+                #desktop-prince {
+                    display: block;
+                }
+
+                #mobile-prince {
+                    display: none;
+                }
             }
 
             .prince {
@@ -417,31 +440,15 @@ header {
 /* ------------ WEBSITES --------------- */
 
 #webportfolio-cards {
-    width: 98%;
-    margin: 5rem auto;
-    display: block;
-
-    h1 {
-        font-size: 3em;
-        text-align: center;
-        font-family: $nameFont;
-        color: $scdry;
-        margin: 2em 0;
-    }
-}
-
-.proj-container {
     width: 100%;
-    margin: 4em 0;
-    display: flex;    
-    align-items: center;
-    justify-content: space-evenly;
+    margin: 5rem 0;
 
     .card {
         background-color: $fourth;
         padding: 1em;
-        width: 30%;
-        border-radius: 30px;
+        width: 25%;
+        margin: 2em auto;
+        border-radius: 7px;
         border: 1px transparent;
         box-shadow: -7px 7px 13px -6px rgba(0,0,0,0.75);
 
@@ -460,7 +467,7 @@ header {
 
         .card-info {
             color: $fourth;
-            display: block;
+            display: flex;
 
             a {
                 font-family: $nameFont;
@@ -468,11 +475,17 @@ header {
                 font-size: 1.5em;
                 text-decoration: none;
             }
+
+            h2 {
+                color: $scdry;
+                font-family: $nameFont;
+            }
             
             p {
                 font-family: $pFont;
                 margin: 1em 0;
                 font-size: 1.3em;
+                color: $scdry;
             }     
         }
 
@@ -493,6 +506,14 @@ header {
         }
     }
 }
+
+// .proj-container {
+//     width: 100%;
+//     margin: 4em 0;
+//     display: flex;    
+//     align-items: center;
+//     justify-content: space-evenly;
+// }
 
 /* ----------- CONTACT ------------- */
 
@@ -532,7 +553,7 @@ header {
             .deet {
                 display: block;
                 font-size: 2em;
-                margin: 1em;
+                margin: 1em 0;
                 color: $blck;
                 text-decoration: none;
             }
@@ -548,12 +569,14 @@ header {
 
 /* ------------------- MOBILE PHONE ------------------------- */
   
-@media screen and (max-width: 1500px) {
+@media only screen and (max-width: 480px) {
 
     /* -------------- NAVBAR ------------- */
 
     header {
         width: 100%;
+        padding: 0 0;
+        // height: 20vh;
 
         #kf-logo {
             font-size: 3em;
@@ -562,14 +585,19 @@ header {
 
         #menu-bars {
             display: block;
-            color: $third;
-            float: right;
-            margin-right: 90px;
-            font-size: 3em;
+            color: $fourth;
+            // float: right;
+            // margin-right: 1em;
+            font-size: 1.4em;
+            position: absolute;
+            top: 1.5em;
+            right: 1.5em;
         }
     
         .navbar {
-            width: 100%;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 3em;
             display: none;
 
             .nav-menu {
@@ -581,13 +609,13 @@ header {
                 }
 
                 li {
-                    width: 90%;
-                    margin: 7px 0;
+                    width: 100%;
+                    margin: 7px auto;
                     text-align: center;
                 }
 
                 a {
-                    font-size: 30px;
+                    font-size: .7em;
                 }
             }
         }
@@ -601,31 +629,86 @@ header {
 
     /* ------------------ About ---------*/
 
-    .sect {
-        display: block;
-    }
+    #about-cont {
 
-    #ab-img {
-        margin: 35px auto;
-    }
+        #ab-intro {
 
-    #ab-img img {
-        width: 350px;
-    }
+            #q1 {
+                left: 0em;
+            }
 
-    .ab-info {
-        text-align: justify;
-        margin: 20px auto;
-        width: 70%;
-    }
+            h1 {
+                width: 90%;
+                font-size: 1.4em;
+            }
+
+            #q2 {
+                right: 4em;
+            }
+        }
+
+        .sect {
+            display: block;
+    
+            .ab-img {
+                width: 100%;
+    
+                img {
+                    width: 350px;
+                }
+            }
+    
+            .ab-info {
+                text-align: justify;
+                width: 100%;
+            }
+        }
+    }   
 
     /* ------------- Portfolio ----------------- */
 
-    .tags p {
-        text-align: center;
-        padding: 10px;
-        font-size: 20px;
+    #port-cont {
+        
+        #dp-title {
+
+            h2 {
+            font-size: 2em;
+            }
+
+            h6 {
+                font-size: 1em;
+            }
+        }
+
+        #principals #titles {
+
+            .prince {
+                h1 {
+                    font-size: 2em;
+                    text-align: left;
+                }
+            }
+
+            #prince4 {
+                #desktop-prince {
+                    display: none;
+                }
+
+                #mobile-prince {
+                    display: block;
+                }
+            }
+        }
+
+        #tiles {
+            display: block;
+
+            .port-sect {
+                padding: 6em 0; 
+            }
+        }
     }
+    
 
     /* ------------- Website ------------ */
 
@@ -648,37 +731,41 @@ header {
                 .img-cont img {
                     width: 40%;
                 }
+
+                .tags p {
+                    text-align: center;
+                    padding: 10px;
+                    font-size: 20px;
+                }
             }
 
             #onecard {
                 width: 60%;
             }
         }
-    }
+    }    
 
     /* ------------- Contact -------------- */
 
-    .bg-contact {
-        width: 50%;
-        height: 100%;
+    #bg-contact {
+        width: 80%;
     }
         
     #cont-info {
-        width: 50vw;
+        width: 80%;
 
         h2 {
             font-size: 1.5em;
         }
 
         #conts-div #conts {
-            padding: 35em auto;
 
             .deet {
-                font-size: 1.4em;
+                font-size: 1.1em;
             }
 
             .icon {
-                margin-right: 1em;
+                margin: 1em 0.5em;
             }
         }
 
