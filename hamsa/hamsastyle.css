@@ -311,7 +311,7 @@ footer .big-foot-div .info-cont .footer-logo {
   margin: 50px 50px 0px 50px;
 }
 footer .big-foot-div .info-cont .foot-info {
-  margin: 40px 50px 40px 50px;
+  margin: 40px 50px;
 }
 footer .big-foot-div .info-cont .foot-info li:hover {
   color: #EF476F;
@@ -334,6 +334,9 @@ footer .big-foot-div .info-cont .foot-info h3 {
 }
 footer .big-foot-div .info-cont .foot-info ul {
   list-style-type: none;
+}
+footer .big-foot-div .info-cont .foot-info #media-ul {
+  display: flex;
 }
 footer .copyright {
   text-align: right;

@@ -350,7 +350,7 @@ footer {
             }
 
             .foot-info {
-                margin: 40px 50px 40px 50px;
+                margin: 40px 50px;
 
                 li:hover {
                     color: #EF476F;
@@ -368,7 +368,7 @@ footer {
 
                     &:nth-child(1) {
                         margin-left: 0px;
-                }
+                    }
                 }
 
                 h3 {
@@ -378,6 +378,10 @@ footer {
                 
                 ul {
                     list-style-type: none;
+                }
+
+                #media-ul {
+                    display: flex;
                 }
             }
         }        
