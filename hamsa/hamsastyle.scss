@@ -782,6 +782,7 @@ form {
     header {
         background-color:  #EF476F;
         width: 100%;
+        padding-left: 0;
 
         .big-head-div #full-nav .navbar ul.nav-menu .text {
             color: #ffffff;
@@ -801,21 +802,58 @@ form {
         }
     }
 
-    .about-body .ab-title {
-        padding: 68px;
+    .about-body {
+        .ab-title {
+            padding: 86px;
+        }
+
+        h4 {
+            width: 75%;
+        }
+
+        #paras {
+            width: 75%;
+        }
+    }
+
+    #su-banner {
+        width: 45%;
     }
 
     #all-cards .card {
-        width: 30%;
+        width: 40%;
+        margin: 5% 2%;
     }
 
     #contact-div {
-        width: 23%;
-        left: 6em;
+        width: 31%;
+        left: 4em;
+    }
+
+    form #form {
+        margin-right: 0;
     }
 
     form {
         width: 50%;
+    }
+
+    footer .big-foot-div .info-cont {
+        .foot-info {
+            margin: 1em 1.5em;
+
+            #media-ul {
+                display: flex;
+            }
+        }
+        
+        .footer-logo {
+            margin: 50px .5em;
+        }
+
+        .copyright {
+            width: 30%;
+        }
     }
 }
 

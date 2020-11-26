@@ -670,6 +670,7 @@ form #form #submit:hover {
   header {
     background-color: #EF476F;
     width: 100%;
+    padding-left: 0;
   }
   header .big-head-div #full-nav .navbar ul.nav-menu .text {
     color: #ffffff;
@@ -688,20 +689,48 @@ form #form #submit:hover {
   }
 
   .about-body .ab-title {
-    padding: 68px;
+    padding: 86px;
+  }
+  .about-body h4 {
+    width: 75%;
+  }
+  .about-body #paras {
+    width: 75%;
+  }
+
+  #su-banner {
+    width: 45%;
   }
 
   #all-cards .card {
-    width: 30%;
+    width: 40%;
+    margin: 5% 2%;
   }
 
   #contact-div {
-    width: 23%;
-    left: 6em;
+    width: 31%;
+    left: 4em;
+  }
+
+  form #form {
+    margin-right: 0;
   }
 
   form {
     width: 50%;
+  }
+
+  footer .big-foot-div .info-cont .foot-info {
+    margin: 1em 1.5em;
+  }
+  footer .big-foot-div .info-cont .foot-info #media-ul {
+    display: flex;
+  }
+  footer .big-foot-div .info-cont .footer-logo {
+    margin: 50px 0.5em;
+  }
+  footer .big-foot-div .info-cont .copyright {
+    width: 30%;
   }
 }
 /* ------------------------ Mobile Responsive -------------- */
