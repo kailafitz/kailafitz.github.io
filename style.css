@@ -21,10 +21,12 @@ header * {
 }
 
 header {
-  font-family: "Work Sans", sans-serif;
-  padding: 50px 0px 3em 100px;
   width: 100%;
   height: 6em;
+  display: block;
+  position: relative;
+  font-family: "Work Sans", sans-serif;
+  padding: 50px 0px 3em 100px;
 }
 header a {
   text-decoration: none;
@@ -446,6 +448,7 @@ header .menu-item a:hover {
   header {
     width: 100%;
     padding: 0 0;
+    position: relative;
   }
   header #kf-logo {
     font-size: 3em;
@@ -460,9 +463,7 @@ header .menu-item a:hover {
     right: 1.5em;
   }
   header .navbar {
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 3em;
+    width: 100%;
     display: none;
   }
   header .navbar .nav-menu {
@@ -512,26 +513,32 @@ header .menu-item a:hover {
   }
 
   /* ------------- Portfolio ----------------- */
-  #port-cont #dp-title h2 {
-    font-size: 2em;
+  #port #menu-bars {
+    color: #ffffff;
   }
-  #port-cont #dp-title h6 {
+  #port #port-cont #dp-title {
+    padding: 2em;
+  }
+  #port #port-cont #dp-title h2 {
+    font-size: 7vw;
+  }
+  #port #port-cont #dp-title h6 {
     font-size: 1em;
   }
-  #port-cont #principals #titles .prince h1 {
+  #port #port-cont #principals #titles .prince h1 {
     font-size: 2em;
     text-align: left;
   }
-  #port-cont #principals #titles #prince4 #desktop-prince {
+  #port #port-cont #principals #titles #prince4 #desktop-prince {
     display: none;
   }
-  #port-cont #principals #titles #prince4 #mobile-prince {
+  #port #port-cont #principals #titles #prince4 #mobile-prince {
     display: block;
   }
-  #port-cont #tiles {
+  #port #port-cont #tiles {
     display: block;
   }
-  #port-cont #tiles .port-sect {
+  #port #port-cont #tiles .port-sect {
     padding: 6em 0;
   }
 

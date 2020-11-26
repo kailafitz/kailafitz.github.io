@@ -45,10 +45,12 @@ header * {
 }
 
 header {
-    font-family: $pFont;
-    padding: 50px 0px 3em 100px;
     width: 100%;
     height: 6em;
+    display: block;
+    position: relative;
+    font-family: $pFont;
+    padding: 50px 0px 3em 100px;
     
     a {
         text-decoration: none;
@@ -577,6 +579,7 @@ header {
         width: 100%;
         padding: 0 0;
         // height: 20vh;
+        position: relative;
 
         #kf-logo {
             font-size: 3em;
@@ -595,9 +598,9 @@ header {
         }
     
         .navbar {
-            width: 90%;
-            margin: 0 auto;
-            margin-top: 3em;
+            width: 100%;
+            // margin: 0 auto;
+            // margin-top: 3em;
             display: none;
 
             .nav-menu {
@@ -667,46 +670,53 @@ header {
 
     /* ------------- Portfolio ----------------- */
 
-    #port-cont {
+    #port {
+        #menu-bars {
+            color: #ffffff;
+        }
+
+        #port-cont {
         
-        #dp-title {
-
-            h2 {
-            font-size: 2em;
-            }
-
-            h6 {
-                font-size: 1em;
-            }
-        }
-
-        #principals #titles {
-
-            .prince {
-                h1 {
-                    font-size: 2em;
-                    text-align: left;
+            #dp-title {
+                padding: 2em;
+    
+                h2 {
+                    font-size: 7vw;
+                }
+    
+                h6 {
+                    font-size: 1em;
                 }
             }
-
-            #prince4 {
-                #desktop-prince {
-                    display: none;
+    
+            #principals #titles {
+    
+                .prince {
+                    h1 {
+                        font-size: 2em;
+                        text-align: left;
+                    }
                 }
-
-                #mobile-prince {
-                    display: block;
+    
+                #prince4 {
+                    #desktop-prince {
+                        display: none;
+                    }
+    
+                    #mobile-prince {
+                        display: block;
+                    }
                 }
             }
-        }
-
-        #tiles {
-            display: block;
-
-            .port-sect {
-                padding: 6em 0; 
+    
+            #tiles {
+                display: block;
+    
+                .port-sect {
+                    padding: 6em 0; 
+                }
             }
-        }
+        }    
     }
     
 

@@ -1,8 +1,9 @@
 $(document).ready(function () {
+
     $("#menu-bars").click(function () {
         $(".navbar").slideToggle();
     });
-
+    
     $(".test").css("display", "none");
     $(".prince").css("display", "none");
     $('body').css('display', 'none');
