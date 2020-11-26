@@ -247,6 +247,7 @@ header .big-head-div #full-nav #navbar-btns {
   bottom: 0;
   z-index: 3;
   display: none;
+  box-shadow: -18px 0px 14px -4px #FFFFFF;
 }
 #mobile-nav #mobile-clsbtn {
   color: white;
@@ -723,16 +724,37 @@ form #form #submit:hover {
     width: 50%;
     text-align: center;
     margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+  footer .big-foot-div .info-cont .footer-logo #media-ul, footer .big-foot-div .info-cont .foot-info #media-ul {
+    display: flex;
+  }
+  footer .big-foot-div .info-cont .footer-logo #media-ul .media-icon, footer .big-foot-div .info-cont .foot-info #media-ul .media-icon {
+    font-size: 2em;
+    margin: 0 auto;
+  }
+  footer .big-foot-div .info-cont .footer-logo #media-ul .media-icon i, footer .big-foot-div .info-cont .foot-info #media-ul .media-icon i {
+    margin: 0;
+  }
+  footer .copyright {
+    margin-top: 1em;
+    width: 100%;
+  }
+  footer .copyright h5 {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
   }
 
   /* ------------ Home mobile ------------------- */
-  #desk-div {
+  #bod-div #desk-div {
     position: relative;
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
-  #desk-div #desk {
+  #bod-div #desk-div #desk {
     display: flex;
     opacity: 0.1;
     position: static;
@@ -740,15 +762,14 @@ form #form #submit:hover {
     z-index: 1;
     margin: 0 auto;
   }
-  #desk-div #desk img {
+  #bod-div #desk-div #desk img {
     position: relative;
-    width: auto;
   }
-  #desk-div #desk-txt {
+  #bod-div #desk-div #desk-txt {
     position: absolute;
-    top: 26%;
-    left: 26%;
-    width: 63%;
+    top: 0%;
+    left: 22%;
+    width: 60%;
     margin: 0 auto;
     z-index: 2;
     padding: 0;
@@ -756,23 +777,20 @@ form #form #submit:hover {
 
   /* ------------- About mobile ------------ */
   .about-body h2 {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
   .about-body h4 {
     width: 65%;
-    font-size: 2em;
   }
   .about-body .ab-title {
+    margin: 0 auto;
     padding: 95px;
-    background-size: 40em;
     width: 50%;
   }
   .about-body #paras {
     width: 80%;
-    font-size: 2em;
   }
   .about-body .team {
-    padding: 5em;
     width: 60%;
     margin: 4em auto;
     display: block;
@@ -784,13 +802,13 @@ form #form #submit:hover {
     margin: 3em auto;
   }
   .about-body .team h3 {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
   .about-body .team h5 {
     font-size: 2em;
   }
   .about-body .team p {
-    font-size: 2em;
+    font-size: 1em;
   }
 
   #su-banner {
@@ -799,17 +817,17 @@ form #form #submit:hover {
   }
   #su-banner h4 {
     width: 82%;
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 16px;
   }
 
   /* ------------ Profiles mobile */
-  .card {
+  #all-cards .card {
     display: block;
     width: 80%;
     margin: 3em auto;
   }
-  .card .edit-icon {
+  #all-cards .card .edit-icon {
     font-size: 2em;
   }
 

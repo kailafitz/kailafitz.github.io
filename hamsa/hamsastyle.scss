@@ -277,6 +277,8 @@ header {
     bottom: 0;
     z-index: 3;
     display: none;
+    box-shadow: -18px 0px 14px -4px #FFFFFF;
+
 
     #mobile-clsbtn {
         color: white;
@@ -833,26 +835,55 @@ form {
             #menu-bars {
                 display: block;
             }
-        } 
-    }   
-
-    footer .big-foot-div .info-cont {
-        display: block;
-        width: 90%;
-
-        .footer-logo, .foot-info {
-            width: 50%;
-            text-align: center;
-            margin: 0 auto;
         }
-    }    
+    }
+
+    footer {
+        .big-foot-div .info-cont {
+            display: block;
+            width: 90%;
+    
+            .footer-logo, .foot-info {
+                width: 50%;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 1em;
+                margin-bottom: .5em;
+    
+                #media-ul {
+                    display: flex;
+    
+                    .media-icon {
+                        font-size: 2em;
+                        margin: 0 auto;
+
+                        i {
+                            margin: 0;
+                        }
+                    }
+                } 
+            }
+        }
+
+        .copyright {
+            margin-top: 1em;
+            width: 100%;
+
+            h5 {
+                text-align: center;
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+    }   
+        
 
     /* ------------ Home mobile ------------------- */
 
-    #desk-div {
+    #bod-div #desk-div {
         position: relative;
         display: flex;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
 
         #desk {
@@ -865,15 +896,14 @@ form {
 
             img {
                 position: relative;
-                width: auto;
             }
         }
 
         #desk-txt {
             position: absolute;
-            top: 26%;
-            left: 26%;
-            width: 63%;
+            top: 0%;
+            left: 22%;
+            width: 60%;
             margin: 0 auto;
             z-index: 2;
             padding: 0;
@@ -885,27 +915,24 @@ form {
     .about-body {
 
         h2 {
-            font-size: 2.5em;
+            font-size: 1.5em;
         }
 
         h4 {
             width: 65%;
-            font-size: 2em;
         }
 
         .ab-title {
+            margin: 0 auto;
             padding: 95px;
-            background-size: 40em;
             width: 50%;
         }
 
         #paras {
             width: 80%;
-            font-size: 2em;
         }
 
         .team {
-            padding: 5em;
             width: 60%;
             margin: 4em auto;
             display: block;
@@ -918,7 +945,7 @@ form {
             }
 
             h3 {
-                font-size: 2.5em;
+                font-size: 1.5em;
             }
 
             h5 {
@@ -926,7 +953,7 @@ form {
             }
 
             p {
-                font-size: 2em;
+                font-size: 1em;
             }
         }
     }
@@ -937,14 +964,14 @@ form {
 
         h4 {
             width: 82%;
-            font-size: 2em;
+            font-size: 1.5em;
             padding: 16px;
         }
     }
 
     /* ------------ Profiles mobile */
 
-    .card {
+    #all-cards .card {
         display: block;
         width: 80%;
         margin: 3em auto;
