@@ -328,14 +328,6 @@ header {
                 background-position: center;
                 background-size: contain;
                 background-repeat: no-repeat;
-
-                #desktop-prince {
-                    display: block;
-                }
-
-                #mobile-prince {
-                    display: none;
-                }
             }
 
             .prince {
@@ -558,16 +550,43 @@ header {
                 margin: 1em 0;
                 color: $blck;
                 text-decoration: none;
+                font-family: $pFont;
             }
 
             .icon {
-                margin: 1em 2em;
+                text-align: center;
+                width: 10%;
+                margin: 1em 1.3em;
                 color: $third;
                 background-color: none;
             }
         }
     }
 }
+
+/* ------------------- TABLET VIEW ------------------------- */
+  
+@media only screen and (max-width: 1024px) {
+    #ab-intro {
+        #q1 {
+        left: 6em;
+        }
+
+        #q2 {
+            right: 8em;
+        }
+    }
+
+    #webportfolio-cards .card {
+        width: 50%;
+    }
+
+    #port-cont #principals #titles .prince h1 {
+        letter-spacing: 0.3em;
+    }
+}
+
+
 
 /* ------------------- MOBILE PHONE ------------------------- */
   
@@ -697,16 +716,6 @@ header {
                         text-align: left;
                     }
                 }
-    
-                #prince4 {
-                    #desktop-prince {
-                        display: none;
-                    }
-    
-                    #mobile-prince {
-                        display: block;
-                    }
-                }
             }
     
             #tiles {
@@ -775,7 +784,8 @@ header {
             }
 
             .icon {
-                margin: 1em 0.5em;
+                text-align: center;
+                margin: 1em .5em;
             }
         }
 
