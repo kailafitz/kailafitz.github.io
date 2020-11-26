@@ -90,55 +90,55 @@ header {
                 }
             }
         
-            #btns {
+            #navbar-btns {
                 margin: 10px 0px;
                 display: flex;
-        
-                .btn {
-                    padding: 7px 10px;
-                    border-radius: 10px;    
-                    text-align: center;
-                    font-weight: 600;
-                    outline: none;
-                    text-align: center;
-                    font-family: 'Raleway', sans-serif;
-                    font-size: 16px;
-                    margin: 10px;
-                    cursor: pointer;
-                }
-                
-                #login-btn {
-                    background-color: #ffffff00;
-                    color: white;
-                    border: 2px solid white;
-                    transition: ease .4s all;
-                    transition-property: ease .2s color;
-            
-                    &:hover {
-                        transform: scale(1.0);
-                        background-color: #EF476F;
-                        color: white;
-                        border: 2px solid #EF476F;
-                    }
-                }
-
-                #su-btn {
-                    background-color: #ffffff;
-                    color: #EF476F;
-                    border: 2px solid #ffffff;
-                    transition: ease .4s all;
-                    transition-property: ease .2s color;
-            
-                    &:hover {
-                        transform: scale(1.0);
-                        background-color: #EF476F;
-                        color: white;
-                        border: 2px solid #EF476F;
-                    }
-                }
             }
         }
     } 
+}
+
+.btn {
+    padding: 7px 10px;
+    border-radius: 10px;    
+    text-align: center;
+    font-weight: 600;
+    outline: none;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#login-btn {
+    background-color: #ffffff00;
+    color: white;
+    border: 2px solid white;
+    transition: ease .4s all;
+    transition-property: ease .2s color;
+
+    &:hover {
+        transform: scale(1.0);
+        background-color: #EF476F;
+        color: white;
+        border: 2px solid #EF476F;
+    }
+}
+
+#su-btn {
+    background-color: #ffffff;
+    color: #EF476F;
+    border: 2px solid #ffffff;
+    transition: ease .4s all;
+    transition-property: ease .2s color;
+
+    &:hover {
+        transform: scale(1.0);
+        background-color: #EF476F;
+        color: white;
+        border: 2px solid #EF476F;
+    }
 }
 
 .modal {
@@ -277,42 +277,48 @@ header {
     bottom: 0;
     z-index: 3;
     display: none;
+
+    #mobile-clsbtn {
+        color: white;
+        text-align: right;
+        font-size: 5em;
+        padding-right: 30px;
+        cursor: pointer;
+    }
+
+    .mobile-navbar {
+        width: 100%;
+
+       .mobile-nav-menu {
+            width: 100%;
+            list-style-type: none;
+            padding: 1em 0;
+            text-align: left;
+
+            li {
+                width: 100%;
+                padding: 1em 0em;
+                padding-left: .5em;
+                font-size: 29px;
+                border-bottom: 2px solid #a02f4a;
+
+                a {
+                    color: #ffffff;
+                    font-family: 'Raleway', sans-serif;
+                }
+            }
+        }
+
+        #mobile-btns {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
 }
 
-#mobile-nav .mobile-navbar {
-    width: 100%;
-}
-
-#mobile-nav .mobile-nav-menu {
-    width: 100%;
-    list-style-type: none;
-    padding: 1em 0;
-    text-align: left;
-}
-
-#mobile-nav .mobile-nav-menu li {
-    width: 100%;
-    padding: 1em 0em;
-    font-size: 29px;
-    border-bottom: 2px solid #a02f4a;
-}
-
-#mobile-btns {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#mobile-btns .btn {
-    font-size: 29px;
-}
-
-#mobile-clsbtn {
-    color: white;
-    text-align: right;
-    font-size: 5em;
-    padding-right: 30px;
-    cursor: pointer;
+.btn {
+    font-size: 1em;
 }
 
 /* ---------------------------- FOOTER ---------------------------- */
@@ -773,6 +779,7 @@ form {
 
     header {
         background-color:  #EF476F;
+        width: 100%;
 
         .big-head-div #full-nav .navbar ul.nav-menu .text {
             color: #ffffff;
@@ -812,18 +819,22 @@ form {
 
 /* ------------------------ Mobile Responsive -------------- */
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
     header {
+        padding-left: 0;
 
-        .big-head-div #full-nav {
-            display: none;
-        }
-    }
+        .big-head-div
+        {
+            #full-nav {
+                display: none;
+            }
 
-    #menu-bars {
-        display: block;
-    }
+            #menu-bars {
+                display: block;
+            }
+        } 
+    }   
 
     footer .big-foot-div .info-cont {
         display: block;
