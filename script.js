@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $("#menu-bars").click(function () {
-        $(".navbar").slideToggle();
+        $(".mob-navbar").slideToggle();
     });
     
     $(".test").css("display", "none");
