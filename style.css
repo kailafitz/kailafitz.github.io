@@ -493,6 +493,7 @@ header #menu-bars {
   .mob-navbar {
     text-decoration: none;
     width: 100%;
+    padding-bottom: 3em;
     display: none;
   }
   .mob-navbar .mob-nav-menu {
@@ -503,6 +504,7 @@ header #menu-bars {
     width: 100%;
     margin: 7px auto;
     text-align: center;
+    background-color: #bbbbbb59;
   }
   .mob-navbar .mob-nav-menu .mob-text {
     font-family: "Nunito", sans-serif;

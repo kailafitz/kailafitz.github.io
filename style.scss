@@ -640,6 +640,7 @@ header {
     .mob-navbar {
         text-decoration: none;
         width: 100%;
+        padding-bottom: 3em;
         // margin: 0 auto;
         // margin-top: 3em;
         display: none;
@@ -651,7 +652,8 @@ header {
             .mob-menu-item {
                 width: 100%;
                 margin: 7px auto;
-                text-align: center;
+                text-align: center;         
+                background-color: #bbbbbb59;
             }
 
             .mob-text {
