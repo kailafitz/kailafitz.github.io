@@ -8,11 +8,26 @@ $(document).ready(function () {
     $(".prince").css("display", "none");
     $('body').css('display', 'none');
     $('body').fadeIn(1000);
-    test1();
-    test2();
+    fadeLoad();
+    quote();
     navColor();
+    showOne();
 
-    function test1() {
+    $(window).scroll(function(){
+        if($(window).scrollTop() > $(window).height()){
+            $("header").css({"background-color":"#ffffff73"});
+            $(".text").css({"color":"#2B4162"});
+        }
+        else{
+            $("header").css({"background-color":"transparent"});
+            $(".text").css({"color":"#e5e5e5"});
+        }
+    })
+
+
+    // Pages load with a fade effect
+
+    function fadeLoad() {
 
         // $('body').(function () {
 
@@ -34,7 +49,9 @@ $(document).ready(function () {
     };
 
 
-    function test2() {
+    // Text animation - ABOUT PAGE
+
+    function quote() {
         //get the welcome msg element
         var $all_msg = $('#e');
         //get a list of letters from the welcome text
@@ -50,7 +67,7 @@ $(document).ready(function () {
             //append it to the welcome message
             newEL.appendTo($all_msg);
             //set the delay on the animation for this element
-            newEL.delay(idx * 20);
+            newEL.delay(idx * 40);
             //animate the opacity back to full 1
             newEL.animate({
                 opacity: 1
@@ -58,51 +75,48 @@ $(document).ready(function () {
         });
     };
 
-
-    // $(function() {
-    //     //get the welcome msg element
-    //     var $all_msg = $('#element');
-    //     //get a list of letters from the welcome text
-    //     var $wordList = $('#element').text().split("");
-    //     //clear the welcome text msg
-    //     $('#element').text("");
-    //     //loop through the letters in the $wordList array
-    //     $.each($wordList, function(idx, elem) {
-    //       //create a span for the letter and set opacity to 0
-    //       var newEL = $("<span/>").text(elem).css({
-    //         opacity: 0
-    //       });
-    //       //append it to the welcome message
-    //       newEL.appendTo($all_msg);
-    //       //set the delay on the animation for this element
-    //       newEL.delay(idx * 70);
-    //       //animate the opacity back to full 1
-    //       newEL.animate({
-    //         opacity: 1
-    //       }, 1100);
-    //     });
-
-    //   });
+    // Navigation bar - changes color depending on bg color
 
     function navColor() {
         
         let bgCol = $("body").css("background-color");
 
-        if (bgCol == "rgb(5, 102, 118)") {
-            $(".text").css("color", "#e5e5e5");
-            $("#kf-logo").css("color", "#e5e5e5");
-        }
-        else if (bgCol == "rgb(229, 229, 229)") {
-            
+        if (bgCol == "rgb(255, 255, 255)") {
             $(".text").css("color", "#2B4162");
+            $("#menu-bars").css("color", "#2B4162");
         }
+        // else if (bgCol == "rgb(229, 229, 229)") {
+            
+        //     $(".text").css("color", "#2B4162");
+        // }
     }
 
 
-    // ----------------- DESIGN PRINCIPALS
+    // Changing background color - ABOUT PAGE
+
+    $(function () {
+        'use strict';
+        var view = $(window).height();
+        $('.part')
+            .height(view)
+            .scrollie({
+                scrollOffset: -50,
+                scrollingInView: function (elem) {
+                    var bgColor = elem.data('background');
+                    $('body').css('background-color', bgColor);
+                }
+            });
+    });
+
+    // ----------------- DESIGN principleS
 
     function hideAllTitles() {
         $(".prince").hide('fast');
+    }
+
+    function showOne() {
+        $("#prince1").show();
+        $("#principles").css("background", "#056676");
     }
 
     function fadeOutAll() {
@@ -116,69 +130,25 @@ $(document).ready(function () {
     $("#tog-but1").click(function () {
         hideAllTitles();
         finishPrince();
-        $("#principals").css("background", "#056676");
+        $("#principles").css("background", "#056676");
         $("#prince1").fadeIn(1500);
-        
-
-        // $("#prince1").css("display", "block");
-        // $("#prince1").fadeIn(3000, function () {
-        //     $(this).fadeIn('slow');
-        // });
     });
     $("#tog-but2").click(function () {
         hideAllTitles();
         finishPrince();
-        $("#principals").css("background", "#2B4162");
+        $("#principles").css("background", "#2B4162");
         $("#prince2").fadeIn(1500);
-
-        // $("#prince2").css("display", "block");
-        // $("#prince2").fadeIn(3000, function () {
-        //     $("#principals").css("background", "#2B4162");
-        //     $(this).fadeIn('slow');
-        // });
     });
     $("#tog-but3").click(function () {
         hideAllTitles();
         finishPrince();
-        $("#principals").css("background", "#056676");
+        $("#principles").css("background", "#056676");
         $("#prince3").fadeIn(1500);
-
-        // $("#prince3").css("display", "block");
-        // $("#prince3").fadeIn(3000, function () {
-        //     $("#principals").css("background", "#056676");
-        //     $(this).fadeIn('slow');
-        // });
     });
     $("#tog-but4").click(function () {
         hideAllTitles();
         finishPrince();
-        $("#principals").css("background", "#2B4162");
+        $("#principles").css("background", "#2B4162");
         $("#prince4").fadeIn(1500);
-
-        // $("#prince4").css("display", "block");
-        // $("#prince4").fadeIn(3000, function () {
-        //     $("#principals").css("background", "#2B4162");
-        //     $(this).fadeIn('slow');
-        // });
     });
-
-    // -----------------------------------------------
-
-
-
-    // $(function () {
-    //     'use strict';
-    //     var view = $(window).height();
-
-    //     $('.card')
-    //         .height(view)
-    //         .scrollie({
-    //             scrolloffset: -50,
-    //             scrollingInView: function (elem) {
-    //                 var bgColor = elem.data('background');
-    //                 $('body').css('background-color', bgColor);
-    //             }
-    //         });
-    // });
-
 });
