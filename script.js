@@ -10,17 +10,16 @@ $(document).ready(function () {
     $('body').fadeIn(1000);
     fadeLoad();
     quote();
-    navColor();
+    // navColor();
     showOne();
 
     $(window).scroll(function(){
         if($(window).scrollTop() > $(window).height()){
-            $("header").css({"background-color":"#ffffff73"});
-            $(".text").css({"color":"#2B4162"});
+            $("header").css({"background-color":"#e76e1c"});
+            // $(".text").css({"color":"#2B4162"});
         }
         else{
             $("header").css({"background-color":"transparent"});
-            $(".text").css({"color":"#e5e5e5"});
         }
     })
 
@@ -77,19 +76,19 @@ $(document).ready(function () {
 
     // Navigation bar - changes color depending on bg color
 
-    function navColor() {
+    // function navColor() {
         
-        let bgCol = $("body").css("background-color");
+    //     let bgCol = $("body").css("background-color");
 
-        if (bgCol == "rgb(255, 255, 255)") {
-            $(".text").css("color", "#2B4162");
-            $("#menu-bars").css("color", "#2B4162");
-        }
-        // else if (bgCol == "rgb(229, 229, 229)") {
+    //     if (bgCol == "rgb(255, 255, 255)") {
+    //         $(".text").css("color", "#2B4162");
+    //         $("#menu-bars").css("color", "#2B4162");
+    //     }
+    //     else if (bgCol == "rgb(229, 229, 229)") {
             
-        //     $(".text").css("color", "#2B4162");
-        // }
-    }
+    //         $(".text").css("color", "#2B4162");
+    //     }
+    // }
 
 
     // Changing background color - ABOUT PAGE

@@ -76,7 +76,7 @@ header {
     
             a {
                 font-family: $nameFont;
-                color: $fourth;
+                // color: $fourth;
                 text-decoration: none;
                 font-weight: 800;
                 letter-spacing: 3px;
@@ -105,8 +105,7 @@ header {
         } 
     }
 
-    #menu-bars {
-        
+    #menu-bars {        
         display: none;
     } 
 }
@@ -175,6 +174,10 @@ header {
 .wh-body {
     background-color: #ffffff;
     transition: ease 1s background;
+
+    .menu-item a {
+        color: $scdry;
+    }
 }
 
 #ab-intro {
@@ -289,6 +292,10 @@ header {
 
 #port {
     background: $third;
+
+    .menu-item a {
+        color: $fourth;
+    }
 }
 
 #port-cont {
@@ -664,30 +671,6 @@ header {
 
 /* ------------------- TABLET VIEW ------------------------- */
   
-// @media only screen and (max-width: 1024px) {
-//     #ab-intro {
-//         #q1 {
-//         left: 6em;
-//         }
-
-//         #q2 {
-//             right: 8em;
-//         }
-//     }
-
-//     #webportfolio-cards .card {
-//         width: 50%;
-//     }
-
-//     #port-cont #principles #titles .prince h1 {
-//         letter-spacing: 0.3em;
-//     }
-// }
-
-
-
-/* ------------------- MOBILE PHONE ------------------------- */
-  
 @media only screen and (max-width: 1200px) {
 
     /* -------------- NAVBAR ------------- */
@@ -703,7 +686,6 @@ header {
 
         #menu-bars {
             display: block;
-            color: $fourth;
             font-size: 6vw;
             position: absolute;
             top: 1.5em;
@@ -730,7 +712,7 @@ header {
                 width: 100%;
                 border-bottom: solid 1px #2b416242;
                 text-align: center;
-                background-color: #ffffff;
+                background-color: $fourth;
                 padding: 1em;
             }
 
@@ -745,12 +727,273 @@ header {
 
     /* -------------- HOME --------------- */
 
-    #index #fizzy-title {
-        width: 70%;
+    #index {
+
+        #menu-bars {
+            color: $fourth;
+        }
+
+        #fizzy-title {
+            width: 70%;
+        }
     }
 
     /* ------------------ About ---------*/
 
+    .wh-body {
+        #menu-bars {
+            color: $scdry;
+        }
+    }
+   
+    #ab-intro {
+        #container {
+            width: 80%;
+            #h1-div {
+    
+                h1 {
+                    width: 90%;
+                    height: 90%;
+                    font-size: 5vw;
+                    font-family: $nameFont;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    .sect {
+        display: block;
+
+        .ab-info {
+            text-align: justify;
+            width: 100%;
+            padding: 1em;
+
+            .ab-box {
+                width: 80%;
+                height: 50%;
+                margin: auto;
+
+                h3 {
+                    font-size: 5vw;
+                }
+            }
+        }
+    }
+
+    /* ------------- Portfolio ----------------- */
+
+    #port-cont {
+
+        #dp-title {
+            padding: 2em;
+
+            #title-container {
+
+                h2 {
+                    width: 80%;
+                    padding: 0;
+                    margin: auto;
+                    font-size: 13vw;
+                    text-align: center;
+                }
+    
+                h6 {
+                    font-size: 1.5vw;
+                }
+            }
+        }
+
+        #principles {
+            #principle-container {
+                width: 95%;
+                #principle-wrapper {
+                    width: 95%;
+                    #titles {  
+                        width: 98%;  
+                        .prince {
+                            h1 {
+                                overflow-wrap: break-word;
+                                font-size: 7vw;
+                                text-align: center;
+                                letter-spacing: 0;
+                            }
+
+                            h6 {
+                                font-size: 6vw;
+                            }
+                        }
+                    }
+
+                    #toggle {
+                        width: 80%;
+
+                        button {
+                            i {
+                                font-size: 5.5vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #tiles {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+
+            .port-sect {
+                padding: 6em 0;
+                width: 60%;
+                margin: 2em auto;
+
+                a {
+                    font-size: 5vw;
+                }
+            }
+        }
+    }    
+    
+    
+
+    /* ------------- Website ------------ */
+
+    #webportfolio-cards {
+        width: 100%;
+        display: block;
+
+        .card {
+            width: 70%;
+            margin: 4em auto;
+
+            .img-cont img {
+                width: 40%;
+            }
+
+            .card-info {
+                h2 {
+                    font-size: 5vw;
+                }
+
+                p {
+                    font-size: 3vw;
+                }
+            }
+
+            .tags p {
+                text-align: center;
+                padding: 10px;
+                font-size: 2vw;
+            }
+        }
+    }    
+
+    /* ------------- Contact -------------- */
+        
+    #contact-bod {
+        height: 100%;
+        
+        #cont-info {
+            width: 90vw;
+            margin-top: 3em;
+
+            h2 {
+                font-size: 8vw;
+            }
+
+            #conts-div #conts {
+
+                .deet {
+                    font-size: 3.5vw;
+                }
+
+                .icon {
+                    text-align: center;
+                    margin: 1em .5em;
+                }
+            }
+        }
+    }
+}
+
+/* ------------------- MOBILE PHONE ------------------------- */
+  
+@media only screen and (max-width: 800px) {
+
+    /* -------------- NAVBAR ------------- */
+
+    header {
+        width: 100%;
+        height: 6em;
+        position: relative;
+
+        .navbar {
+            display: none;
+        }
+
+        #menu-bars {
+            display: block;
+            font-size: 6vw;
+            position: absolute;
+            top: 1.5em;
+            left: 1.5em;
+            z-index: 6;
+        }
+    }
+
+    .mob-navbar {
+        position: absolute;
+        text-decoration: none;
+        width: 100%;
+        padding-bottom: 3em;
+        // margin: 0 auto;
+        // margin-top: 3em;
+        display: none;
+        z-index: 6;
+
+        .mob-nav-menu {
+            display: block;
+            width: 100%;
+
+            .mob-menu-item {
+                width: 100%;
+                border-bottom: solid 1px #2b416242;
+                text-align: center;
+                background-color: $fourth;
+                padding: 1em;
+            }
+
+            .mob-text {
+                font-family: $nameFont;
+                color: $scdry;
+                text-decoration: none;
+                font-size: 4vw;
+            }
+        }
+    }
+
+    /* -------------- HOME --------------- */
+
+    #index {
+
+        #menu-bars {
+            color: $fourth;
+        }
+
+        #fizzy-title {
+            width: 70%;
+        }
+    }
+
+    /* ------------------ About ---------*/
+
+    .wh-body {
+        #menu-bars {
+            color: $scdry;
+        }
+    }
    
     #ab-intro {
         #container {

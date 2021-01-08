@@ -50,7 +50,6 @@ header .navbar .nav-menu .menu-item {
 }
 header .navbar .nav-menu .menu-item a {
   font-family: "Nunito", sans-serif;
-  color: #e5e5e5;
   text-decoration: none;
   font-weight: 800;
   letter-spacing: 3px;
@@ -108,6 +107,9 @@ header #menu-bars {
 .wh-body {
   background-color: #ffffff;
   transition: ease 1s background;
+}
+.wh-body .menu-item a {
+  color: #2B4162;
 }
 
 #ab-intro {
@@ -188,6 +190,9 @@ header #menu-bars {
 
 #port {
   background: #e76e1c;
+}
+#port .menu-item a {
+  color: #e5e5e5;
 }
 
 #port-cont {
@@ -480,7 +485,6 @@ header #menu-bars {
 }
 
 /* ------------------- TABLET VIEW ------------------------- */
-/* ------------------- MOBILE PHONE ------------------------- */
 @media only screen and (max-width: 1200px) {
   /* -------------- NAVBAR ------------- */
   header {
@@ -493,7 +497,6 @@ header #menu-bars {
   }
   header #menu-bars {
     display: block;
-    color: #e5e5e5;
     font-size: 6vw;
     position: absolute;
     top: 1.5em;
@@ -517,7 +520,7 @@ header #menu-bars {
     width: 100%;
     border-bottom: solid 1px #2b416242;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #e5e5e5;
     padding: 1em;
   }
   .mob-navbar .mob-nav-menu .mob-text {
@@ -528,11 +531,200 @@ header #menu-bars {
   }
 
   /* -------------- HOME --------------- */
+  #index #menu-bars {
+    color: #e5e5e5;
+  }
   #index #fizzy-title {
     width: 70%;
   }
 
   /* ------------------ About ---------*/
+  .wh-body #menu-bars {
+    color: #2B4162;
+  }
+
+  #ab-intro #container {
+    width: 80%;
+  }
+  #ab-intro #container #h1-div h1 {
+    width: 90%;
+    height: 90%;
+    font-size: 5vw;
+    font-family: "Nunito", sans-serif;
+    margin: auto;
+  }
+
+  .sect {
+    display: block;
+  }
+  .sect .ab-info {
+    text-align: justify;
+    width: 100%;
+    padding: 1em;
+  }
+  .sect .ab-info .ab-box {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+  }
+  .sect .ab-info .ab-box h3 {
+    font-size: 5vw;
+  }
+
+  /* ------------- Portfolio ----------------- */
+  #port-cont #dp-title {
+    padding: 2em;
+  }
+  #port-cont #dp-title #title-container h2 {
+    width: 80%;
+    padding: 0;
+    margin: auto;
+    font-size: 13vw;
+    text-align: center;
+  }
+  #port-cont #dp-title #title-container h6 {
+    font-size: 1.5vw;
+  }
+  #port-cont #principles #principle-container {
+    width: 95%;
+  }
+  #port-cont #principles #principle-container #principle-wrapper {
+    width: 95%;
+  }
+  #port-cont #principles #principle-container #principle-wrapper #titles {
+    width: 98%;
+  }
+  #port-cont #principles #principle-container #principle-wrapper #titles .prince h1 {
+    overflow-wrap: break-word;
+    font-size: 7vw;
+    text-align: center;
+    letter-spacing: 0;
+  }
+  #port-cont #principles #principle-container #principle-wrapper #titles .prince h6 {
+    font-size: 6vw;
+  }
+  #port-cont #principles #principle-container #principle-wrapper #toggle {
+    width: 80%;
+  }
+  #port-cont #principles #principle-container #principle-wrapper #toggle button i {
+    font-size: 5.5vw;
+  }
+  #port-cont #tiles {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #port-cont #tiles .port-sect {
+    padding: 6em 0;
+    width: 60%;
+    margin: 2em auto;
+  }
+  #port-cont #tiles .port-sect a {
+    font-size: 5vw;
+  }
+
+  /* ------------- Website ------------ */
+  #webportfolio-cards {
+    width: 100%;
+    display: block;
+  }
+  #webportfolio-cards .card {
+    width: 70%;
+    margin: 4em auto;
+  }
+  #webportfolio-cards .card .img-cont img {
+    width: 40%;
+  }
+  #webportfolio-cards .card .card-info h2 {
+    font-size: 5vw;
+  }
+  #webportfolio-cards .card .card-info p {
+    font-size: 3vw;
+  }
+  #webportfolio-cards .card .tags p {
+    text-align: center;
+    padding: 10px;
+    font-size: 2vw;
+  }
+
+  /* ------------- Contact -------------- */
+  #contact-bod {
+    height: 100%;
+  }
+  #contact-bod #cont-info {
+    width: 90vw;
+    margin-top: 3em;
+  }
+  #contact-bod #cont-info h2 {
+    font-size: 8vw;
+  }
+  #contact-bod #cont-info #conts-div #conts .deet {
+    font-size: 3.5vw;
+  }
+  #contact-bod #cont-info #conts-div #conts .icon {
+    text-align: center;
+    margin: 1em 0.5em;
+  }
+}
+/* ------------------- MOBILE PHONE ------------------------- */
+@media only screen and (max-width: 800px) {
+  /* -------------- NAVBAR ------------- */
+  header {
+    width: 100%;
+    height: 6em;
+    position: relative;
+  }
+  header .navbar {
+    display: none;
+  }
+  header #menu-bars {
+    display: block;
+    font-size: 6vw;
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    z-index: 6;
+  }
+
+  .mob-navbar {
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
+    padding-bottom: 3em;
+    display: none;
+    z-index: 6;
+  }
+  .mob-navbar .mob-nav-menu {
+    display: block;
+    width: 100%;
+  }
+  .mob-navbar .mob-nav-menu .mob-menu-item {
+    width: 100%;
+    border-bottom: solid 1px #2b416242;
+    text-align: center;
+    background-color: #e5e5e5;
+    padding: 1em;
+  }
+  .mob-navbar .mob-nav-menu .mob-text {
+    font-family: "Nunito", sans-serif;
+    color: #2B4162;
+    text-decoration: none;
+    font-size: 4vw;
+  }
+
+  /* -------------- HOME --------------- */
+  #index #menu-bars {
+    color: #e5e5e5;
+  }
+  #index #fizzy-title {
+    width: 70%;
+  }
+
+  /* ------------------ About ---------*/
+  .wh-body #menu-bars {
+    color: #2B4162;
+  }
+
   #ab-intro #container {
     width: 80%;
   }
