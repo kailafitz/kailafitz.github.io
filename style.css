@@ -1,23 +1,26 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   width: 100%;
+  -webkit-transition: ease 1s background;
   transition: ease 1s background;
 }
 
 [data-scroll] {
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
-[data-scroll=in] {
+[data-scroll="in"] {
   opacity: 1;
 }
 
-[data-scroll=out] {
+[data-scroll="out"] {
   opacity: 0;
 }
 
@@ -36,18 +39,25 @@ header {
   padding: 1.5em;
   z-index: 5;
 }
+
 header a {
   text-decoration: none;
 }
+
 header #kf-logo {
   display: none;
 }
+
 header .navbar .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 header .navbar .nav-menu .menu-item {
   list-style-type: none;
 }
+
 header .navbar .nav-menu .menu-item a {
   font-family: "Nunito", sans-serif;
   text-decoration: none;
@@ -57,6 +67,7 @@ header .navbar .nav-menu .menu-item a {
   margin: 0 1em;
   position: relative;
 }
+
 header .navbar .nav-menu .menu-item a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
@@ -66,13 +77,16 @@ header .navbar .nav-menu .menu-item a:after {
   left: 50%;
   position: absolute;
   background: #2B4162;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
+
 header .navbar .nav-menu .menu-item a:hover:after {
   width: 100%;
   left: 0;
 }
+
 header #menu-bars {
   display: none;
 }
@@ -85,768 +99,44 @@ header #menu-bars {
 #index {
   background-color: #e76e1c;
 }
+
 #index .menu-item a {
   color: #e5e5e5;
 }
+
 #index #fizzy-title {
   text-align: center;
   width: 50.5%;
 }
 
-@keyframes nameColor {
+#index h1 {
+  font-family: "Nunito", sans-serif;
+  color: white;
+}
+
+@-webkit-keyframes nameColor {
   0% {
-    transform: translate(-240px);
+    -webkit-transform: translate(-240px);
+            transform: translate(-240px);
     color: #e5e5e5;
   }
   100% {
-    transform: translate(0);
+    -webkit-transform: translate(0);
+            transform: translate(0);
     color: #000000;
   }
 }
-/* ---------------- ABOUT ------------------- */
-.wh-body {
-  background-color: #ffffff;
-  transition: ease 1s background;
-}
-.wh-body .menu-item a {
-  color: #2B4162;
-}
 
-#ab-intro {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  display: flex;
-}
-#ab-intro #container {
-  position: relative;
-  width: 50%;
-  margin: auto;
-}
-#ab-intro #container img {
-  position: absolute;
-  opacity: 0.6;
-  width: 40%;
-}
-#ab-intro #container #q1 {
-  top: 0;
-  left: 1em;
-}
-#ab-intro #container #q2 {
-  bottom: 0;
-  right: 1em;
-}
-#ab-intro #container #h1-div {
-  width: 100%;
-  text-align: center;
-  display: flex;
-}
-#ab-intro #container #h1-div h1 {
-  width: 90%;
-  height: 90%;
-  font-size: 2vw;
-  font-family: "Nunito", sans-serif;
-  margin: auto;
-}
-
-.sect {
-  width: 100%;
-  display: block;
-}
-.sect .ab-info {
-  padding: 2em 4em;
-  font-family: "Work Sans", sans-serif;
-  display: flex;
-  color: #ffffff;
-}
-.sect .ab-info .ab-box {
-  width: 50%;
-  height: 50%;
-  margin: auto;
-}
-.sect .ab-info .ab-box h3 {
-  font-family: "Nunito", sans-serif;
-  text-align: left;
-  font-size: 3vw;
-  letter-spacing: 12px;
-  margin-bottom: 20px;
-}
-.sect .ab-info .ab-box h4 {
-  margin: 1em 0 0.4em 0;
-}
-
-/* ----------- PORTFOLIO --------------- */
-#myVideo {
-  position: fixed;
-  object-fit: contain;
-  object-position: center;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -5;
-  opacity: 0.5;
-}
-
-#port {
-  background: #e76e1c;
-}
-#port .menu-item a {
-  color: #e5e5e5;
-}
-
-#port-cont {
-  margin-top: 6em;
-  display: block;
-}
-#port-cont #dp-title {
-  width: 100%;
-  height: 100vh;
-  font-family: "Nunito", sans-serif;
-  color: #e5e5e5;
-  display: flex;
-}
-#port-cont #dp-title #title-container {
-  width: 100%;
-  height: 50%;
-  margin-top: 3em;
-  text-align: center;
-}
-#port-cont #dp-title #title-container h2 {
-  width: 50%;
-  font-size: 8vw;
-  letter-spacing: 0.4em;
-  text-align: left;
-  margin-left: 0;
-  padding-left: 0.5em;
-}
-#port-cont #dp-title #title-container h6 {
-  padding-top: 2em;
-  width: 60%;
-  font-size: 3vw;
-  font-family: "Nunito", sans-serif;
-  text-align: center;
-  margin: 0 auto;
-  font-weight: 400;
-}
-#port-cont #dp-title #title-container #arrows {
-  width: 20%;
-  margin-top: 4em;
-}
-#port-cont #principles {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-}
-#port-cont #principles #principle-container {
-  width: 90%;
-  height: 80vh;
-  margin: auto;
-  display: flex;
-}
-#port-cont #principles #principle-container #principle-wrapper {
-  width: 90%;
-  height: 80vh;
-  margin: auto;
-}
-#port-cont #principles #principle-container #principle-wrapper #titles {
-  display: flex;
-  width: 80%;
-  height: 100%;
-  margin: auto;
-}
-#port-cont #principles #principle-container #principle-wrapper #titles #prince1 {
-  background-image: url("./images/prince-bgimg1.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-#port-cont #principles #principle-container #principle-wrapper #titles #prince2 {
-  background-image: url("./images/prince-bgimg2.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-#port-cont #principles #principle-container #principle-wrapper #titles #prince3 {
-  background-image: url("./images/prince-bgimg3.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-#port-cont #principles #principle-container #principle-wrapper #titles #prince4 {
-  background-image: url("./images/prince-bgimg4.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-#port-cont #principles #principle-container #principle-wrapper #titles .prince {
-  margin: auto;
-}
-#port-cont #principles #principle-container #principle-wrapper #titles .prince h1 {
-  width: 90%;
-  height: 60%;
-  font-family: "Nunito", sans-serif;
-  text-align: center;
-  font-size: 4vw;
-  color: #ffffff;
-  margin: auto;
-  letter-spacing: 0.6em;
-}
-#port-cont #principles #principle-container #principle-wrapper #titles .prince h6 {
-  padding-top: 2em;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 200;
-  text-align: center;
-  font-size: 2vw;
-  color: #e5e5e5;
-  margin: auto;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-}
-#port-cont #principles #principle-container #principle-wrapper #toggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  margin: 0 auto;
-}
-#port-cont #principles #principle-container #principle-wrapper #toggle button {
-  outline: none;
-  margin: 1em;
-  border: none;
-  display: block;
-  border-radius: 50%;
-  box-shadow: -7px 7px 13px -6px rgba(0, 0, 0, 0.75);
-  padding: 9px;
-  background-color: #e76e1c;
-  transition: ease 0.3s transform;
-  cursor: pointer;
-}
-#port-cont #principles #principle-container #principle-wrapper #toggle button i {
-  color: #2B4162;
-  font-size: 1.5vw;
-}
-#port-cont #principles #principle-container #principle-wrapper #toggle button:hover {
-  background-color: #e5e5e5;
-  transform: scale(1.1);
-}
-#port-cont #tiles {
-  width: 100%;
-  margin-top: 20em;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-#port-cont #tiles .port-sect {
-  width: 40%;
-  background-color: #e76e1c;
-  display: flex;
-  padding: 14em 0;
-  margin: 0 2em;
-  border-radius: 4px;
-  box-shadow: -3px 3px 15px 1px #ffffff;
-}
-#port-cont #tiles .port-sect:hover {
-  background-color: #056676;
-  transition: 0.6s ease-in-out;
-}
-#port-cont #tiles .port-sect:hover a {
-  color: white;
-  transition: 0.2s ease-in-out;
-}
-#port-cont #tiles .port-sect a {
-  color: #010f12;
-  margin: auto;
-  font-size: 3vw;
-  font-family: "Nunito", sans-serif;
-  text-decoration: none;
-}
-#port-cont #big-insta-div {
-  margin-top: 5em;
-}
-#port-cont #big-insta-div #insta-container {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-#port-cont #big-insta-div #insta-container #fizzy-insta {
-  margin: 2em;
-}
-
-/* ------------ WEBSITES --------------- */
-#webportfolio-cards {
-  width: 100%;
-  margin: 9em 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-#webportfolio-cards .card {
-  background-color: #e5e5e5;
-  padding: 1em;
-  width: 25%;
-  margin: 2em 4em;
-  border-radius: 4px;
-  border: 1px transparent;
-  box-shadow: -7px 7px 13px -6px rgba(0, 0, 0, 0.75);
-  transition: ease-in-out 0.5s transform;
-}
-#webportfolio-cards .card:hover {
-  transform: scale(1.1);
-}
-#webportfolio-cards .card .img-cont {
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
-}
-#webportfolio-cards .card .img-cont img {
-  width: 50%;
-  margin: 3rem auto;
-}
-#webportfolio-cards .card .card-info {
-  color: #e5e5e5;
-  display: flex;
-}
-#webportfolio-cards .card .card-info a {
-  font-family: "Nunito", sans-serif;
-  color: #2B4162;
-  font-size: 2vw;
-  text-decoration: none;
-}
-#webportfolio-cards .card .card-info h2 {
-  color: #2B4162;
-  font-family: "Nunito", sans-serif;
-  font-size: 2vw;
-}
-#webportfolio-cards .card .card-info p {
-  font-family: "Work Sans", sans-serif;
-  margin: 1em 0;
-  font-size: 1vw;
-  color: #2B4162;
-}
-#webportfolio-cards .card .tags {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-#webportfolio-cards .card .tags p {
-  font-size: 0.8vw;
-  font-family: "Quantico", sans-serif;
-  margin: 1em 1.5em 1em 0;
-  background-color: #2B4162;
-  padding: 1em;
-  border-radius: 10px;
-  color: #e5e5e5;
-}
-
-/* ----------- CONTACT ------------- */
-#contact-bod {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-}
-#contact-bod #cont-info {
-  width: 50vw;
-  height: 60vh;
-  margin: auto;
-}
-#contact-bod #cont-info h2 {
-  font-family: "Nunito", sans-serif;
-  margin-bottom: 2em;
-  font-size: 3vw;
-  text-align: center;
-  letter-spacing: 0.4em;
-}
-#contact-bod #cont-info #conts-div {
-  margin: 0 auto;
-  width: 90%;
-}
-#contact-bod #cont-info #conts-div #conts {
-  min-width: 90%;
-}
-#contact-bod #cont-info #conts-div #conts .deet {
-  display: block;
-  font-size: 1.5vw;
-  margin: 1em 0;
-  color: #010f12;
-  text-decoration: none;
-  font-family: "Work Sans", sans-serif;
-}
-#contact-bod #cont-info #conts-div #conts .icon {
-  text-align: center;
-  width: 10%;
-  margin: 1em 1.3em;
-  color: #e76e1c;
-  background-color: none;
-}
-
-/* ------------------- TABLET VIEW ------------------------- */
-@media only screen and (max-width: 1200px) {
-  /* -------------- NAVBAR ------------- */
-  header {
-    width: 100%;
-    height: 12em;
-    position: relative;
-  }
-  header .navbar {
-    display: none;
-  }
-  header #menu-bars {
-    display: block;
-    font-size: 6vw;
-    position: absolute;
-    top: 1.5em;
-    left: 1.5em;
-    z-index: 6;
-  }
-
-  .mob-navbar {
-    position: absolute;
-    text-decoration: none;
-    width: 100%;
-    padding-bottom: 3em;
-    display: none;
-    z-index: 6;
-  }
-  .mob-navbar .mob-nav-menu {
-    display: block;
-    width: 100%;
-  }
-  .mob-navbar .mob-nav-menu .mob-menu-item {
-    width: 100%;
-    border-bottom: solid 1px #2b416242;
-    text-align: center;
-    background-color: #e5e5e5;
-    padding: 1em;
-  }
-  .mob-navbar .mob-nav-menu .mob-text {
-    font-family: "Nunito", sans-serif;
-    color: #2B4162;
-    text-decoration: none;
-    font-size: 4vw;
-  }
-
-  /* -------------- HOME --------------- */
-  #index #menu-bars {
+@keyframes nameColor {
+  0% {
+    -webkit-transform: translate(-240px);
+            transform: translate(-240px);
     color: #e5e5e5;
   }
-  #index #fizzy-title {
-    width: 70%;
-  }
-
-  /* ------------------ About ---------*/
-  .wh-body #menu-bars {
-    color: #2B4162;
-  }
-
-  #ab-intro #container {
-    width: 80%;
-  }
-  #ab-intro #container #h1-div h1 {
-    width: 90%;
-    height: 90%;
-    font-size: 5vw;
-    font-family: "Nunito", sans-serif;
-    margin: auto;
-  }
-
-  .sect {
-    display: block;
-  }
-  .sect .ab-info {
-    text-align: justify;
-    width: 100%;
-    padding: 1em;
-  }
-  .sect .ab-info .ab-box {
-    width: 80%;
-    height: 50%;
-    margin: auto;
-  }
-  .sect .ab-info .ab-box h3 {
-    font-size: 5vw;
-  }
-
-  /* ------------- Portfolio ----------------- */
-  #port-cont #dp-title {
-    padding: 2em;
-  }
-  #port-cont #dp-title #title-container h2 {
-    width: 80%;
-    padding: 0;
-    margin: auto;
-    font-size: 13vw;
-    text-align: center;
-  }
-  #port-cont #dp-title #title-container h6 {
-    font-size: 1.5vw;
-  }
-  #port-cont #principles #principle-container {
-    width: 95%;
-  }
-  #port-cont #principles #principle-container #principle-wrapper {
-    width: 95%;
-  }
-  #port-cont #principles #principle-container #principle-wrapper #titles {
-    width: 98%;
-  }
-  #port-cont #principles #principle-container #principle-wrapper #titles .prince h1 {
-    overflow-wrap: break-word;
-    font-size: 7vw;
-    text-align: center;
-    letter-spacing: 0;
-  }
-  #port-cont #principles #principle-container #principle-wrapper #titles .prince h6 {
-    font-size: 6vw;
-  }
-  #port-cont #principles #principle-container #principle-wrapper #toggle {
-    width: 80%;
-  }
-  #port-cont #principles #principle-container #principle-wrapper #toggle button i {
-    font-size: 5.5vw;
-  }
-  #port-cont #tiles {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-  }
-  #port-cont #tiles .port-sect {
-    padding: 6em 0;
-    width: 60%;
-    margin: 2em auto;
-  }
-  #port-cont #tiles .port-sect a {
-    font-size: 5vw;
-  }
-
-  /* ------------- Website ------------ */
-  #webportfolio-cards {
-    width: 100%;
-    display: block;
-  }
-  #webportfolio-cards .card {
-    width: 70%;
-    margin: 4em auto;
-  }
-  #webportfolio-cards .card .img-cont img {
-    width: 40%;
-  }
-  #webportfolio-cards .card .card-info h2 {
-    font-size: 5vw;
-  }
-  #webportfolio-cards .card .card-info p {
-    font-size: 3vw;
-  }
-  #webportfolio-cards .card .tags p {
-    text-align: center;
-    padding: 10px;
-    font-size: 2vw;
-  }
-
-  /* ------------- Contact -------------- */
-  #contact-bod {
-    height: 100%;
-  }
-  #contact-bod #cont-info {
-    width: 90vw;
-    margin-top: 3em;
-  }
-  #contact-bod #cont-info h2 {
-    font-size: 8vw;
-  }
-  #contact-bod #cont-info #conts-div #conts .deet {
-    font-size: 3.5vw;
-  }
-  #contact-bod #cont-info #conts-div #conts .icon {
-    text-align: center;
-    margin: 1em 0.5em;
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    color: #000000;
   }
 }
-/* ------------------- MOBILE PHONE ------------------------- */
-@media only screen and (max-width: 800px) {
-  /* -------------- NAVBAR ------------- */
-  header {
-    width: 100%;
-    height: 6em;
-    position: relative;
-  }
-  header .navbar {
-    display: none;
-  }
-  header #menu-bars {
-    display: block;
-    font-size: 6vw;
-    position: absolute;
-    top: 1.5em;
-    left: 1.5em;
-    z-index: 6;
-  }
-
-  .mob-navbar {
-    position: absolute;
-    text-decoration: none;
-    width: 100%;
-    padding-bottom: 3em;
-    display: none;
-    z-index: 6;
-  }
-  .mob-navbar .mob-nav-menu {
-    display: block;
-    width: 100%;
-  }
-  .mob-navbar .mob-nav-menu .mob-menu-item {
-    width: 100%;
-    border-bottom: solid 1px #2b416242;
-    text-align: center;
-    background-color: #e5e5e5;
-    padding: 1em;
-  }
-  .mob-navbar .mob-nav-menu .mob-text {
-    font-family: "Nunito", sans-serif;
-    color: #2B4162;
-    text-decoration: none;
-    font-size: 4vw;
-  }
-
-  /* -------------- HOME --------------- */
-  #index #menu-bars {
-    color: #e5e5e5;
-  }
-  #index #fizzy-title {
-    width: 70%;
-  }
-
-  /* ------------------ About ---------*/
-  .wh-body #menu-bars {
-    color: #2B4162;
-  }
-
-  #ab-intro #container {
-    width: 80%;
-  }
-  #ab-intro #container #h1-div h1 {
-    width: 90%;
-    height: 90%;
-    font-size: 5vw;
-    font-family: "Nunito", sans-serif;
-    margin: auto;
-  }
-
-  .sect {
-    display: block;
-  }
-  .sect .ab-info {
-    text-align: justify;
-    width: 100%;
-    padding: 1em;
-  }
-  .sect .ab-info .ab-box {
-    width: 80%;
-    height: 50%;
-    margin: auto;
-  }
-  .sect .ab-info .ab-box h3 {
-    font-size: 5vw;
-  }
-
-  /* ------------- Portfolio ----------------- */
-  #port-cont #dp-title {
-    padding: 2em;
-  }
-  #port-cont #dp-title #title-container h2 {
-    width: 80%;
-    padding: 0;
-    margin: auto;
-    font-size: 13vw;
-    text-align: center;
-  }
-  #port-cont #dp-title #title-container h6 {
-    font-size: 1.5vw;
-  }
-  #port-cont #principles #principle-container {
-    width: 95%;
-  }
-  #port-cont #principles #principle-container #principle-wrapper {
-    width: 95%;
-  }
-  #port-cont #principles #principle-container #principle-wrapper #titles {
-    width: 98%;
-  }
-  #port-cont #principles #principle-container #principle-wrapper #titles .prince h1 {
-    overflow-wrap: break-word;
-    font-size: 7vw;
-    text-align: center;
-    letter-spacing: 0;
-  }
-  #port-cont #principles #principle-container #principle-wrapper #titles .prince h6 {
-    font-size: 6vw;
-  }
-  #port-cont #principles #principle-container #principle-wrapper #toggle {
-    width: 80%;
-  }
-  #port-cont #principles #principle-container #principle-wrapper #toggle button i {
-    font-size: 5.5vw;
-  }
-  #port-cont #tiles {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-  }
-  #port-cont #tiles .port-sect {
-    padding: 6em 0;
-    width: 60%;
-    margin: 2em auto;
-  }
-  #port-cont #tiles .port-sect a {
-    font-size: 5vw;
-  }
-
-  /* ------------- Website ------------ */
-  #webportfolio-cards {
-    width: 100%;
-    display: block;
-  }
-  #webportfolio-cards .card {
-    width: 70%;
-    margin: 4em auto;
-  }
-  #webportfolio-cards .card .img-cont img {
-    width: 40%;
-  }
-  #webportfolio-cards .card .card-info h2 {
-    font-size: 5vw;
-  }
-  #webportfolio-cards .card .card-info p {
-    font-size: 3vw;
-  }
-  #webportfolio-cards .card .tags p {
-    text-align: center;
-    padding: 10px;
-    font-size: 2vw;
-  }
-
-  /* ------------- Contact -------------- */
-  #contact-bod {
-    height: 100%;
-  }
-  #contact-bod #cont-info {
-    width: 90vw;
-    margin-top: 3em;
-  }
-  #contact-bod #cont-info h2 {
-    font-size: 8vw;
-  }
-  #contact-bod #cont-info #conts-div #conts .deet {
-    font-size: 3.5vw;
-  }
-  #contact-bod #cont-info #conts-div #conts .icon {
-    text-align: center;
-    margin: 1em 0.5em;
-  }
-}
-
 /*# sourceMappingURL=style.css.map */
