@@ -7962,6 +7962,17 @@ h6, .h6 {
 
 #about-btn {
   width: 100%;
+  -webkit-box-shadow: 0px 0px 10px 0px #4a4e69;
+          box-shadow: 0px 0px 10px 0px #4a4e69;
+  -webkit-transition: -webkit-box-shadow 1s ease-in-out;
+  transition: -webkit-box-shadow 1s ease-in-out;
+  transition: box-shadow 1s ease-in-out;
+  transition: box-shadow 1s ease-in-out, -webkit-box-shadow 1s ease-in-out;
+}
+
+#about-btn:hover {
+  -webkit-box-shadow: 0px 0px 0px 0px #4a4e69;
+          box-shadow: 0px 0px 0px 0px #4a4e69;
 }
 
 #youtube-video {
