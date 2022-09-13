@@ -7855,6 +7855,10 @@ progress {
      object-fit: contain;
 }
 
+#bitmoji {
+  top: 7vh;
+}
+
 a {
   cursor: pointer;
 }
@@ -7900,7 +7904,7 @@ h6, .h6 {
 }
 
 .text-shadow-light {
-  text-shadow: 0px 2px #4a4e6985;
+  text-shadow: 0px 20px #4a4e6985;
 }
 
 .tag {
