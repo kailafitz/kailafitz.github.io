@@ -16,3 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     ScrollUpdateDelay();
 });
+
+const imagesLoaded = require("imagesloaded"); // import the library or can use cdn
+
+/* update scroll (height) when all images are loaded */
+
+imagesLoaded(scrollContainer, { background: true }, function () {
+  scroll.update();
+});
