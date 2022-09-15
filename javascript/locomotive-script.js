@@ -1,5 +1,8 @@
+
+let scrollContainer = document.querySelector("[data-scroll-container]");
+
 const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
+    el: scrollContainer,
     smooth: true,
     tablet: {
         smooth: true,
@@ -16,8 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     ScrollUpdateDelay();
 });
-
-const imagesLoaded = require("imagesloaded"); // import the library or can use cdn
 
 /* update scroll (height) when all images are loaded */
 
