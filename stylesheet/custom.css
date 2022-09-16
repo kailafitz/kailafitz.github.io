@@ -6948,17 +6948,13 @@ progress {
 }
 
 #intro {
-  margin-top: 8vh;
+  padding-top: 8vh;
 }
 
 #profile-pic {
   border-radius: 25%;
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-#bitmoji {
-  top: 40%;
 }
 
 a {
@@ -7092,19 +7088,15 @@ h6, .h6 {
 
 @media only screen and (min-width: 576px) {
   .title {
-    font-size: 7vh;
-  }
-  .size-sm {
-    height: 100%;
-    width: 100%;
+    font-size: 11vh;
   }
 }
 @media only screen and (min-width: 768px) {
   .title {
-    font-size: 8vh;
+    font-size: 10vh;
   }
   #intro {
-    margin-top: 15vh;
+    padding-top: 15vh;
   }
   .mb-6 {
     margin-bottom: 15vh;
@@ -7140,7 +7132,7 @@ h6, .h6 {
 }
 @media only screen and (min-width: 992px) {
   .title {
-    font-size: 11vh;
+    font-size: 13vh;
   }
   #youtube-video {
     height: 40vh;
@@ -7161,7 +7153,7 @@ h6, .h6 {
 }
 @media only screen and (min-width: 1400px) {
   #intro {
-    margin-top: 8%;
+    padding-top: 8%;
   }
   #youtube-video {
     height: 60vh;
@@ -7255,4 +7247,4 @@ html.has-scroll-dragging {
 [data-scroll-direction=horizontal] .c-scrollbar_thumb {
   bottom: 0;
   right: auto;
-}
+}/*# sourceMappingURL=custom.css.map */
