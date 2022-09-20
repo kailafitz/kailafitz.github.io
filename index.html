@@ -7,9 +7,9 @@
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+        gtag("js", new Date());
 
-        gtag('config', 'UA-173946352-1');
+        gtag("config", "UA-173946352-1");
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +28,7 @@
 
 <body data-scroll-container>
     <!-- <div data-scroll-container> -->
-    <nav class="navbar bg-secondary">
+    <nav class="navbar bg-secondary position-absolute w-100 top-0 z-index--1">
         <div class="container">
             <span
                 class="navbar-brand mb-0 h6 py-2 px-3 px-sm-0 rounded-3 d-flex align-items-center flex-wrap text-white">
@@ -38,10 +38,11 @@
             </span>
         </div>
     </nav>
-    <div id="md">
-        <section data-scroll-section class="bg-secondary position-absolute top-0 start-0 w-100" id="background-top">
+    <div class="lg">
+        <section data-scroll-section class="bg-secondary position-absolute top-0 start-0 w-100 z-index--3"
+            id="background-top">
         </section>
-        <section data-scroll-section class="container-md pt-6">
+        <section data-scroll-section class="container-md pt-7">
             <div id="iPadPro" class="row d-flex flex-column flex-md-row justify-content-md-center align-items-center">
                 <div class="col-10 col-md-8 col-lg-7 mt-md-5 mb-md-5 m-auto ms-md-0 me-md-0">
                     <h3 data-scroll data-scroll-speed="-3" data-scroll-direction="horizontal" data-scroll-position="top"
@@ -53,30 +54,62 @@
                     </h3>
                     <h2 data-scroll data-scroll-speed="3" data-scroll-direction="horizontal"
                         class="text-shadow-dark ms-lg-n5">I
-                        like design and animation</h2>
+                        like designing and building with tech</h2>
                     <p data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal"
                         class="text-shadow-dark ms-4">.
                         . .
-                        and golf when I've free time!</p>
+                        and golfing when I've free time!</p>
+                    <div>
+                        <a class="btn btn-primary top-action-button my-3 my-md-0 box-shadow"
+                            href="./MikhailaFitzpatrick_TechnologyCurriculumVitae.pdf"
+                            download="MikhailaFitzpatrick_TechnologyCurriculumVitae">Download my CV</a>
+                        <a class="btn btn-primary top-action-button box-shadow" id="action-contact-button" data-scroll-to
+                            href="#contact-bio">Contact me</a>
+                    </div>
                 </div>
                 <div class="col-8 col-md-4 col-lg-4 mb-3 mt-sm-5 mt-md-0 mb-md-0 m-auto m-md-0 text-center">
                     <img data-scroll data-scroll-speed="2" src="./media/bitmoji-circle.png" alt="profile picture"
-                        id="profile-pic" class="h-100 w-100" />
+                        id="profile-pic" class="h-100 w-100 my-5 my-md-0" />
                 </div>
             </div>
         </section>
-        <section>
-            <div>
+    </div>
+    <section class="lg container d-flex flex-column justify-content-center" data-scroll-section>
+        <div data-scroll data-scroll-speed="1" class="row mobile-row mb-5">
+            <div class="col-12 col-md-4 mb-5 mb-md-0 mx-auto d-flex flex-column justify-content-center">
+                <div class="d-flex flex-row align-items-start mb-5">
+                    <i class="bi bi-phone text-primary pe-3 fs-1"></i>
+                    <div>
+                        <h4 class="m-0">Mobile-first Design</h4>
+                        <p class="m-0">Responsive from the get-go</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row align-items-start mb-5">
+                    <i class="bi bi-easel2 text-primary pe-3 fs-1"></i>
+                    <div>
+                        <h4 class="m-0">Wireframes & Prototyping</h4>
+                        <p class="m-0">Planning and prep using Figma, of course</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row align-items-start mb-4">
+                    <i class="bi bi-journal-code text-primary pe-3 fs-1"></i>
+                    <div>
+                        <h4 class="m-0">Staying Up-to-date</h4>
+                        <p class="m-0">Keeping an eye on the horizon</p>
+                    </div>
+                </div>
 
             </div>
-        </section>
-    </div>
-    <div data-scroll-section data-scroll data-scroll-speed="3" class="position-relative">
-        <div data-scroll-section
-            class="position-absolute w-100 h-100 top-0 left-0 bg-light z-index--1 d-none d-md-block"></div>
-        <section data-scroll-section>
-            <div data-scroll data-scroll-speed="2" data-scroll-direction="vertical" data-scroll-class="opacity-loco"
-                class="container mb-7 pre-opacity" data-scroll-repeat={true}>
+            <div class="col-12 col-md-7 mx-auto mb-5 mb-md-0" id="skills-chart">
+                <canvas id="myChart"></canvas>
+            </div>
+    </section>
+    <div data-scroll-section class="position-relative">
+        <div data-scroll data-scroll-speed="1"
+            class="position-absolute w-100 h-100 top-0 left-0 bg-light z-index--2 d-none d-md-block"></div>
+        <section>
+            <div data-scroll data-scroll-speed="-1" class="container mb-7 pre-opacity" data-scroll-class="opacity-loco"
+                data-scroll-repeat={true}>
                 <div class="row mobile-row d-flex flex-row justify-content-start border-start border-primary border-2">
                     <div class="col-12 col-md-2 mb-3 mb-md-0">
                         <hr class="w-100 bg-secondary border border-2 border-primary d-inline opacity-75" />
@@ -128,8 +161,8 @@
                     </div>
                 </div>
             </div>
-            <div data-scroll data-scroll-speed="2" data-scroll-direction="vertical" data-scroll-class="opacity-loco"
-                class="container mb-7 pre-opacity" data-scroll-repeat={true}>
+            <div data-scroll data-scroll-speed="-1" class="container mb-7 pre-opacity" data-scroll-class="opacity-loco"
+                data-scroll-repeat={true}>
                 <div class="row mobile-row d-flex flex-row justify-content-start  border-start border-primary border-2">
                     <div class="col-12 col-md-2 mb-3 mb-md-0">
                         <hr class="w-100 bg-secondary border border-2 border-primary d-inline opacity-75" />
@@ -168,8 +201,8 @@
                     </div>
                 </div>
             </div>
-            <div data-scroll data-scroll-speed="2" data-scroll-direction="vertical" data-scroll-class="opacity-loco"
-                class="container pre-opacity mb-6 mb-md-5" data-scroll-repeat={true}>
+            <div data-scroll data-scroll-speed="-1" class="container pre-opacity mb-6 mb-md-5"
+                data-scroll-class="opacity-loco" data-scroll-repeat={true}>
                 <div class="row mobile-row d-flex flex-row justify-content-start  border-start border-primary border-2">
                     <div class="col-12 col-md-2 mb-3 mb-md-0">
                         <hr class="w-100 bg-secondary border border-2 border-primary d-inline opacity-75" />
@@ -215,7 +248,7 @@
             </div>
         </section>
     </div>
-    <section data-scroll-section class="bg-primary p-5 mb-6">
+    <section data-scroll-section class="bg-primary p-5 mt-6">
         <div data-scroll class="container pre-opacity" data-scroll-class="opacity-loco" data-scroll-repeat={true}
             data-scroll-speed="1">
             <a class="btn btn-lg btn-light text-decoration-none d-block m-auto mb-3" id="about-btn"
@@ -226,8 +259,8 @@
                 download="MikhailaFitzpatrick_TechnologyCurriculumVitae">you can download my cv here</a>
         </div>
     </section>
-    <div class="vh-100 position-relative">
-        <section data-scroll-section class="container pt-6">
+    <div class="vh-100 position-relative d-flex flex-column justify-content-center">
+        <section data-scroll-section class="container pb-4 pb-md-0">
             <h3 class="text-center mb-2">. . . or get in touch!</h3>
             <p class="d-block m-auto text-start mb-5" id="contact-bio">I'm currently looking to work in a team
                 role
@@ -265,6 +298,48 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script type="text/javascript">
+        const ctx = document.getElementById("myChart");
+        const myChart = new Chart(ctx, {
+            type: "bar",
+            data: {
+                labels: ["HTML", "CSS", "React", "Javascript", "Bootstrap", "Figma", "SQL"],
+                datasets: [{
+                    label: " In Years",
+                    data: [3, 3, 1, 1, 2, 1.5, 1],
+                    backgroundColor: [
+                        "rgba(74, 78, 105, 1)",
+                        "rgba(74, 78, 105, 1)",
+                        "rgba(74, 78, 105, 1)",
+                        "rgba(74, 78, 105, 1)",
+                        "rgba(74, 78, 105, 1)",
+                        "rgba(74, 78, 105, 1)",
+                        "rgba(74, 78, 105, 1)"
+                    ],
+                    categoryPercentage: 1.0,
+                    barPercentage: 0.4,
+                }]
+            },
+            options: {
+                responsive: "true",
+                maintainAspectRatio: false,
+                indexAxis: "y",
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            drawOnChartArea: false
+                        }
+                    },
+                    x: {
+                        grid: {
+                            drawOnChartArea: false
+                        }
+                    },
+                },
+            }
+        });
+    </script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="./packages/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="./packages/locomotive-scroll/dist/locomotive-scroll.min.js"></script>

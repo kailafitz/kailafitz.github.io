@@ -5,6 +5,7 @@ const scroll = new LocomotiveScroll({
     el: scrollContainer,
     smooth: true,
     tablet: {
+        breakpoint: 768,
         smooth: true,
     }
 });
@@ -23,5 +24,5 @@ document.addEventListener('DOMContentLoaded', function () {
 /* update scroll (height) when all images are loaded */
 
 imagesLoaded(scrollContainer, { background: true }, function () {
-  scroll.update();
+    scroll.update();
 });
