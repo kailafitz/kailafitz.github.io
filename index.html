@@ -26,276 +26,602 @@
         rel="stylesheet">
 </head>
 
-<body data-scroll-container>
-    <!-- <div data-scroll-container> -->
-    <nav class="navbar bg-secondary position-absolute w-100 top-0 z-index--1">
-        <div class="container">
-            <span
-                class="navbar-brand mb-0 h6 py-2 px-3 px-sm-0 rounded-3 d-flex align-items-center flex-wrap text-white">
-                <a class="d-inline m-0 pe-2 spacing h3 text-decoration-none text-white">fizzydesigns</a>
-                <h3 class="d-inline m-0 pe-2">|</h3>
-                <a class="d-inline m-0 h6 text-decoration-none text-white">Mikhaila Fitzpatrick</a>
-            </span>
+<body>
+    <main data-scroll-container>
+        <nav class="navbar bg-secondary w-100 top-0 z-index--1">
+            <div class="container">
+                <span
+                    class="navbar-brand mb-0 h6 py-2 px-3 px-sm-0 rounded-3 d-flex align-items-center flex-wrap text-white">
+                    <a class="d-inline m-0 pe-2 spacing h3 text-decoration-none text-white">fizzydesigns</a>
+                    <h3 class="d-inline m-0 pe-2">|</h3>
+                    <a class="d-inline m-0 h6 text-decoration-none text-white">Mikhaila Fitzpatrick</a>
+                </span>
+            </div>
+        </nav>
+        <div data-scroll-section class="lg">
+            <section class="bg-secondary position-absolute top-0 start-0 w-100 z-index--3" id="background-top">
+            </section>
+            <section class="container-md pt-7">
+                <div id="iPadPro"
+                    class="row d-flex flex-column flex-md-row justify-content-md-center align-items-center">
+                    <div class="col-10 col-md-8 col-lg-7 mt-md-5 mb-md-5 m-auto ms-md-0 me-md-0">
+                        <h3 data-scroll data-scroll-speed="-3" data-scroll-direction="horizontal"
+                            data-scroll-position="top" class="text-white text-shadow-light mb-4">
+                            Frontend Developer
+                            <br />
+                            <h1 id="test" class="title d-block" data-scroll-section>Mikhaila</h1>
+                            <h1 class="title d-block mb-3" data-scroll-section>Fitzpatrick</h1>
+                        </h3>
+                        <h2 data-scroll data-scroll-speed="3" data-scroll-direction="horizontal"
+                            class="text-shadow-dark ms-lg-n5">I
+                            like designing and building with tech</h2>
+                        <p data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal"
+                            class="text-shadow-dark ms-4">.
+                            . .
+                            and golfing when I've free time!</p>
+                        <div>
+                            <a class="btn btn-primary top-action-button my-3 my-md-0 box-shadow"
+                                href="./MikhailaFitzpatrick_TechnologyCurriculumVitae.pdf"
+                                download="MikhailaFitzpatrick_TechnologyCurriculumVitae">Download my CV</a>
+                            <a class="btn btn-primary top-action-button box-shadow" id="action-contact-button"
+                                data-scroll-to href="#contact-bio">Contact me</a>
+                        </div>
+                    </div>
+                    <div class="col-8 col-md-4 col-lg-4 mb-3 mt-sm-5 mt-md-0 mb-md-0 m-auto m-md-0 text-center">
+                        <img data-scroll data-scroll-speed="2" src="./media/bitmoji-circle.png" alt="profile picture"
+                            id="profile-pic" class="h-100 w-100 my-5 my-md-0" />
+                    </div>
+                </div>
+            </section>
         </div>
-    </nav>
-    <div class="lg">
-        <section data-scroll-section class="bg-secondary position-absolute top-0 start-0 w-100 z-index--3"
-            id="background-top">
-        </section>
-        <section data-scroll-section class="container-md pt-7">
-            <div id="iPadPro" class="row d-flex flex-column flex-md-row justify-content-md-center align-items-center">
-                <div class="col-10 col-md-8 col-lg-7 mt-md-5 mb-md-5 m-auto ms-md-0 me-md-0">
-                    <h3 data-scroll data-scroll-speed="-3" data-scroll-direction="horizontal" data-scroll-position="top"
-                        class="text-white text-shadow-light mb-4">
-                        Frontend Developer
-                        <br />
-                        <h1 id="test" class="title d-block" data-scroll-section>Mikhaila</h1>
-                        <h1 class="title d-block mb-3" data-scroll-section>Fitzpatrick</h1>
-                    </h3>
-                    <h2 data-scroll data-scroll-speed="3" data-scroll-direction="horizontal"
-                        class="text-shadow-dark ms-lg-n5">I
-                        like designing and building with tech</h2>
-                    <p data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal"
-                        class="text-shadow-dark ms-4">.
-                        . .
-                        and golfing when I've free time!</p>
-                    <div>
-                        <a class="btn btn-primary top-action-button my-3 my-md-0 box-shadow"
-                            href="./MikhailaFitzpatrick_TechnologyCurriculumVitae.pdf"
-                            download="MikhailaFitzpatrick_TechnologyCurriculumVitae">Download my CV</a>
-                        <a class="btn btn-primary top-action-button box-shadow" id="action-contact-button"
-                            data-scroll-to href="#contact-bio">Contact me</a>
-                    </div>
-                </div>
-                <div class="col-8 col-md-4 col-lg-4 mb-3 mt-sm-5 mt-md-0 mb-md-0 m-auto m-md-0 text-center">
-                    <img data-scroll data-scroll-speed="2" src="./media/bitmoji-circle.png" alt="profile picture"
-                        id="profile-pic" class="h-100 w-100 my-5 my-md-0" />
-                </div>
-            </div>
-        </section>
-    </div>
-    <section class="lg container d-flex flex-column justify-content-center" data-scroll-section>
-        <div data-scroll data-scroll-speed="1" class="row mobile-row mb-5">
-            <div class="col-12 col-md-4 mb-5 mb-md-0 mx-auto d-flex flex-column justify-content-center">
-                <div class="d-flex flex-row align-items-start mb-5">
-                    <i class="bi bi-phone text-primary pe-3 fs-1"></i>
-                    <div>
-                        <h4 class="m-0">Mobile-first Design</h4>
-                        <p class="m-0">Responsive from the get-go</p>
-                    </div>
-                </div>
-                <div class="d-flex flex-row align-items-start mb-5">
-                    <i class="bi bi-easel2 text-primary pe-3 fs-1"></i>
-                    <div>
-                        <h4 class="m-0">Wireframes & Prototyping</h4>
-                        <p class="m-0">Planning and prep using Figma, of course</p>
-                    </div>
-                </div>
-                <div class="d-flex flex-row align-items-start mb-4">
-                    <i class="bi bi-journal-code text-primary pe-3 fs-1"></i>
-                    <div>
-                        <h4 class="m-0">Staying Up-to-date</h4>
-                        <p class="m-0">Keeping an eye on the horizon</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-12 col-md-7 mx-auto mb-5 mb-md-0" id="skills-chart">
-                <canvas id="myChart"></canvas>
-            </div>
-    </section>
-    <div data-scroll-section class="position-relative">
-        <div data-scroll data-scroll-speed="1"
-            class="position-absolute w-100 h-100 top-0 left-0 bg-light z-index--2 d-none d-md-block"></div>
-        <section>
-            <div data-scroll data-scroll-speed="-1" class="container mb-7 pre-opacity" data-scroll-class="opacity-loco"
-                data-scroll-repeat={true}>
-                <div class="row mobile-row d-flex flex-row justify-content-start border-start border-primary border-2">
-                    <div class="col-12 col-md-2 mb-3 mb-md-0">
-                        <hr class="w-100 bg-secondary border border-2 border-primary d-inline opacity-75" />
-                        <h6 class="fw-bold ps-2 d-inline">2022</h6>
-                    </div>
-                    <div class="col-12 col-md-4 ps-4 ps-md-0 pe-md-3 mb-5 mb-md-0">
-                        <h3 class="p-0">Lancer</h3>
-                        <div class="d-flex flex-row flex-wrap align-items-stretch mb-2">
-                            <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
-                                data-bs-toggle="tooltip" data-bs-title="React">
-                                <img src="./media/react_Logo.png" class="code-icon" />
-                            </div>
-                            <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
-                                data-bs-toggle="tooltip" data-bs-title="Flask">
-                                <img src="./media/flask_Logo.png" class="code-icon" />
-                            </div>
-
-                            <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
-                                data-bs-toggle="tooltip" data-bs-title="Python">
-                                <img src="./media/Python_Logo.webp" class="code-icon" />
-                            </div>
-
-                            <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
-                                data-bs-toggle="tooltip" data-bs-title="SQLite">
-                                <img src="./media/sqlite3_Logo.png" class="code-icon" />
-                            </div>
-
-                            <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
-                                data-bs-toggle="tooltip" data-bs-title="Bootstrap">
-                                <img src="./media/bootstrap_Logo.png" class="code-icon" />
-                            </div>
-
-                            <div class="bg-tertiary p-2 mb-3 badge-style d-flex flex-column justify-content-center"
-                                data-bs-toggle="tooltip" data-bs-title="Sass">
-                                <img src="./media/SCSS_Logo.png" class="code-icon" />
-                            </div>
+        <section data-scroll-section class="lg container d-flex flex-column justify-content-center" id="skills">
+            <div data-scroll data-scroll-speed="1" class="row mobile-row mb-5">
+                <div class="col-12 col-md-4 mb-5 mb-md-0 mx-auto d-flex flex-column justify-content-center">
+                    <div class="d-flex flex-row align-items-start mb-5">
+                        <i class="bi bi-phone text-primary pe-3 fs-1"></i>
+                        <div>
+                            <h4 class="m-0">Mobile-first Design</h4>
+                            <p class="m-0">Responsive from the get-go</p>
                         </div>
-                        <p class="text-muted">My final project for CS50x
-                        </p>
-                        <a href="pages/lancer.html" class="btn btn-primary text-white d-inline">Learn more <i
-                                class="bi bi-arrow-right-short"></i></a>
-                        <a href="https://github.com/kailafitz/Lancer" target="_blank"
-                            class="btn btn-secondary d-inline mb-5 mb-md-0"><i class="bi bi-github"></i></a>
                     </div>
-                    <div class="col-12 col-md-5 ps-4 ps-md-0">
-                        <video class="w-100 screenshot" autoplay loop>
-                            <source src="./media/Lancer-screen-recording.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-            </div>
-            <div data-scroll data-scroll-speed="-1" class="container mb-7 pre-opacity" data-scroll-class="opacity-loco"
-                data-scroll-repeat={true}>
-                <div class="row mobile-row d-flex flex-row justify-content-start  border-start border-primary border-2">
-                    <div class="col-12 col-md-2 mb-3 mb-md-0">
-                        <hr class="w-100 bg-secondary border border-2 border-primary d-inline opacity-75" />
-                        <h6 class="fw-bold ps-2 d-inline">2021</h6>
-                    </div>
-                    <div class="col-12 col-md-4 ps-4 ps-md-0 pe-md-3 mb-5 mb-md-0">
-                        <h3 class="p-0">[Coming Soon]</h3>
-                        <div class="d-flex flex-row flex-wrap align-items-stretch mb-2">
-                            <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
-                                data-bs-toggle="tooltip" data-bs-title="React">
-                                <img src="./media/react_Logo.png" class="code-icon" />
-                            </div>
-                            <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
-                                data-bs-toggle="tooltip" data-bs-title="Material UI">
-                                <img src="./media/materialui_Logo.png" class="code-icon" />
-                            </div>
-                            <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
-                                data-bs-toggle="tooltip" data-bs-title="Styled Components">
-                                <img src="./media/styled_components_Logo.png" class="code-icon" />
-                            </div>
+                    <div class="d-flex flex-row align-items-start mb-5">
+                        <i class="bi bi-easel2 text-primary pe-3 fs-1"></i>
+                        <div>
+                            <h4 class="m-0">Wireframes & Prototyping</h4>
+                            <p class="m-0">Planning and prep using Figma, of course</p>
                         </div>
-                        <p class="text-muted">My first website using React for a local company in Ennis, Co. Clare who
-                            are
-                            currently in the middle
-                            of
-                            re-launching their brand.
-                        </p>
-
-                        <a href="#" class="btn btn-primary text-white d-inline disabled">Learn more <i
-                                class="bi bi-arrow-right-short"></i></a>
-                        <a href="https://github.com/kailafitz/Lancer" target="_blank"
-                            class="btn btn-secondary d-inline mb-5 mb-md-0 disabled"><i class="bi bi-github"></i></a>
                     </div>
-                    <div class="col-12 col-md-5 ps-4 ps-md-0">
-                        <img class="w-100 screenshot" src="./media/moneyadvice-screenshot.png" />
-                    </div>
-                </div>
-            </div>
-            <div data-scroll data-scroll-speed="-1" class="container pre-opacity mb-6 mb-md-5"
-                data-scroll-class="opacity-loco" data-scroll-repeat={true}>
-                <div class="row mobile-row d-flex flex-row justify-content-start  border-start border-primary border-2">
-                    <div class="col-12 col-md-2 mb-3 mb-md-0">
-                        <hr class="w-100 bg-secondary border border-2 border-primary d-inline opacity-75" />
-                        <h6 class="fw-bold ps-2 d-inline">2020</h6>
-                    </div>
-                    <div class="col-12 col-md-4 ps-4 ps-md-0 pe-md-3 mb-5 mb-md-0">
-                        <h3 class="p-0">Eileen Fitzgerald School of Speech & Drama</h3>
-                        <div class="d-flex flex-row flex-wrap align-items-stretch mb-2">
-                            <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
-                                data-bs-toggle="tooltip" data-bs-title="HTML5">
-                                <img src="./media/HTML5_Logo.svg" class="code-icon" />
-                            </div>
-
-                            <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
-                                data-bs-toggle="tooltip" data-bs-title="CSS3">
-                                <img src="./media/CSS3_Logo.png" class="code-icon" />
-                            </div>
-
-                            <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
-                                data-bs-toggle="tooltip" data-bs-title="Sass">
-                                <img src="./media/SCSS_Logo.png" class="code-icon" />
-                            </div>
-
-                            <div class="bg-tertiary p-2 mb-3 badge-style d-flex flex-column justify-content-center"
-                                data-bs-toggle="tooltip" data-bs-title="Javascript">
-                                <img src="./media/JS_Logo.png" class="code-icon" />
-                            </div>
+                    <div class="d-flex flex-row align-items-start mb-4">
+                        <i class="bi bi-journal-code text-primary pe-3 fs-1"></i>
+                        <div>
+                            <h4 class="m-0">Staying Up-to-date</h4>
+                            <p class="m-0">Keeping an eye on the horizon</p>
                         </div>
-                        <p class="text-muted">My first website. Click the button below for my process and some notes
-                            upon
-                            reflection!
-                        </p>
+                    </div>
 
-                        <a href="./pages/efdrama.html" class="btn btn-primary text-white d-inline">Learn more <i
-                                class="bi bi-arrow-right-short"></i></a>
-                        <a href="https://github.com/efdrama/efdrama.github.io" target="_blank"
-                            class="btn btn-secondary d-inline mb-5 mb-md-0"><i class="bi bi-github"></i></a>
-                    </div>
-                    <div class="col-12 col-md-5 ps-4 ps-md-0">
-                        <img class="w-100 screenshot" src="./media/eileen-screenshot.png" />
-                    </div>
                 </div>
-            </div>
+                <div class="col-12 col-md-7 mx-auto mb-5 mb-md-0" id="skills-chart">
+                    <canvas id="myChart"></canvas>
+                </div>
         </section>
-    </div>
-    <section data-scroll-section class="bg-primary p-5 mt-6">
-        <div data-scroll class="container pre-opacity" data-scroll-class="opacity-loco" data-scroll-repeat={true}
-            data-scroll-speed="1">
-            <a class="btn btn-lg btn-light text-decoration-none d-block m-auto mb-3" id="about-btn"
-                href="./pages/about.html">View past work experience and
-                education</a>
-            <a class="d-block text-center m-auto h6 text-dark"
-                href="./MikhailaFitzpatrick_TechnologyCurriculumVitae.pdf"
-                download="MikhailaFitzpatrick_TechnologyCurriculumVitae">you can download my cv here</a>
+        <div data-scroll-section class="position-relative">
+            <div data-scroll data-scroll-speed="1"
+                class="position-absolute w-100 h-100 top-0 left-0 bg-light z-index--2 d-none d-md-block"></div>
+            <section>
+                <div data-scroll data-scroll-speed="-1" class="container mb-7 pre-opacity"
+                    data-scroll-class="opacity-loco" data-scroll-repeat={true}>
+                    <div
+                        class="row mobile-row d-flex flex-row justify-content-start border-start border-primary border-2">
+                        <div class="col-12 col-md-2 mb-3 mb-md-0">
+                            <hr class="w-100 bg-secondary border border-2 border-primary d-inline opacity-75" />
+                            <h6 class="fw-bold ps-2 d-inline">2022</h6>
+                        </div>
+                        <div class="col-12 col-md-4 ps-4 ps-md-0 pe-md-3 mb-5 mb-md-0">
+                            <h3 class="p-0">Lancer</h3>
+                            <div class="d-flex flex-row flex-wrap align-items-stretch mb-2">
+                                <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
+                                    data-bs-toggle="tooltip" data-bs-title="React">
+                                    <img src="./media/react_Logo.png" class="code-icon" />
+                                </div>
+                                <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
+                                    data-bs-toggle="tooltip" data-bs-title="Flask">
+                                    <img src="./media/flask_Logo.png" class="code-icon" />
+                                </div>
+
+                                <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
+                                    data-bs-toggle="tooltip" data-bs-title="Python">
+                                    <img src="./media/Python_Logo.webp" class="code-icon" />
+                                </div>
+
+                                <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
+                                    data-bs-toggle="tooltip" data-bs-title="SQLite">
+                                    <img src="./media/sqlite3_Logo.png" class="code-icon" />
+                                </div>
+
+                                <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
+                                    data-bs-toggle="tooltip" data-bs-title="Bootstrap">
+                                    <img src="./media/bootstrap_Logo.png" class="code-icon" />
+                                </div>
+
+                                <div class="bg-tertiary p-2 mb-3 badge-style d-flex flex-column justify-content-center"
+                                    data-bs-toggle="tooltip" data-bs-title="Sass">
+                                    <img src="./media/SCSS_Logo.png" class="code-icon" />
+                                </div>
+                            </div>
+                            <p class="text-muted">My final project for CS50x
+                            </p>
+                            <a href="pages/lancer.html" class="btn btn-primary text-white d-inline">Learn more <i
+                                    class="bi bi-arrow-right-short"></i></a>
+                            <a href="https://github.com/kailafitz/Lancer" target="_blank"
+                                class="btn btn-secondary d-inline mb-5 mb-md-0"><i class="bi bi-github"></i></a>
+                        </div>
+                        <div class="col-12 col-md-5 ps-4 ps-md-0">
+                            <video class="w-100 screenshot" autoplay loop>
+                                <source src="./media/Lancer-screen-recording.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div data-scroll data-scroll-speed="-1" class="container mb-7 pre-opacity"
+                    data-scroll-class="opacity-loco" data-scroll-repeat={true}>
+                    <div
+                        class="row mobile-row d-flex flex-row justify-content-start  border-start border-primary border-2">
+                        <div class="col-12 col-md-2 mb-3 mb-md-0">
+                            <hr class="w-100 bg-secondary border border-2 border-primary d-inline opacity-75" />
+                            <h6 class="fw-bold ps-2 d-inline">2021</h6>
+                        </div>
+                        <div class="col-12 col-md-4 ps-4 ps-md-0 pe-md-3 mb-5 mb-md-0">
+                            <h3 class="p-0">[Coming Soon]</h3>
+                            <div class="d-flex flex-row flex-wrap align-items-stretch mb-2">
+                                <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
+                                    data-bs-toggle="tooltip" data-bs-title="React">
+                                    <img src="./media/react_Logo.png" class="code-icon" />
+                                </div>
+                                <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
+                                    data-bs-toggle="tooltip" data-bs-title="Material UI">
+                                    <img src="./media/materialui_Logo.png" class="code-icon" />
+                                </div>
+                                <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
+                                    data-bs-toggle="tooltip" data-bs-title="Styled Components">
+                                    <img src="./media/styled_components_Logo.png" class="code-icon" />
+                                </div>
+                            </div>
+                            <p class="text-muted">My first website using React for a local company in Ennis, Co. Clare
+                                who
+                                are
+                                currently in the middle
+                                of
+                                re-launching their brand.
+                            </p>
+
+                            <a href="#" class="btn btn-primary text-white d-inline disabled">Learn more <i
+                                    class="bi bi-arrow-right-short"></i></a>
+                            <a href="https://github.com/kailafitz/Lancer" target="_blank"
+                                class="btn btn-secondary d-inline mb-5 mb-md-0 disabled"><i
+                                    class="bi bi-github"></i></a>
+                        </div>
+                        <div class="col-12 col-md-5 ps-4 ps-md-0">
+                            <img class="w-100 screenshot" src="./media/moneyadvice-screenshot.png" />
+                        </div>
+                    </div>
+                </div>
+                <div data-scroll data-scroll-speed="-1" class="container pre-opacity mb-6 mb-md-5"
+                    data-scroll-class="opacity-loco" data-scroll-repeat={true}>
+                    <div
+                        class="row mobile-row d-flex flex-row justify-content-start  border-start border-primary border-2">
+                        <div class="col-12 col-md-2 mb-3 mb-md-0">
+                            <hr class="w-100 bg-secondary border border-2 border-primary d-inline opacity-75" />
+                            <h6 class="fw-bold ps-2 d-inline">2020</h6>
+                        </div>
+                        <div class="col-12 col-md-4 ps-4 ps-md-0 pe-md-3 mb-5 mb-md-0">
+                            <h3 class="p-0">Eileen Fitzgerald School of Speech & Drama</h3>
+                            <div class="d-flex flex-row flex-wrap align-items-stretch mb-2">
+                                <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
+                                    data-bs-toggle="tooltip" data-bs-title="HTML5">
+                                    <img src="./media/HTML5_Logo.svg" class="code-icon" />
+                                </div>
+
+                                <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
+                                    data-bs-toggle="tooltip" data-bs-title="CSS3">
+                                    <img src="./media/CSS3_Logo.png" class="code-icon" />
+                                </div>
+
+                                <div class="bg-tertiary p-2 me-3 mb-3 badge-style d-flex flex-column justify-content-center"
+                                    data-bs-toggle="tooltip" data-bs-title="Sass">
+                                    <img src="./media/SCSS_Logo.png" class="code-icon" />
+                                </div>
+
+                                <div class="bg-tertiary p-2 mb-3 badge-style d-flex flex-column justify-content-center"
+                                    data-bs-toggle="tooltip" data-bs-title="Javascript">
+                                    <img src="./media/JS_Logo.png" class="code-icon" />
+                                </div>
+                            </div>
+                            <p class="text-muted">My first website. Click the button below for my process and some notes
+                                upon
+                                reflection!
+                            </p>
+
+                            <a href="./pages/efdrama.html" class="btn btn-primary text-white d-inline">Learn more <i
+                                    class="bi bi-arrow-right-short"></i></a>
+                            <a href="https://github.com/efdrama/efdrama.github.io" target="_blank"
+                                class="btn btn-secondary d-inline mb-5 mb-md-0"><i class="bi bi-github"></i></a>
+                        </div>
+                        <div class="col-12 col-md-5 ps-4 ps-md-0">
+                            <img class="w-100 screenshot" src="./media/eileen-screenshot.png" />
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
-    <div class="vh-100 position-relative d-flex flex-column justify-content-center">
-        <section data-scroll-section class="container pb-4 pb-md-0">
-            <h3 class="text-center mb-2">. . . or get in touch!</h3>
-            <p class="d-block m-auto text-start mb-5" id="contact-bio">I'm currently looking to work in a team
-                role
-                but
-                I'm
-                available
-                for
-                any freelance projects! I focus on <span class="text-primary fw-bold h5">SEO</span> and <span
-                    class="text-primary fw-bold h5">UX</span>
-                when working with any clients one-to-one :]</p>
-            <div class="row d-flex flex-column flex-md-row justify-content-center">
-                <div class="col-10 col-md-6 col-lg-5 col-xl-4 mx-auto mx-md-0 mb-4 pb-3 mb-md-0" id="contact-border">
-                    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_0hrr7pgt.json"
-                        background="transparent" speed="1" style="width: 100%; height: 100%" loop autoplay>
-                    </lottie-player>
-                </div>
-                <div
-                    class="col-10 col-md-2 col-lg-2 col-xl-1 d-flex flex-row flex-md-column justify-content-around align-items-center mx-auto mx-md-0">
-                    <a class="link-primary text-decoration-none icon-link" href="mailTo:mikhailafitzpatrick@yahoo.com"
-                        target="_blank"><i class="bi bi-envelope-fill icon"></i></a>
-                    <a class="link-primary text-decoration-none icon-link" href="tel:0862321667" target="_blank"><i
-                            class="bi bi-telephone-fill icon"></i></a>
-                    <a class="link-primary text-decoration-none icon-link"
-                        href="https://www.linkedin.com/in/mikhaila-fitzpatrick-701848141/" target="_blank"><i
-                            class="bi bi-linkedin icon"></i></a>
+        <section data-scroll-section class="lg p-5 mt-6">
+            <div class="d-block text-center mx-auto mb-3">
+                <h6>Catch me on Dribbble</h6>
+                <a href="https://dribbble.com/kfitz47" target="_blank"><i class="bi bi-dribbble fs-4"></i></a>
+            </div>
+            <div data-scroll-section data-scroll data-scroll-speed="2" data-scroll-direction="horizontal"
+                class="container">
+                <div class="row d-flex flex-column flex-md-row align-items-center justify-content-center" id="shots">
                 </div>
             </div>
         </section>
-        <footer data-scroll-section
-            class="position-absolute w-100 bottom-0 bg-secondary p-3 d-flex flex-row justify-content-center">
-            <a class="link-light me-3 text-decoration-none icon" href="https://github.com/kailafitz" target="_blank">
-                <i class="bi bi-github"></i>
-            </a>
-        </footer>
-    </div>
+        <section data-scroll-section class="lg p-5">
+            <div class="d-block text-center mx-auto mb-3">
+                <h6>and Instagram</h6>
+                <a href="https://www.instagram.com/fizzydesigns/" target="_blank"><i
+                        class="bi bi-instagram fs-4"></i></a>
+            </div>
+            <div class="container" data-scroll-section data-scroll data-scroll-speed="4"
+                data-scroll-direction="horizontal">
+                <div class="row d-flex flex-wrap flex-row justify-content-around align-items-center">
+                    <div class="col-10 col-sm-7 col-md-3">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/p/CilvkedI98G/?utm_source=ig_embed&amp;utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/CilvkedI98G/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/CilvkedI98G/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by Kaila Fitz | Fizzy Designs
+                                        (@fizzydesigns)</a>
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <div class="col-10 col-sm-7 col-md-3">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/p/Cilm4Skjr5V/?utm_source=ig_embed&amp;utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/Cilm4Skjr5V/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/Cilm4Skjr5V/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by Kaila Fitz | Fizzy Designs
+                                        (@fizzydesigns)</a>
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <div class="col-10 col-sm-7 col-md-3">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/p/CilpJ1kDXr9/?utm_source=ig_embed&amp;utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/CilpJ1kDXr9/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/CilpJ1kDXr9/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by Kaila Fitz | Fizzy Designs
+                                        (@fizzydesigns)</a>
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-scroll-section class="bg-primary p-5 mt-6 mb-5">
+            <div data-scroll class="container pre-opacity" data-scroll-class="opacity-loco" data-scroll-repeat={true}
+                data-scroll-speed="1">
+                <a class="btn btn-lg btn-light text-decoration-none d-block m-auto mb-3" id="about-btn"
+                    href="./pages/about.html">View past work experience and
+                    education</a>
+                <a class="d-block text-center m-auto h6 text-dark"
+                    href="./MikhailaFitzpatrick_TechnologyCurriculumVitae.pdf"
+                    download="MikhailaFitzpatrick_TechnologyCurriculumVitae">you can download my cv here</a>
+            </div>
+        </section>
+        <div class="vh-100 d-flex flex-column justify-content-between">
+            <div class="h-100 d-flex flex-column justify-content-center">
+                <section data-scroll-section>
+                    <h3 class="text-center mb-2">. . . or get in touch!</h3>
+                    <p class="d-block m-auto text-start mb-5" id="contact-bio">I'm currently looking to work in a
+                        team
+                        role
+                        but
+                        I'm
+                        available
+                        for
+                        any freelance projects! I focus on <span class="text-primary fw-bold h5">SEO</span> and
+                        <span class="text-primary fw-bold h5">UX</span>
+                        when working with any clients one-to-one :]
+                    </p>
+                    <div class="row d-flex flex-column flex-md-row justify-content-center">
+                        <div class="col-10 col-md-6 col-lg-5 col-xl-4 mx-auto mx-md-0 mb-4 pb-3 mb-md-0"
+                            id="contact-border">
+                            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_0hrr7pgt.json"
+                                background="transparent" speed="1" style="width: 100%; height: 100%" loop autoplay>
+                            </lottie-player>
+                        </div>
+                        <div
+                            class="col-10 col-md-2 col-lg-2 col-xl-1 d-flex flex-row flex-md-column justify-content-around align-items-center mx-auto mx-md-0">
+                            <a class="link-primary text-decoration-none icon-link"
+                                href="mailTo:mikhailafitzpatrick@yahoo.com" target="_blank"><i
+                                    class="bi bi-envelope-fill icon"></i></a>
+                            <a class="link-primary text-decoration-none icon-link" href="tel:0862321667"
+                                target="_blank"><i class="bi bi-telephone-fill icon"></i></a>
+                            <a class="link-primary text-decoration-none icon-link"
+                                href="https://www.linkedin.com/in/mikhaila-fitzpatrick-701848141/" target="_blank"><i
+                                    class="bi bi-linkedin icon"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer data-scroll-section class="w-100 bg-secondary p-3 d-flex flex-row justify-content-center">
+                <a class="link-light me-3 text-decoration-none icon" href="https://github.com/kailafitz"
+                    target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+            </footer>
+        </div>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <script type="text/javascript">
@@ -341,6 +667,31 @@
             }
         });
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        let accessToken = "80cdba96a6100c8df4e2526e289935e5e5f13dffc35392e443c91236f17ceeb6";
+
+        $.ajax({
+            url: 'https://api.dribbble.com/v2/user/shots?access_token=' + accessToken,
+            dataType: 'json',
+            type: 'GET',
+            success: function (data) {
+                let recents = data.slice(0, 2);
+                if (recents.length > 0) {
+                    $.each(recents, function (i, val) {
+                        $('#shots').prepend(
+                            '<div class="col-10 col-md-4 mb-3 mb-md-0"><a class="shot" target="_blank" href="' + val.html_url + '" title="' + val.title + '"><img class="w-100" src="' + val.images.normal + '"/></a></div>'
+                        )
+                    })
+                }
+                else {
+                    $('#shots').append('<p>No shots yet!</p>');
+                }
+            }
+        });
+    </script>
+    <script async src="//www.instagram.com/embed.js"></script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="./packages/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="./packages/locomotive-scroll/dist/locomotive-scroll.min.js"></script>

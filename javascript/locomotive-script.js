@@ -4,10 +4,10 @@ let scrollContainer = document.querySelector("[data-scroll-container]");
 const scroll = new LocomotiveScroll({
     el: scrollContainer,
     smooth: true,
-    tablet: {
-        breakpoint: 768,
-        smooth: true,
-    }
+    // tablet: {
+    //     breakpoint: 768,
+    //     smooth: true,
+    // }
 });
 
 // Scroll update all pages

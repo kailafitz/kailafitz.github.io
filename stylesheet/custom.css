@@ -7667,6 +7667,10 @@ progress {
     display: none !important;
   }
 }
+nav {
+  position: absolute;
+}
+
 #background-top {
   height: 40vh;
 }
@@ -7817,6 +7821,11 @@ h6, .h6 {
   transform: rotate(90deg);
 }
 
+.instagram-media {
+  border: none !important;
+  min-width: 0 !important;
+}
+
 .pre-opacity {
   opacity: 0;
   transition: opacity 0ms ease;
@@ -7840,6 +7849,10 @@ h6, .h6 {
   }
 }
 @media only screen and (min-width: 768px) {
+  nav {
+    position: -webkit-sticky;
+    position: sticky;
+  }
   .title {
     font-size: 11.5vw;
   }
@@ -7849,7 +7862,10 @@ h6, .h6 {
   .top-action-button {
     width: auto;
   }
-  #skills-chart {
+  #skills {
+    height: 100vh;
+  }
+  #skills-chart > canvas {
     height: 100%;
   }
   .mb-6 {
