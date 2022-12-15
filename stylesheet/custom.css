@@ -7672,7 +7672,7 @@ nav {
 }
 
 #background-top {
-  height: 40vh;
+  height: 55vh;
 }
 
 .z-index--3 {
@@ -7688,7 +7688,7 @@ nav {
 }
 
 .pt-6 {
-  padding-top: 4vh;
+  padding-top: 6vh;
 }
 
 .pt-7 {
@@ -7757,7 +7757,7 @@ h6, .h6 {
 }
 
 .text-shadow-dark {
-  text-shadow: 7px -13px rgba(255, 255, 255, 0.63);
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.63);
 }
 
 .text-shadow-light {
@@ -7826,15 +7826,6 @@ h6, .h6 {
   min-width: 0 !important;
 }
 
-.pre-opacity {
-  opacity: 0;
-  transition: opacity 0ms ease;
-}
-
-.opacity-loco {
-  opacity: 1;
-}
-
 @media only screen and (min-width: 576px) {
   .title {
     font-size: 15vw;
@@ -7844,7 +7835,7 @@ h6, .h6 {
   #background-top {
     height: 42vh;
   }
-  #iPadPro {
+  .iPad {
     margin-bottom: 10vh;
   }
 }
@@ -7854,7 +7845,7 @@ h6, .h6 {
     position: sticky;
   }
   .title {
-    font-size: 11.5vw;
+    font-size: 6em;
   }
   .pt-7 {
     padding-top: 15vh;
@@ -7902,7 +7893,7 @@ h6, .h6 {
 }
 @media only screen and (min-width: 992px) {
   .title {
-    font-size: 10vw;
+    font-size: 7em;
   }
   #youtube-video {
     height: 40vh;
@@ -7922,10 +7913,10 @@ h6, .h6 {
   .pt-7 {
     padding-top: 8vh;
   }
-  section #iPadPro {
+  section #iPad {
     flex-direction: column !important;
   }
-  section #iPadPro div:first-child {
+  section #iPad div:first-child {
     flex: 0 0 auto;
     width: 83.33333333%;
   }
@@ -7935,7 +7926,7 @@ h6, .h6 {
     height: 60vh;
   }
   .title {
-    font-size: 11vw;
+    font-size: 8em;
   }
   #youtube-video {
     height: 50vh;
@@ -7948,9 +7939,6 @@ h6, .h6 {
   }
 }
 @media only screen and (min-width: 1400px) {
-  .title {
-    font-size: 8vw;
-  }
   .pt-7 {
     padding-top: 8%;
   }
